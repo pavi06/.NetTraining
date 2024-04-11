@@ -1,0 +1,14 @@
+C:\dotNet\ApplicationSolution1\FirstApplication\bin\Debug\net8.0\FirstApplication.exe
+C:\dotNet\ApplicationSolution1\FirstApplication\bin\Debug\net8.0\FirstApplication.deps.json
+C:\dotNet\ApplicationSolution1\FirstApplication\bin\Debug\net8.0\FirstApplication.runtimeconfig.json
+C:\dotNet\ApplicationSolution1\FirstApplication\bin\Debug\net8.0\FirstApplication.dll
+C:\dotNet\ApplicationSolution1\FirstApplication\bin\Debug\net8.0\FirstApplication.pdb
+C:\dotNet\ApplicationSolution1\FirstApplication\obj\Debug\net8.0\FirstApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\ApplicationSolution1\FirstApplication\obj\Debug\net8.0\FirstApplication.AssemblyInfoInputs.cache
+C:\dotNet\ApplicationSolution1\FirstApplication\obj\Debug\net8.0\FirstApplication.AssemblyInfo.cs
+C:\dotNet\ApplicationSolution1\FirstApplication\obj\Debug\net8.0\FirstApplication.csproj.CoreCompileInputs.cache
+C:\dotNet\ApplicationSolution1\FirstApplication\obj\Debug\net8.0\FirstApplication.dll
+C:\dotNet\ApplicationSolution1\FirstApplication\obj\Debug\net8.0\refint\FirstApplication.dll
+C:\dotNet\ApplicationSolution1\FirstApplication\obj\Debug\net8.0\FirstApplication.pdb
+C:\dotNet\ApplicationSolution1\FirstApplication\obj\Debug\net8.0\FirstApplication.genruntimeconfig.cache
+C:\dotNet\ApplicationSolution1\FirstApplication\obj\Debug\net8.0\ref\FirstApplication.dll
