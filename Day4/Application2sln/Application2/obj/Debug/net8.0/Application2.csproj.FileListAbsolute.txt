@@ -1,0 +1,15 @@
+C:\dotNet\Day2\Application2sln\Application2\bin\Debug\net8.0\Application2.exe
+C:\dotNet\Day2\Application2sln\Application2\bin\Debug\net8.0\Application2.deps.json
+C:\dotNet\Day2\Application2sln\Application2\bin\Debug\net8.0\Application2.runtimeconfig.json
+C:\dotNet\Day2\Application2sln\Application2\bin\Debug\net8.0\Application2.dll
+C:\dotNet\Day2\Application2sln\Application2\bin\Debug\net8.0\Application2.pdb
+C:\dotNet\Day2\Application2sln\Application2\obj\Debug\net8.0\Application2.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day2\Application2sln\Application2\obj\Debug\net8.0\Application2.AssemblyInfoInputs.cache
+C:\dotNet\Day2\Application2sln\Application2\obj\Debug\net8.0\Application2.AssemblyInfo.cs
+C:\dotNet\Day2\Application2sln\Application2\obj\Debug\net8.0\Application2.csproj.CoreCompileInputs.cache
+C:\dotNet\Day2\Application2sln\Application2\obj\Debug\net8.0\Application2.sourcelink.json
+C:\dotNet\Day2\Application2sln\Application2\obj\Debug\net8.0\Application2.dll
+C:\dotNet\Day2\Application2sln\Application2\obj\Debug\net8.0\refint\Application2.dll
+C:\dotNet\Day2\Application2sln\Application2\obj\Debug\net8.0\Application2.pdb
+C:\dotNet\Day2\Application2sln\Application2\obj\Debug\net8.0\Application2.genruntimeconfig.cache
+C:\dotNet\Day2\Application2sln\Application2\obj\Debug\net8.0\ref\Application2.dll
