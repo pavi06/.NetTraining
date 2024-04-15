@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "RequestTracker/1.0.0": {
+        "dependencies": {
+          "RequestTrackerLibrary": "1.0.0"
+        },
+        "runtime": {
+          "RequestTracker.dll": {}
+        }
+      },
+      "RequestTrackerLibrary/1.0.0": {
+        "runtime": {
+          "RequestTrackerLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RequestTracker/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RequestTrackerLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\bin\Debug\net8.0\BasicOfCSharp.exe
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\bin\Debug\net8.0\BasicOfCSharp.deps.json
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\bin\Debug\net8.0\BasicOfCSharp.runtimeconfig.json
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\bin\Debug\net8.0\BasicOfCSharp.dll
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\bin\Debug\net8.0\BasicOfCSharp.pdb
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\obj\Debug\net8.0\BasicOfCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\obj\Debug\net8.0\BasicOfCSharp.AssemblyInfoInputs.cache
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\obj\Debug\net8.0\BasicOfCSharp.AssemblyInfo.cs
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\obj\Debug\net8.0\BasicOfCSharp.csproj.CoreCompileInputs.cache
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\obj\Debug\net8.0\BasicOfCSharp.sourcelink.json
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\obj\Debug\net8.0\BasicOfCSharp.dll
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\obj\Debug\net8.0\refint\BasicOfCSharp.dll
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\obj\Debug\net8.0\BasicOfCSharp.pdb
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\obj\Debug\net8.0\BasicOfCSharp.genruntimeconfig.cache
+C:\dotNet\Day5\BasicOfCSharpSolution\BasicOfCSharp\obj\Debug\net8.0\ref\BasicOfCSharp.dll

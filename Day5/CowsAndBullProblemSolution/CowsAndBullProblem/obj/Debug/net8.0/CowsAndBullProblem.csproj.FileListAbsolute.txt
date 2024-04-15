@@ -1,0 +1,15 @@
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\bin\Debug\net8.0\CowsAndBullProblem.exe
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\bin\Debug\net8.0\CowsAndBullProblem.deps.json
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\bin\Debug\net8.0\CowsAndBullProblem.runtimeconfig.json
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\bin\Debug\net8.0\CowsAndBullProblem.dll
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\bin\Debug\net8.0\CowsAndBullProblem.pdb
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\obj\Debug\net8.0\CowsAndBullProblem.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\obj\Debug\net8.0\CowsAndBullProblem.AssemblyInfoInputs.cache
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\obj\Debug\net8.0\CowsAndBullProblem.AssemblyInfo.cs
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\obj\Debug\net8.0\CowsAndBullProblem.csproj.CoreCompileInputs.cache
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\obj\Debug\net8.0\CowsAndBullProblem.sourcelink.json
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\obj\Debug\net8.0\CowsAndBullProblem.dll
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\obj\Debug\net8.0\refint\CowsAndBullProblem.dll
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\obj\Debug\net8.0\CowsAndBullProblem.pdb
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\obj\Debug\net8.0\CowsAndBullProblem.genruntimeconfig.cache
+C:\dotNet\Day5\CowsAndBullProblemSolution\CowsAndBullProblem\obj\Debug\net8.0\ref\CowsAndBullProblem.dll
