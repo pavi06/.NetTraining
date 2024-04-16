@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CompanyTrackerApp/1.0.0": {
+        "dependencies": {
+          "CompanyTrackerLibrary": "1.0.0"
+        },
+        "runtime": {
+          "CompanyTrackerApp.dll": {}
+        }
+      },
+      "CompanyTrackerLibrary/1.0.0": {
+        "runtime": {
+          "CompanyTrackerLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CompanyTrackerApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CompanyTrackerLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

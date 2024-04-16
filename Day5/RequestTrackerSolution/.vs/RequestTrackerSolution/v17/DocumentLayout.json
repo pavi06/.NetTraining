@@ -5,6 +5,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{C7D48EDF-0341-419A-8F92-47E13AFA686F}|RequestTrackerLibrary\\RequestTrackerLibrary.csproj|c:\\dotnet\\day5\\requesttrackersolution\\requesttrackerlibrary\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7D48EDF-0341-419A-8F92-47E13AFA686F}|RequestTrackerLibrary\\RequestTrackerLibrary.csproj|solutionrelative:requesttrackerlibrary\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479E93F9-AAF6-4E51-8500-BF80760A0F59}|RequestTracker\\RequestTracker.csproj|c:\\dotnet\\day5\\requesttrackersolution\\requesttracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479E93F9-AAF6-4E51-8500-BF80760A0F59}|RequestTracker\\RequestTracker.csproj|solutionrelative:requesttracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7D48EDF-0341-419A-8F92-47E13AFA686F}|RequestTrackerLibrary\\RequestTrackerLibrary.csproj|c:\\dotnet\\day5\\requesttrackersolution\\requesttrackerlibrary\\contractemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7D48EDF-0341-419A-8F92-47E13AFA686F}|RequestTrackerLibrary\\RequestTrackerLibrary.csproj|solutionrelative:requesttrackerlibrary\\contractemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7D48EDF-0341-419A-8F92-47E13AFA686F}|RequestTrackerLibrary\\RequestTrackerLibrary.csproj|c:\\dotnet\\day5\\requesttrackersolution\\requesttrackerlibrary\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7D48EDF-0341-419A-8F92-47E13AFA686F}|RequestTrackerLibrary\\RequestTrackerLibrary.csproj|solutionrelative:requesttrackerlibrary\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7D48EDF-0341-419A-8F92-47E13AFA686F}|RequestTrackerLibrary\\RequestTrackerLibrary.csproj|c:\\dotnet\\day5\\requesttrackersolution\\requesttrackerlibrary\\iclientinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7D48EDF-0341-419A-8F92-47E13AFA686F}|RequestTrackerLibrary\\RequestTrackerLibrary.csproj|solutionrelative:requesttrackerlibrary\\iclientinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +30,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IClientInteraction.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day5\\RequestTrackerSolution\\RequestTrackerLibrary\\IClientInteraction.cs",
+              "RelativeDocumentMoniker": "RequestTrackerLibrary\\IClientInteraction.cs",
+              "ToolTip": "C:\\dotNet\\Day5\\RequestTrackerSolution\\RequestTrackerLibrary\\IClientInteraction.cs",
+              "RelativeToolTip": "RequestTrackerLibrary\\IClientInteraction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T09:08:59.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day5\\RequestTrackerSolution\\RequestTracker\\Program.cs",
+              "RelativeDocumentMoniker": "RequestTracker\\Program.cs",
+              "ToolTip": "C:\\dotNet\\Day5\\RequestTrackerSolution\\RequestTracker\\Program.cs",
+              "RelativeToolTip": "RequestTracker\\Program.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAADwv20AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T04:59:31.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContractEmployee.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day5\\RequestTrackerSolution\\RequestTrackerLibrary\\ContractEmployee.cs",
+              "RelativeDocumentMoniker": "RequestTrackerLibrary\\ContractEmployee.cs",
+              "ToolTip": "C:\\dotNet\\Day5\\RequestTrackerSolution\\RequestTrackerLibrary\\ContractEmployee.cs",
+              "RelativeToolTip": "RequestTrackerLibrary\\ContractEmployee.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T04:57:41.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day5\\RequestTrackerSolution\\RequestTrackerLibrary\\Department.cs",
+              "RelativeDocumentMoniker": "RequestTrackerLibrary\\Department.cs",
+              "ToolTip": "C:\\dotNet\\Day5\\RequestTrackerSolution\\RequestTrackerLibrary\\Department.cs",
+              "RelativeToolTip": "RequestTrackerLibrary\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T04:41:43.629Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +91,7 @@
               "RelativeDocumentMoniker": "RequestTrackerLibrary\\Employee.cs",
               "ToolTip": "C:\\dotNet\\Day5\\RequestTrackerSolution\\RequestTrackerLibrary\\Employee.cs",
               "RelativeToolTip": "RequestTrackerLibrary\\Employee.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAADwvzIAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T14:04:32.541Z",
               "EditorCaption": ""

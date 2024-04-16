@@ -1,0 +1,12 @@
+C:\dotNet\Day6\CompanyTrackerAppSolution\CompanyTrackerLibrary\bin\Debug\net8.0\CompanyTrackerLibrary.deps.json
+C:\dotNet\Day6\CompanyTrackerAppSolution\CompanyTrackerLibrary\bin\Debug\net8.0\CompanyTrackerLibrary.dll
+C:\dotNet\Day6\CompanyTrackerAppSolution\CompanyTrackerLibrary\bin\Debug\net8.0\CompanyTrackerLibrary.pdb
+C:\dotNet\Day6\CompanyTrackerAppSolution\CompanyTrackerLibrary\obj\Debug\net8.0\CompanyTrackerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day6\CompanyTrackerAppSolution\CompanyTrackerLibrary\obj\Debug\net8.0\CompanyTrackerLibrary.AssemblyInfoInputs.cache
+C:\dotNet\Day6\CompanyTrackerAppSolution\CompanyTrackerLibrary\obj\Debug\net8.0\CompanyTrackerLibrary.AssemblyInfo.cs
+C:\dotNet\Day6\CompanyTrackerAppSolution\CompanyTrackerLibrary\obj\Debug\net8.0\CompanyTrackerLibrary.csproj.CoreCompileInputs.cache
+C:\dotNet\Day6\CompanyTrackerAppSolution\CompanyTrackerLibrary\obj\Debug\net8.0\CompanyTrackerLibrary.sourcelink.json
+C:\dotNet\Day6\CompanyTrackerAppSolution\CompanyTrackerLibrary\obj\Debug\net8.0\CompanyTrackerLibrary.dll
+C:\dotNet\Day6\CompanyTrackerAppSolution\CompanyTrackerLibrary\obj\Debug\net8.0\refint\CompanyTrackerLibrary.dll
+C:\dotNet\Day6\CompanyTrackerAppSolution\CompanyTrackerLibrary\obj\Debug\net8.0\CompanyTrackerLibrary.pdb
+C:\dotNet\Day6\CompanyTrackerAppSolution\CompanyTrackerLibrary\obj\Debug\net8.0\ref\CompanyTrackerLibrary.dll

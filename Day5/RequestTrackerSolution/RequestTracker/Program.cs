@@ -56,11 +56,6 @@ namespace RequestTracker
         }
         void AddEmployee()
         {
-            //if (employees[employees.Length - 1] != null)
-            //{
-            //    Console.WriteLine("Sorry we have reached the maximum number of employees");
-            //    return;
-            //}
             bool flagToCheckForEmployeeAddition = false;
             for (int i = 0; i < employees.Length; i++)
             {
@@ -82,9 +77,13 @@ namespace RequestTracker
             bool flagToCheckIfEmployeeAvailable = false;
             for (int i = 0; i < employees.Length; i++)
             {
-                if (employees[i] != null)
+                if (employees[i] != null) {
+                    //creating the company object and passing the employee object itself but only those methods that are cerated with interface is accessible.
+                    Company company = new Company();
                     PrintEmployee(employees[i]);
-                flagToCheckIfEmployeeAvailable = true;
+                    company.EmployeeClientVisit(employees[i]);
+                    flagToCheckIfEmployeeAvailable = true;
+                }
             }
             if (!flagToCheckIfEmployeeAvailable)
             {
@@ -95,6 +94,16 @@ namespace RequestTracker
         Employee CreateEmployee(int id)
         {
             Employee employee = new Employee();
+            Console.WriteLine("Please enter the type of employee");
+            string type = Console.ReadLine();
+            while (type != "Permanent" && type != "Contract") {
+                Console.WriteLine("Employee type is not valid!.Please enter the valid type.");
+                type= Console.ReadLine();
+            }
+            if (type == "Permanent")
+                employee = new PermanentEmployee();
+            else if (type == "Contract")
+                employee = new ContractEmployee();
             employee.Id = 101 + id;
             employee.BuildEmployeeFromConsole();
             return employee;
@@ -201,6 +210,11 @@ namespace RequestTracker
         {
             Program program = new Program();
             program.EmployeeInteraction();
+            //ContractEmployee employee = new ContractEmployee(101, "Pavi", Convert.ToDateTime("2002-02-04") , 90000, 1233);
+            //employee.PrintEmployeeDetails();
+            //Employee employee = new ContractEmployee();
+            //employee.BuildEmployeeFromConsole();
+            //Console.WriteLine(employee);
         }
     }
 }

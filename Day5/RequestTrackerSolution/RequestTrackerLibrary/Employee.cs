@@ -3,8 +3,9 @@ using System.Xml.Linq;
 
 namespace RequestTrackerLibrary
 {
-    public class Employee
+    public class Employee : IClientInteraction, IInternalCompanyWorking
     {
+        public Department EmployeeDepartment { get; set; }
         int age;
         DateTime dob;
         public int Id { get; set; }
@@ -26,63 +27,69 @@ namespace RequestTrackerLibrary
             }
         }
         public double Salary { get; set; }
+        public string Type { get; set; }
 
         public Employee()
         {
+            //Console.WriteLine("Employee class default constructor");
             Id = 0;
             Name = string.Empty;
             Salary = 0.0;
             DateOfBirth = new DateTime();
+            Type = string.Empty;
         }
-        public Employee(int id, string name, DateTime dateOfBirth, double salary)
+        public Employee(int id, string name, DateTime dateOfBirth)
         {
+            //Console.WriteLine("Employee class prameterized constructor");
             Id = id;
             Name = name;
             DateOfBirth = dateOfBirth;
-            Salary = salary;
         }
 
-        string GetStringInputFromConsole()
+        public virtual void BuildEmployeeFromConsole()
         {
-            bool flag = false;
-            string name = "";
-            do
-            {
-                if (flag)
-                {
-                    Console.WriteLine("Invalid input. Please enter the proper name.");
-                }
-                else
-                {
-                    Console.WriteLine("Please enter the Name: ");
-                    flag = true;
-                }
-                name = Console.ReadLine();
-            }
-            while (name.Any(char.IsDigit));
-            return name;
-        }
-
-        public void BuildEmployeeFromConsole()
-        {
-            //Console.WriteLine("Please enter the Name");
-            Name = GetStringInputFromConsole();            
+            Console.WriteLine("Please enter the Name");
+            Name = Console.ReadLine() ?? String.Empty;
             Console.WriteLine("Please enter the Date of birth");
             DateOfBirth = Convert.ToDateTime(Console.ReadLine());
-            Console.WriteLine("Please enter the Basic Salary");
-            double sal;
-            while (!double.TryParse(Console.ReadLine(), out sal))
-                Console.WriteLine("Invalid value. Enter the salary again.");
-            Salary = sal;
         }
 
-        public void PrintEmployeeDetails()
+        public virtual void PrintEmployeeDetails()
         {
+            Console.WriteLine("Employee Type : "+Type);
             Console.WriteLine("Employee Id : " + Id);
             Console.WriteLine("Employee Name " + Name);
             Console.WriteLine("Date of birth : " + DateOfBirth);
             Console.WriteLine("Employee Age : " + Age);
-            Console.WriteLine("Employee Salary : Rs." + Salary);
+        }
+
+        public override string ToString()
+        {
+            return "Employee Type : " + Type
+                + "\nEmployee Id : " + Id
+                + "\nEmployee Name " + Name
+                + "\nDate of birth : " + DateOfBirth
+                + "\nEmployee Age : " + Age;
+        }
+
+        public void GetOrder()
+        {
+            Console.WriteLine("Order fetched by " + Name);
+        }
+
+        public void GetPayment()
+        {
+            Console.WriteLine("Get the payment as per terms");
+        }
+
+        public void RaiseRequest()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CloseRequest()
+        {
+            throw new NotImplementedException();
         }
     }
 }
