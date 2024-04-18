@@ -30,6 +30,8 @@ namespace ClinicTrackerBLLLibrary
         /// <returns>returns the list of appointment</returns>
         List<Appointment> GetAllAppointmentsByDoctorId(int id);
 
+        List<Appointment> GetAllAppointmentsByDoctorIdAndStatus(int id, string status);
+
         /// <summary>
         /// method to delete the doctor object
         /// </summary>
