@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E769B941-19CD-40A8-9D50-98AED3D2C538}|RequestTrackerApp\\RequestTrackerApp.csproj|c:\\dotnet\\day7\\requesttrackerappsolution\\requesttrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E769B941-19CD-40A8-9D50-98AED3D2C538}|RequestTrackerApp\\RequestTrackerApp.csproj|solutionrelative:requesttrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE6D96B4-46CF-4182-A61D-EA6BA8B6D84B}|RequestTrackerBLLLibrary\\RequestTrackerBLLLibrary.csproj|c:\\dotnet\\day7\\requesttrackerappsolution\\requesttrackerblllibrary\\departmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE6D96B4-46CF-4182-A61D-EA6BA8B6D84B}|RequestTrackerBLLLibrary\\RequestTrackerBLLLibrary.csproj|solutionrelative:requesttrackerblllibrary\\departmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,22 +24,10 @@
               "RelativeDocumentMoniker": "RequestTrackerApp\\Program.cs",
               "ToolTip": "C:\\dotNet\\Day7\\RequestTrackerAppSolution\\RequestTrackerApp\\Program.cs",
               "RelativeToolTip": "RequestTrackerApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T14:35:39.158Z",
+              "WhenOpened": "2024-04-19T04:58:04.492Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DepartmentBL.cs",
-              "DocumentMoniker": "C:\\dotNet\\Day7\\RequestTrackerAppSolution\\RequestTrackerBLLLibrary\\DepartmentBL.cs",
-              "RelativeDocumentMoniker": "RequestTrackerBLLLibrary\\DepartmentBL.cs",
-              "ToolTip": "C:\\dotNet\\Day7\\RequestTrackerAppSolution\\RequestTrackerBLLLibrary\\DepartmentBL.cs",
-              "RelativeToolTip": "RequestTrackerBLLLibrary\\DepartmentBL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T14:30:52.882Z"
             }
           ]
         }

@@ -1,0 +1,12 @@
+C:\dotNet\Day7\RequestTrackerAppSolution\RequestTrackerModelLibrary\bin\Debug\net8.0\RequestTrackerModelLibrary.deps.json
+C:\dotNet\Day7\RequestTrackerAppSolution\RequestTrackerModelLibrary\bin\Debug\net8.0\RequestTrackerModelLibrary.dll
+C:\dotNet\Day7\RequestTrackerAppSolution\RequestTrackerModelLibrary\bin\Debug\net8.0\RequestTrackerModelLibrary.pdb
+C:\dotNet\Day7\RequestTrackerAppSolution\RequestTrackerModelLibrary\obj\Debug\net8.0\RequestTrackerModelLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day7\RequestTrackerAppSolution\RequestTrackerModelLibrary\obj\Debug\net8.0\RequestTrackerModelLibrary.AssemblyInfoInputs.cache
+C:\dotNet\Day7\RequestTrackerAppSolution\RequestTrackerModelLibrary\obj\Debug\net8.0\RequestTrackerModelLibrary.AssemblyInfo.cs
+C:\dotNet\Day7\RequestTrackerAppSolution\RequestTrackerModelLibrary\obj\Debug\net8.0\RequestTrackerModelLibrary.csproj.CoreCompileInputs.cache
+C:\dotNet\Day7\RequestTrackerAppSolution\RequestTrackerModelLibrary\obj\Debug\net8.0\RequestTrackerModelLibrary.sourcelink.json
+C:\dotNet\Day7\RequestTrackerAppSolution\RequestTrackerModelLibrary\obj\Debug\net8.0\RequestTrackerModelLibrary.dll
+C:\dotNet\Day7\RequestTrackerAppSolution\RequestTrackerModelLibrary\obj\Debug\net8.0\refint\RequestTrackerModelLibrary.dll
+C:\dotNet\Day7\RequestTrackerAppSolution\RequestTrackerModelLibrary\obj\Debug\net8.0\RequestTrackerModelLibrary.pdb
+C:\dotNet\Day7\RequestTrackerAppSolution\RequestTrackerModelLibrary\obj\Debug\net8.0\ref\RequestTrackerModelLibrary.dll
