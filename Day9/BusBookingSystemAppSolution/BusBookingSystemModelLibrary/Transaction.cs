@@ -15,14 +15,13 @@ namespace BusBookingSystemModelLibrary
         public string TransactionStatus { get; set; } = string.Empty;
         private DateTime TransactionDate { get; set; } = DateTime.Now;
 
-        public Transaction(int transactionId, string transactionMode, string transactionType, string transactionDescription, string transactionStatus, DateTime transactionDate, Passenger passenger)
+        public Transaction(int transactionId, string transactionMode, string transactionType, string transactionDescription, string transactionStatus)
         {
             TransactionId = transactionId;
             TransactionMode = transactionMode;
             TransactionType = transactionType;
             TransactionDescription = transactionDescription;
             TransactionStatus = transactionStatus;
-            TransactionDate = transactionDate;
         }
 
         public override string ToString()
