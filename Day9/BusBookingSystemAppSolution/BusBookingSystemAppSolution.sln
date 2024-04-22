@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusBookingSystemApp", "BusBookingSystemApp\BusBookingSystemApp.csproj", "{B5DE5B51-43B5-4460-B316-3C236700594E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusBookingSystemApp", "BusBookingSystemApp\BusBookingSystemApp.csproj", "{B5DE5B51-43B5-4460-B316-3C236700594E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusBookingSystemModelLibrary", "BusBookingSystemModelLibrary\BusBookingSystemModelLibrary.csproj", "{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusBookingSystemModelLibrary", "BusBookingSystemModelLibrary\BusBookingSystemModelLibrary.csproj", "{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusBookingSystemDALLibrary", "BusBookingSystemDALLibrary\BusBookingSystemDALLibrary.csproj", "{D2CAC175-6B41-4359-96B6-8C6F2AED4B28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2CAC175-6B41-4359-96B6-8C6F2AED4B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2CAC175-6B41-4359-96B6-8C6F2AED4B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2CAC175-6B41-4359-96B6-8C6F2AED4B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2CAC175-6B41-4359-96B6-8C6F2AED4B28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

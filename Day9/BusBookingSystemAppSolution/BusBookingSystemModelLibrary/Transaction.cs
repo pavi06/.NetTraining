@@ -8,7 +8,7 @@ namespace BusBookingSystemModelLibrary
 {
     public class Transaction
     {
-        private int TransactionId { get; set; }
+        public int TransactionId { get; set; }
         private string TransactionMode { get; set; } = string.Empty;
         private string TransactionType { get; set; } = string.Empty;
         private string TransactionDescription { get; set; } = string.Empty;
