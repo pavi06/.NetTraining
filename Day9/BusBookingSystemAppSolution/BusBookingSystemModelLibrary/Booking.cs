@@ -17,6 +17,10 @@ namespace BusBookingSystemModelLibrary
         public string BookingStatus { get; set; }
         public TransactionForBooking Transaction { get; set; }
 
+        public Booking() {
+            BookingStatus = "Not Confirmed";
+        }
+
         public Booking(int id, Passenger passenger, Bus bus, DateTime bookingDate, int noOfSeatsBooked, string bookingStatus, TransactionForBooking transaction)
         {
             BookingId = id;

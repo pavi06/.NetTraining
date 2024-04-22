@@ -14,7 +14,7 @@ namespace BusBookingSystemBLLLibrary
         List<BusRoute> GetAllBusRoute();
         BusRoute DeleteBusRouteById(int id);
         BusRoute UpdateBusRouteByObject(BusRoute busRoute);
-        List<Bus> GetAllBusWithBusRouteId(int id);
+        List<Bus> GetAllBusByDestination(string destination);
         bool UpdateBusRouteNameById(int id, string routeName);
         bool UpdateBusRouteSourcePointById(int id, string source);
         bool UpdateBusRouteDestinationPointById(int id, string destination);

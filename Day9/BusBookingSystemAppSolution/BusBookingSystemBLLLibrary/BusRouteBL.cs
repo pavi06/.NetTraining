@@ -133,5 +133,19 @@ namespace BusBookingSystemBLLLibrary
                 return false;
             }
         }
+
+        public List<Bus> GetAllBusByDestination(string destination)
+        {
+            var busRoutes = GetAllBusRoute();
+            List<Bus> buses;
+            foreach (BusRoute busRoute in busRoutes) {
+                if (busRoute.RouteDestinationPoint == destination) {
+                     buses = busRoute._buses;
+                     return buses;
+                }
+            }
+            return new List<Bus>();
+
+        }
     }
 }
