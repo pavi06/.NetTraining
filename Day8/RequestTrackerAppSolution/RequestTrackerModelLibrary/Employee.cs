@@ -44,13 +44,19 @@
             Role = role;
         }
 
-        public virtual void BuildEmployeeFromConsole()
+        public void BuildEmployeeFromConsole()
         {
             Console.WriteLine("Please enter the Name");
             Name = Console.ReadLine() ?? String.Empty;
             Console.WriteLine("Please enter the Date of birth");
             DateOfBirth = Convert.ToDateTime(Console.ReadLine());
-            Role = "Employee";
+            //Role = "Employee";
+            Console.WriteLine("Please enter your Role : ");
+            Role = Console.ReadLine();
+            Console.WriteLine("Please enter your Employment type : ");
+            Type = Console.ReadLine();
+            Console.WriteLine("Please enter your salary : ");
+            Salary = Convert.ToDouble(Console.ReadLine());
         }
 
 

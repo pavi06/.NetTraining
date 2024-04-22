@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{275D7530-B2EE-4851-B748-014E000BE7AC}|RequestTrackerModelLibrary\\RequestTrackerModelLibrary.csproj|c:\\dotnet\\day8\\requesttrackerappsolution\\requesttrackermodellibrary\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{275D7530-B2EE-4851-B748-014E000BE7AC}|RequestTrackerModelLibrary\\RequestTrackerModelLibrary.csproj|solutionrelative:requesttrackermodellibrary\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E769B941-19CD-40A8-9D50-98AED3D2C538}|RequestTrackerApp\\RequestTrackerApp.csproj|c:\\dotnet\\day8\\requesttrackerappsolution\\requesttrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E769B941-19CD-40A8-9D50-98AED3D2C538}|RequestTrackerApp\\RequestTrackerApp.csproj|solutionrelative:requesttrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerModelLibrary\\Employee.cs",
+              "RelativeDocumentMoniker": "RequestTrackerModelLibrary\\Employee.cs",
+              "ToolTip": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerModelLibrary\\Employee.cs",
+              "RelativeToolTip": "RequestTrackerModelLibrary\\Employee.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAiwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T04:53:40.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerApp\\Program.cs",
+              "RelativeDocumentMoniker": "RequestTrackerApp\\Program.cs",
+              "ToolTip": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerApp\\Program.cs",
+              "RelativeToolTip": "RequestTrackerApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T02:54:45.51Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

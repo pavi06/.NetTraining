@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RequestTrackerBLLLibrary
 {
-    internal interface IEmployeeService
+    public interface IEmployeeService
     {
         int AddEmployee(Employee employee);
         Employee GetEmployeeById(int id);

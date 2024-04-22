@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dotNet\\Day2\\Application2sln\\Application2\\Application2.csproj",
+      "projectUniqueName": "C:\\dotNet\\Day4\\Application2sln\\Application2\\Application2.csproj",
       "projectName": "Application2",
-      "projectPath": "C:\\dotNet\\Day2\\Application2sln\\Application2\\Application2.csproj",
+      "projectPath": "C:\\dotNet\\Day4\\Application2sln\\Application2\\Application2.csproj",
       "packagesPath": "C:\\Users\\VC\\.nuget\\packages\\",
-      "outputPath": "C:\\dotNet\\Day2\\Application2sln\\Application2\\obj\\",
+      "outputPath": "C:\\dotNet\\Day4\\Application2sln\\Application2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

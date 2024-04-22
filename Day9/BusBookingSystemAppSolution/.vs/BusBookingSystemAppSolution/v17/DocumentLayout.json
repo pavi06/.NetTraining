@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}|BusBookingSystemModelLibrary\\BusBookingSystemModelLibrary.csproj|c:\\dotnet\\day9\\busbookingsystemappsolution\\busbookingsystemmodellibrary\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}|BusBookingSystemModelLibrary\\BusBookingSystemModelLibrary.csproj|solutionrelative:busbookingsystemmodellibrary\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}|BusBookingSystemModelLibrary\\BusBookingSystemModelLibrary.csproj|c:\\dotnet\\day9\\busbookingsystemappsolution\\busbookingsystemmodellibrary\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}|BusBookingSystemModelLibrary\\BusBookingSystemModelLibrary.csproj|solutionrelative:busbookingsystemmodellibrary\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}|BusBookingSystemModelLibrary\\BusBookingSystemModelLibrary.csproj|c:\\dotnet\\day9\\busbookingsystemappsolution\\busbookingsystemmodellibrary\\passenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}|BusBookingSystemModelLibrary\\BusBookingSystemModelLibrary.csproj|solutionrelative:busbookingsystemmodellibrary\\passenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}|BusBookingSystemModelLibrary\\BusBookingSystemModelLibrary.csproj|c:\\dotnet\\day9\\busbookingsystemappsolution\\busbookingsystemmodellibrary\\busroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}|BusBookingSystemModelLibrary\\BusBookingSystemModelLibrary.csproj|solutionrelative:busbookingsystemmodellibrary\\busroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5DE5B51-43B5-4460-B316-3C236700594E}|BusBookingSystemApp\\BusBookingSystemApp.csproj|c:\\dotnet\\day9\\busbookingsystemappsolution\\busbookingsystemapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5DE5B51-43B5-4460-B316-3C236700594E}|BusBookingSystemApp\\BusBookingSystemApp.csproj|solutionrelative:busbookingsystemapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}|BusBookingSystemModelLibrary\\BusBookingSystemModelLibrary.csproj|c:\\dotnet\\day9\\busbookingsystemappsolution\\busbookingsystemmodellibrary\\bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48FB2B08-AACB-4359-9A96-EDDC9AE30E99}|BusBookingSystemModelLibrary\\BusBookingSystemModelLibrary.csproj|solutionrelative:busbookingsystemmodellibrary\\bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemModelLibrary\\Transaction.cs",
+              "RelativeDocumentMoniker": "BusBookingSystemModelLibrary\\Transaction.cs",
+              "ToolTip": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemModelLibrary\\Transaction.cs",
+              "RelativeToolTip": "BusBookingSystemModelLibrary\\Transaction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:24:01.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemModelLibrary\\Booking.cs",
+              "RelativeDocumentMoniker": "BusBookingSystemModelLibrary\\Booking.cs",
+              "ToolTip": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemModelLibrary\\Booking.cs",
+              "RelativeToolTip": "BusBookingSystemModelLibrary\\Booking.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAUwAwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:23:17.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Passenger.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemModelLibrary\\Passenger.cs",
+              "RelativeDocumentMoniker": "BusBookingSystemModelLibrary\\Passenger.cs",
+              "ToolTip": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemModelLibrary\\Passenger.cs",
+              "RelativeToolTip": "BusBookingSystemModelLibrary\\Passenger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAUwAsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:22:30.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BusRoute.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemModelLibrary\\BusRoute.cs",
+              "RelativeDocumentMoniker": "BusBookingSystemModelLibrary\\BusRoute.cs",
+              "ToolTip": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemModelLibrary\\BusRoute.cs",
+              "RelativeToolTip": "BusBookingSystemModelLibrary\\BusRoute.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAUwBMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:21:48.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Bus.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemModelLibrary\\Bus.cs",
+              "RelativeDocumentMoniker": "BusBookingSystemModelLibrary\\Bus.cs",
+              "ToolTip": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemModelLibrary\\Bus.cs",
+              "RelativeToolTip": "BusBookingSystemModelLibrary\\Bus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:20:52.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemApp\\Program.cs",
+              "RelativeDocumentMoniker": "BusBookingSystemApp\\Program.cs",
+              "ToolTip": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemApp\\Program.cs",
+              "RelativeToolTip": "BusBookingSystemApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:20:17.212Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
