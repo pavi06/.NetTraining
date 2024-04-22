@@ -9,14 +9,14 @@ namespace BusBookingSystemBLLLibrary
 {
     public interface ITransactionService
     {
-        int AddTransaction(Transaction transaction);
-        Transaction GetTransactionById(int id);
-        List<Transaction> GetAllTransactions(int id);
-        List<Transaction> GetAllTransactionsByStatus(string transactionStatus);
-        List<Transaction> GetAllTransactionsByType(string transactionType);
-        List<Transaction> GetAllTransactionsByDate(DateTime date);
-        Transaction DeleteTransactionById(int id);
-        Transaction UpdateTransactionByObject(Transaction transaction);
+        int AddTransaction(TransactionForBooking transaction);
+        TransactionForBooking GetTransactionById(int id);
+        List<TransactionForBooking> GetAllTransactions();
+        List<TransactionForBooking> GetAllTransactionsByStatus(string transactionStatus);
+        List<TransactionForBooking> GetAllTransactionsByType(string transactionType);
+        List<TransactionForBooking> GetAllTransactionsByDate(DateTime date);
+        TransactionForBooking DeleteTransactionById(int id);
+        TransactionForBooking UpdateTransactionByObject(TransactionForBooking transaction);
         bool UpdateTransactionStatusById(int id, string status);
     }
 }

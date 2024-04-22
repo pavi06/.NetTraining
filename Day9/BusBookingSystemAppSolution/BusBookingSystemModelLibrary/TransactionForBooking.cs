@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace BusBookingSystemModelLibrary
 {
-    public class Transaction
+    public class TransactionForBooking
     {
         public int TransactionId { get; set; }
-        private string TransactionMode { get; set; } = string.Empty;
-        private string TransactionType { get; set; } = string.Empty;
-        private string TransactionDescription { get; set; } = string.Empty;
+        public string TransactionMode { get; set; } = string.Empty;
+        public string TransactionType { get; set; } = string.Empty;
+        public string TransactionDescription { get; set; } = string.Empty;
         public string TransactionStatus { get; set; } = string.Empty;
-        private DateTime TransactionDate { get; set; } = DateTime.Now;
+        public DateTime TransactionDate { get; set; } = DateTime.Now;
 
-        public Transaction(int transactionId, string transactionMode, string transactionType, string transactionDescription, string transactionStatus)
+        public TransactionForBooking(int transactionId, string transactionMode, string transactionType, string transactionDescription, string transactionStatus)
         {
             TransactionId = transactionId;
             TransactionMode = transactionMode;

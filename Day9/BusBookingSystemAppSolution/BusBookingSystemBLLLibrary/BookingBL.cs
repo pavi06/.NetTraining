@@ -85,7 +85,7 @@ namespace BusBookingSystemBLLLibrary
             throw new ObjectNotAvailableException($"Passenger associated with the booking id - {id} is not available");
         }
 
-        public Transaction GetTransactionByBookingId(int id)
+        public TransactionForBooking GetTransactionByBookingId(int id)
         {
             var transaction = GetBookingById(id).Transaction;
             if (transaction != null)

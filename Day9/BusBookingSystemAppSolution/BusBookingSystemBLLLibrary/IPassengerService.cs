@@ -12,14 +12,14 @@ namespace BusBookingSystemBLLLibrary
         int AddPassenger(Passenger passenger);
         Passenger GetPassengerById(int id);
         List<Booking> GetAllBookingsByPassengerId(int id);
-        List<Transaction> GetAllTransactionsByPassengerId(int id);
+        List<TransactionForBooking> GetAllTransactionsByPassengerId(int id);
         List<Booking> GetAllBookingsWithStatusByPassengerId(int id, string bookingStatus);
-        List<Transaction> GetAllTransactionsWithStatusByPassengerId(int id, string transactionStatus);
+        List<TransactionForBooking> GetAllTransactionsWithStatusByPassengerId(int id, string transactionStatus);
         Passenger DeletePassengerById(int id);
         Passenger UpdatePassengerByObject(Passenger passenger);
-        bool UpdatePassengerNameById(int id);
-        bool UpdatePassengerPhoneNumberById(int id);
-        bool UpdatePassengerAddressById(int id);
-        bool UpdatePassengerAgeById(int id);
+        bool UpdatePassengerNameById(int id, string name);
+        bool UpdatePassengerPhoneNumberById(int id, string phoneNumber);
+        bool UpdatePassengerAddressById(int id, string address);
+        bool UpdatePassengerAgeById(int id, int age);
     }
 }

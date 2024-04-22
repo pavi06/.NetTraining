@@ -15,15 +15,15 @@ namespace BusBookingSystemModelLibrary
         public int Age { get; set; }
         public string Address { get; set; }
         public List<Booking> BookingList { get; set; }
-        public List<Transaction> TransctionMade { get; set; }
+        public List<TransactionForBooking> TransctionMade { get; set; }
 
         public Passenger()
         {
             BookingList = new List<Booking>();
-            TransctionMade = new List<Transaction>();
+            TransctionMade = new List<TransactionForBooking>();
         }
 
-        public Passenger(int id, string name, string phoneNumber,int age, string address, List<Booking> bookingList, List<Transaction> transctionMade)
+        public Passenger(int id, string name, string phoneNumber,int age, string address, List<Booking> bookingList, List<TransactionForBooking> transctionMade)
         {
             Id = id;
             Name = name;

@@ -16,7 +16,7 @@ namespace BusBookingSystemBLLLibrary
         Booking UpdateBookingByObject(Booking booking);
         Passenger GetPassengerByBookingId(int id);
         Bus GetBusByBookingId(int id);
-        Transaction GetTransactionByBookingId(int id);
+        TransactionForBooking GetTransactionByBookingId(int id);
         string GetBookingStatusById(int id);
         bool UpdateBookingStatusById(int id, string status);
         bool UpdateNoOfSeatsToBookById(int id, int updatedSeats);

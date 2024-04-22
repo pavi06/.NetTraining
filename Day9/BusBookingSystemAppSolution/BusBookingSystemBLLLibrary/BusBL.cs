@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BusBookingSystemBLLLibrary
 {
-    internal class BusBL : IBusService
+    public class BusBL : IBusService
     {
         readonly IRepository<int, Bus> _busRepository;
         public BusBL()

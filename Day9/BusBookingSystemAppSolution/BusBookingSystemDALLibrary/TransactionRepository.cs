@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace BusBookingSystemDALLibrary
 {
-    public class TransactionRepository : IRepository<int,Transaction>
+    public class TransactionRepository : IRepository<int,TransactionForBooking>
     {
-        public readonly Dictionary<int, Transaction> _transactions;
+        public readonly Dictionary<int, TransactionForBooking> _transactions;
 
         public TransactionRepository()
         {
-            _transactions = new Dictionary<int, Transaction>();
+            _transactions = new Dictionary<int, TransactionForBooking>();
         }
 
         int GenerateId()
@@ -24,7 +24,7 @@ namespace BusBookingSystemDALLibrary
             return ++id;
         }
 
-        public Transaction Add(Transaction item)
+        public TransactionForBooking Add(TransactionForBooking item)
         {
             if (_transactions.ContainsValue(item))
             {
@@ -35,7 +35,7 @@ namespace BusBookingSystemDALLibrary
             return item;
         }
 
-        public Transaction Delete(int key)
+        public TransactionForBooking Delete(int key)
         {
             if (_transactions.ContainsKey(key))
             {
@@ -46,19 +46,19 @@ namespace BusBookingSystemDALLibrary
             return null;
         }
 
-        public Transaction Get(int key)
+        public TransactionForBooking Get(int key)
         {
             return _transactions.ContainsKey(key) ? _transactions[key] : null;
         }
 
-        public List<Transaction> GetAll()
+        public List<TransactionForBooking> GetAll()
         {
             if (_transactions.Count == 0)
                 return null;
             return _transactions.Values.ToList();
         }
 
-        public Transaction Update(Transaction item)
+        public TransactionForBooking Update(TransactionForBooking item)
         {
             if (_transactions.ContainsKey(item.TransactionId))
             {

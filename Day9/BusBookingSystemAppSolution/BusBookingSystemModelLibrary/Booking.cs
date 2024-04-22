@@ -15,9 +15,9 @@ namespace BusBookingSystemModelLibrary
         public DateTime BookingDate { get; set; }
         public int NoOfSeatsToBook { get; set; }
         public string BookingStatus { get; set; }
-        public Transaction Transaction { get; set; }
+        public TransactionForBooking Transaction { get; set; }
 
-        public Booking(int id, Passenger passenger, Bus bus, DateTime bookingDate, int noOfSeatsBooked, string bookingStatus, Transaction transaction)
+        public Booking(int id, Passenger passenger, Bus bus, DateTime bookingDate, int noOfSeatsBooked, string bookingStatus, TransactionForBooking transaction)
         {
             BookingId = id;
             Passenger = passenger;

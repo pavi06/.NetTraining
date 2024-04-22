@@ -1,11 +1,68 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "BusBookingSystemBLLLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BusBookingSystemDALLibrary": "1.0.0",
+          "BusBookingSystemModelLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusBookingSystemBLLLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusBookingSystemBLLLibrary.dll": {}
+        }
+      },
+      "BusBookingSystemDALLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BusBookingSystemModelLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusBookingSystemDALLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusBookingSystemDALLibrary.dll": {}
+        }
+      },
+      "BusBookingSystemModelLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BusBookingSystemModelLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusBookingSystemModelLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BusBookingSystemBLLLibrary/1.0.0": {
+      "type": "project",
+      "path": "../BusBookingSystemBLLLibrary/BusBookingSystemBLLLibrary.csproj",
+      "msbuildProject": "../BusBookingSystemBLLLibrary/BusBookingSystemBLLLibrary.csproj"
+    },
+    "BusBookingSystemDALLibrary/1.0.0": {
+      "type": "project",
+      "path": "../BusBookingSystemDALLibrary/BusBookingSystemDALLibrary.csproj",
+      "msbuildProject": "../BusBookingSystemDALLibrary/BusBookingSystemDALLibrary.csproj"
+    },
+    "BusBookingSystemModelLibrary/1.0.0": {
+      "type": "project",
+      "path": "../BusBookingSystemModelLibrary/BusBookingSystemModelLibrary.csproj",
+      "msbuildProject": "../BusBookingSystemModelLibrary/BusBookingSystemModelLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "BusBookingSystemBLLLibrary >= 1.0.0",
+      "BusBookingSystemModelLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\VC\\.nuget\\packages\\": {},
@@ -38,7 +95,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemBLLLibrary\\BusBookingSystemBLLLibrary.csproj": {
+              "projectPath": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemBLLLibrary\\BusBookingSystemBLLLibrary.csproj"
+            },
+            "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemModelLibrary\\BusBookingSystemModelLibrary.csproj": {
+              "projectPath": "C:\\dotNet\\Day9\\BusBookingSystemAppSolution\\BusBookingSystemModelLibrary\\BusBookingSystemModelLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
