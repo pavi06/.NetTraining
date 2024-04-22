@@ -15,13 +15,13 @@ namespace BusBookingSystemBLLLibrary
         List<Bus> GetAllBus();
         List<Bus> GetAllBusByDepartureTime(DateTime time);
         Bus DeleteBusById(int id);
-        Bus UpdateDoctorByObject(Bus bus);
+        Bus UpdateBusByObject(Bus bus);
         BusRoute GetBusRouteByBusId(int id);
         List<Passenger> GetAllPassengersByBusId(int id);
         int GetNoOfSeatsAvailableForBusById(int id);
         int GetNoOfSeatsBookedForBusById(int id);
-        bool UpdatePredictedTimeOfReachingDestinationById(int id);
-        bool UpdateTotalNoOfSeats(int totalNoOfSeats);
-        bool UpdateDepartureTimeByBusId(DateTime updatedTime);
+        bool UpdatePredictedTimeOfReachingDestinationById(int id, DateTime updatedTime);
+        bool UpdateTotalNoOfSeatsById(int id, int totalNoOfSeats);
+        bool UpdateDepartureTimeByBusId(int id, DateTime updatedTime);
     }
 }
