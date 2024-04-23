@@ -191,7 +191,7 @@ namespace BusBookingSystemApp
                 Console.WriteLine("Buses Available : ");
                 foreach (Bus bus in buses)
                 {
-                    bus.ToString();
+                    Console.WriteLine( bus.ToString());
                 }
                 Console.WriteLine("Enter the choosen bus id :");
                 int id = Convert.ToInt32(Console.ReadLine());

@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BusBookingSystemApp/1.0.0": {
+        "dependencies": {
+          "BusBookingSystemBLLLibrary": "1.0.0",
+          "BusBookingSystemModelLibrary": "1.0.0"
+        },
+        "runtime": {
+          "BusBookingSystemApp.dll": {}
+        }
+      },
+      "BusBookingSystemBLLLibrary/1.0.0": {
+        "dependencies": {
+          "BusBookingSystemDALLibrary": "1.0.0",
+          "BusBookingSystemModelLibrary": "1.0.0"
+        },
+        "runtime": {
+          "BusBookingSystemBLLLibrary.dll": {}
+        }
+      },
+      "BusBookingSystemDALLibrary/1.0.0": {
+        "dependencies": {
+          "BusBookingSystemModelLibrary": "1.0.0"
+        },
+        "runtime": {
+          "BusBookingSystemDALLibrary.dll": {}
+        }
+      },
+      "BusBookingSystemModelLibrary/1.0.0": {
+        "runtime": {
+          "BusBookingSystemModelLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BusBookingSystemApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BusBookingSystemBLLLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BusBookingSystemDALLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BusBookingSystemModelLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

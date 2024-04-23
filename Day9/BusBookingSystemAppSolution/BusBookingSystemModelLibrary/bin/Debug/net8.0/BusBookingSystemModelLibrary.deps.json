@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BusBookingSystemModelLibrary/1.0.0": {
+        "runtime": {
+          "BusBookingSystemModelLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BusBookingSystemModelLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

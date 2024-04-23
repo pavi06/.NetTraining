@@ -1,0 +1,12 @@
+C:\dotNet\Day9\BusBookingSystemAppSolution\BusBookingSystemModelLibrary\bin\Debug\net8.0\BusBookingSystemModelLibrary.deps.json
+C:\dotNet\Day9\BusBookingSystemAppSolution\BusBookingSystemModelLibrary\bin\Debug\net8.0\BusBookingSystemModelLibrary.dll
+C:\dotNet\Day9\BusBookingSystemAppSolution\BusBookingSystemModelLibrary\bin\Debug\net8.0\BusBookingSystemModelLibrary.pdb
+C:\dotNet\Day9\BusBookingSystemAppSolution\BusBookingSystemModelLibrary\obj\Debug\net8.0\BusBookingSystemModelLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day9\BusBookingSystemAppSolution\BusBookingSystemModelLibrary\obj\Debug\net8.0\BusBookingSystemModelLibrary.AssemblyInfoInputs.cache
+C:\dotNet\Day9\BusBookingSystemAppSolution\BusBookingSystemModelLibrary\obj\Debug\net8.0\BusBookingSystemModelLibrary.AssemblyInfo.cs
+C:\dotNet\Day9\BusBookingSystemAppSolution\BusBookingSystemModelLibrary\obj\Debug\net8.0\BusBookingSystemModelLibrary.csproj.CoreCompileInputs.cache
+C:\dotNet\Day9\BusBookingSystemAppSolution\BusBookingSystemModelLibrary\obj\Debug\net8.0\BusBookingSystemModelLibrary.sourcelink.json
+C:\dotNet\Day9\BusBookingSystemAppSolution\BusBookingSystemModelLibrary\obj\Debug\net8.0\BusBookingSystemModelLibrary.dll
+C:\dotNet\Day9\BusBookingSystemAppSolution\BusBookingSystemModelLibrary\obj\Debug\net8.0\refint\BusBookingSystemModelLibrary.dll
+C:\dotNet\Day9\BusBookingSystemAppSolution\BusBookingSystemModelLibrary\obj\Debug\net8.0\BusBookingSystemModelLibrary.pdb
+C:\dotNet\Day9\BusBookingSystemAppSolution\BusBookingSystemModelLibrary\obj\Debug\net8.0\ref\BusBookingSystemModelLibrary.dll

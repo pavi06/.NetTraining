@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{275D7530-B2EE-4851-B748-014E000BE7AC}|RequestTrackerModelLibrary\\RequestTrackerModelLibrary.csproj|c:\\dotnet\\day8\\requesttrackerappsolution\\requesttrackermodellibrary\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{275D7530-B2EE-4851-B748-014E000BE7AC}|RequestTrackerModelLibrary\\RequestTrackerModelLibrary.csproj|solutionrelative:requesttrackermodellibrary\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52A2CD72-B884-4DF4-BDBC-7CFAA508EBC7}|RequestTrackerBLTest\\RequestTrackerBLTest.csproj|c:\\dotnet\\day8\\requesttrackerappsolution\\requesttrackerbltest\\departmentbltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52A2CD72-B884-4DF4-BDBC-7CFAA508EBC7}|RequestTrackerBLTest\\RequestTrackerBLTest.csproj|solutionrelative:requesttrackerbltest\\departmentbltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E769B941-19CD-40A8-9D50-98AED3D2C538}|RequestTrackerApp\\RequestTrackerApp.csproj|c:\\dotnet\\day8\\requesttrackerappsolution\\requesttrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E769B941-19CD-40A8-9D50-98AED3D2C538}|RequestTrackerApp\\RequestTrackerApp.csproj|solutionrelative:requesttrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE6D96B4-46CF-4182-A61D-EA6BA8B6D84B}|RequestTrackerBLLLibrary\\RequestTrackerBLLLibrary.csproj|c:\\dotnet\\day8\\requesttrackerappsolution\\requesttrackerblllibrary\\customexceptions\\duplicatedepartmentnameexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE6D96B4-46CF-4182-A61D-EA6BA8B6D84B}|RequestTrackerBLLLibrary\\RequestTrackerBLLLibrary.csproj|solutionrelative:requesttrackerblllibrary\\customexceptions\\duplicatedepartmentnameexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE6D96B4-46CF-4182-A61D-EA6BA8B6D84B}|RequestTrackerBLLLibrary\\RequestTrackerBLLLibrary.csproj|c:\\dotnet\\day8\\requesttrackerappsolution\\requesttrackerblllibrary\\departmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE6D96B4-46CF-4182-A61D-EA6BA8B6D84B}|RequestTrackerBLLLibrary\\RequestTrackerBLLLibrary.csproj|solutionrelative:requesttrackerblllibrary\\departmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ACD1B11-B8DD-4122-97BB-66CFC7B10C55}|RequestTrackerDALLibrary\\RequestTrackerDALLibrary.csproj|c:\\dotnet\\day8\\requesttrackerappsolution\\requesttrackerdallibrary\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ACD1B11-B8DD-4122-97BB-66CFC7B10C55}|RequestTrackerDALLibrary\\RequestTrackerDALLibrary.csproj|solutionrelative:requesttrackerdallibrary\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +26,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerModelLibrary\\Employee.cs",
-              "RelativeDocumentMoniker": "RequestTrackerModelLibrary\\Employee.cs",
-              "ToolTip": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerModelLibrary\\Employee.cs",
-              "RelativeToolTip": "RequestTrackerModelLibrary\\Employee.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAiwAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "DuplicateDepartmentNameException.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerBLLLibrary\\CustomExceptions\\DuplicateDepartmentNameException.cs",
+              "RelativeDocumentMoniker": "RequestTrackerBLLLibrary\\CustomExceptions\\DuplicateDepartmentNameException.cs",
+              "ToolTip": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerBLLLibrary\\CustomExceptions\\DuplicateDepartmentNameException.cs",
+              "RelativeToolTip": "RequestTrackerBLLLibrary\\CustomExceptions\\DuplicateDepartmentNameException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T04:53:40.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T07:07:16.037Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerApp\\Program.cs",
-              "RelativeDocumentMoniker": "RequestTrackerApp\\Program.cs",
-              "ToolTip": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerApp\\Program.cs",
-              "RelativeToolTip": "RequestTrackerApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAANAAAA",
+              "DocumentIndex": 3,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerDALLibrary\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "RequestTrackerDALLibrary\\DepartmentRepository.cs",
+              "ToolTip": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerDALLibrary\\DepartmentRepository.cs",
+              "RelativeToolTip": "RequestTrackerDALLibrary\\DepartmentRepository.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T02:54:45.51Z",
+              "WhenOpened": "2024-04-23T06:54:41.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DepartmentBL.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerBLLLibrary\\DepartmentBL.cs",
+              "RelativeDocumentMoniker": "RequestTrackerBLLLibrary\\DepartmentBL.cs",
+              "ToolTip": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerBLLLibrary\\DepartmentBL.cs",
+              "RelativeToolTip": "RequestTrackerBLLLibrary\\DepartmentBL.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAwwG4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:29:29.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepartmentBLTest.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerBLTest\\DepartmentBLTest.cs",
+              "RelativeDocumentMoniker": "RequestTrackerBLTest\\DepartmentBLTest.cs",
+              "ToolTip": "C:\\dotNet\\Day8\\RequestTrackerAppSolution\\RequestTrackerBLTest\\DepartmentBLTest.cs",
+              "RelativeToolTip": "RequestTrackerBLTest\\DepartmentBLTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:26:38.365Z",
               "EditorCaption": ""
             }
           ]
