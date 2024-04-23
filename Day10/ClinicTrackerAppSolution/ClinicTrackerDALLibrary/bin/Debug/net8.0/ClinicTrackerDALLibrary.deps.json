@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ClinicTrackerDALLibrary/1.0.0": {
+        "dependencies": {
+          "ClinicTrackerModelLibrary": "1.0.0"
+        },
+        "runtime": {
+          "ClinicTrackerDALLibrary.dll": {}
+        }
+      },
+      "ClinicTrackerModelLibrary/1.0.0": {
+        "runtime": {
+          "ClinicTrackerModelLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ClinicTrackerDALLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClinicTrackerModelLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

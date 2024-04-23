@@ -1,0 +1,15 @@
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\bin\Debug\net8.0\ClinicTrackerApp.exe
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\bin\Debug\net8.0\ClinicTrackerApp.deps.json
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\bin\Debug\net8.0\ClinicTrackerApp.runtimeconfig.json
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\bin\Debug\net8.0\ClinicTrackerApp.dll
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\bin\Debug\net8.0\ClinicTrackerApp.pdb
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\obj\Debug\net8.0\ClinicTrackerApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\obj\Debug\net8.0\ClinicTrackerApp.AssemblyInfoInputs.cache
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\obj\Debug\net8.0\ClinicTrackerApp.AssemblyInfo.cs
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\obj\Debug\net8.0\ClinicTrackerApp.csproj.CoreCompileInputs.cache
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\obj\Debug\net8.0\ClinicTrackerApp.sourcelink.json
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\obj\Debug\net8.0\ClinicTrackerApp.dll
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\obj\Debug\net8.0\refint\ClinicTrackerApp.dll
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\obj\Debug\net8.0\ClinicTrackerApp.pdb
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\obj\Debug\net8.0\ClinicTrackerApp.genruntimeconfig.cache
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerApp\obj\Debug\net8.0\ref\ClinicTrackerApp.dll
