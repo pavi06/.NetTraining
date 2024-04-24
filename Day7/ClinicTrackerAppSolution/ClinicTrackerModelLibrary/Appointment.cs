@@ -8,16 +8,18 @@ namespace ClinicTrackerModelLibrary
 {
     public class Appointment
     {
-        public Patient patient { get; set; }
+        public Patient Patient { get; set; }
         public Doctor Doctor { get; set; }
         public int Id { get; set; }
         public DateTime AppointmentDateAndTime { get; set; }
         public string AppointmentDescription { get; set; }
         public string AppointmentStatus { get; set; }
 
-        public Appointment(int id, DateTime appointmentDateAndTime, string appointmentDescription, string appointmentStatus)
+        public Appointment(int id, Patient patient, Doctor doctor,DateTime appointmentDateAndTime, string appointmentDescription, string appointmentStatus)
         {
             Id = id;
+            Patient = patient;
+            Doctor = doctor;
             AppointmentDateAndTime = appointmentDateAndTime;
             AppointmentDescription = appointmentDescription;
             AppointmentStatus = appointmentStatus;
@@ -25,7 +27,7 @@ namespace ClinicTrackerModelLibrary
 
         public override string ToString()
         {
-            return $"Appointment Id : {Id}\nAppointment Date and Time : {AppointmentDateAndTime}\nPatient Name : {patient.Name}" +
+            return $"Appointment Id : {Id}\nAppointment Date and Time : {AppointmentDateAndTime}\nPatient Name : {Patient.Name}" +
                 $"Doctor Name : {Doctor.Name}\nAppointment Description : {AppointmentDescription}\nAppointment Status : {AppointmentStatus}";
         }
     }

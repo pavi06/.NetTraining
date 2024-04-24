@@ -8,7 +8,6 @@ namespace ClinicTrackerModelLibrary
 {
     public class Patient
     {
-        readonly List<Appointment> _appointments;
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public int Age { get; set; }
@@ -35,7 +34,7 @@ namespace ClinicTrackerModelLibrary
             Address = address;
             PhoneNumber = phonenumber;
             BloodGroup = bloodGroup;
-            _appointments = new List<Appointment>();
+           
         }
         /// <summary>
         /// Overridden method for displaying Patient details.
