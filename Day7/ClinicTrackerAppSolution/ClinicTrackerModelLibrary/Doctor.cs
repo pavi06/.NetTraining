@@ -4,7 +4,6 @@ namespace ClinicTrackerModelLibrary
 {
     public class Doctor
     {
-        readonly List<Appointment> _appointments;
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public int Age { get; set; }
@@ -21,7 +20,6 @@ namespace ClinicTrackerModelLibrary
             Experience = 0;
             Qualification = string.Empty;
             Specialization = string.Empty;
-            _appointments = new List<Appointment>();
 
         }
         public Doctor(int id)

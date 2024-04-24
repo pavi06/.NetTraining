@@ -21,16 +21,7 @@ namespace ClinicTrackerBLLLibrary
         /// </summary>
         /// <param name="id">id of int datatype</param>
         /// <returns>returns patient object</returns>
-        Patient GetPatientById(int id);
-
-        /// <summary>
-        /// Method to retrieve all the appointments that are related to that patient object.
-        /// </summary>
-        /// <param name="id">id of int type</param>
-        /// <returns>returns list of appointment for the patient</returns>
-        List<Appointment> GetAllAppointmentsByPatientId(int id);
-        
-        List<Appointment> GetAllAppointmentsByPatientIdAndStatus(int id,string status);
+        Patient GetPatientById(int id);        
 
         /// <summary>
         /// Method to delete the patient object by passing its id
