@@ -10,6 +10,16 @@ namespace ShoppingAppDALLibrary
 {
     public class CustomerRepository : AbstractRepository<int, Customer>
     {
+        public override Customer Add(Customer item)
+        {
+            foreach (var i in items)
+            {
+                if (i.Name == item.Name && i.PhoneNumber == item.PhoneNumber && i.Address == item.Address) {
+                    return null;
+                } 
+            }
+            return base.Add(item);
+        }
         public override Customer Delete(int key)
         {
             Customer customer = GetByKey(key);

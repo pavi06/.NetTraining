@@ -89,7 +89,7 @@ namespace ShoppingAppDALTests
         }
 
         [Test]
-        public void UpdtaeProductByIdFailTest()
+        public void UpdateProductByIdFailTest()
         {
             List<CartItem> cartItems = new List<CartItem>();
             Cart cart = new Cart() { Id = 2, CustomerId = 2, Customer = new Customer(0, "Pavi", "97866464", "no.5 guru nagar, chennai"), CartItems = cartItems };

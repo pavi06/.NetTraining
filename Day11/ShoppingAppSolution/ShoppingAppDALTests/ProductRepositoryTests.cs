@@ -30,7 +30,7 @@ namespace ShoppingAppDALTests
         public void AddProductFailTest()
         {
             //Arrange 
-            Product product = new Product() { Id = 1, Name = "Painting Canvas", Category = "Stationary", Price = 350.0, Image = "https://demoWaterBottle/w1", QuantityInHand = 40 };
+            Product product = new Product() { Name = "Painting Canvas", Category = "Stationary", Price = 350.0, Image = "https://demoWaterBottle/w1", QuantityInHand = 40 };
             //Action
             var result = productRepository.Add(product);
             //Assert
@@ -39,7 +39,7 @@ namespace ShoppingAppDALTests
 
         [Test]
         public void GetProductByIdPassTest() { 
-            Product product = productRepository.GetByKey(1);
+            Product product = productRepository.GetByKey(0);
             Assert.IsNotNull(product);
         }
 
@@ -53,7 +53,7 @@ namespace ShoppingAppDALTests
         [Test]
         public void DeleteProductByIdPassTest()
         {
-            Product product = productRepository.Delete(1);
+            Product product = productRepository.Delete(0);
             Assert.IsNotNull(product);
         }
 

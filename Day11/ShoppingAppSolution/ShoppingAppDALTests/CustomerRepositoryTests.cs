@@ -15,7 +15,7 @@ namespace ShoppingAppDALTests
         public void Setup()
         {
             customerRepository = new CustomerRepository();
-            Customer customer = new Customer() { Id=1,Name = "Pavi", PhoneNumber = "97677646", Address = "no.3 chennai"};
+            Customer customer = new Customer() { Name = "Pavi", PhoneNumber = "97677646", Address = "no.3 chennai"};
             customerRepository.Add(customer);
         }
 
@@ -23,7 +23,7 @@ namespace ShoppingAppDALTests
         public void AddCustomerSuccessTest()
         {
             //Arrange 
-            Customer customer = new Customer() { Id = 1, Name = "Pavi", PhoneNumber = "97677646", Address = "no.3 chennai" };
+            Customer customer = new Customer() { Name = "Pavi", PhoneNumber = "97677646", Address = "no.3 chennai" };
             //Action
             var result = customerRepository.Add(customer);
             //Assert
@@ -44,7 +44,7 @@ namespace ShoppingAppDALTests
         [Test]
         public void GetCustomerByIdPassTest()
         {
-            Customer customer = customerRepository.GetByKey(1);
+            Customer customer = customerRepository.GetByKey(0);
             Assert.IsNotNull(customer);
         }
 
@@ -58,7 +58,7 @@ namespace ShoppingAppDALTests
         [Test]
         public void DeleteCustomerByIdPassTest()
         {
-            Customer customer = customerRepository.Delete(1);
+            Customer customer = customerRepository.Delete(0);
             Assert.IsNotNull(customer);
         }
 
@@ -72,7 +72,8 @@ namespace ShoppingAppDALTests
         [Test]
         public void UpdateCustomerByIdPassTest()
         {
-            Customer customer = new Customer() { Id = 1, Name = "Pavi", PhoneNumber = "97677646", Address = "no.3 chennai" };
+            var customer = customerRepository.GetByKey(0);
+            customer.Id = 1;
             Customer updatedCustomer = customerRepository.Update(customer);
             Assert.IsNotNull(updatedCustomer);
         }
