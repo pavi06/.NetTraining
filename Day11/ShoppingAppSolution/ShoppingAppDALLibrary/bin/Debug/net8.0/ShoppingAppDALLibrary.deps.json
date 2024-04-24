@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ShoppingAppDALLibrary/1.0.0": {
+        "dependencies": {
+          "ShoppingAppModelLibrary": "1.0.0"
+        },
+        "runtime": {
+          "ShoppingAppDALLibrary.dll": {}
+        }
+      },
+      "ShoppingAppModelLibrary/1.0.0": {
+        "runtime": {
+          "ShoppingAppModelLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ShoppingAppDALLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShoppingAppModelLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

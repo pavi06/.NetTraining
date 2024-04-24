@@ -1,0 +1,16 @@
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\bin\Debug\net8.0\ShoppingAppDALLibrary.deps.json
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\bin\Debug\net8.0\ShoppingAppDALLibrary.dll
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\bin\Debug\net8.0\ShoppingAppDALLibrary.pdb
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\bin\Debug\net8.0\ShoppingAppModelLibrary.dll
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\bin\Debug\net8.0\ShoppingAppModelLibrary.pdb
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\obj\Debug\net8.0\ShoppingAppDALLibrary.csproj.AssemblyReference.cache
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\obj\Debug\net8.0\ShoppingAppDALLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\obj\Debug\net8.0\ShoppingAppDALLibrary.AssemblyInfoInputs.cache
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\obj\Debug\net8.0\ShoppingAppDALLibrary.AssemblyInfo.cs
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\obj\Debug\net8.0\ShoppingAppDALLibrary.csproj.CoreCompileInputs.cache
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\obj\Debug\net8.0\ShoppingAppDALLibrary.sourcelink.json
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\obj\Debug\net8.0\Shopping.FCAF3607.Up2Date
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\obj\Debug\net8.0\ShoppingAppDALLibrary.dll
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\obj\Debug\net8.0\refint\ShoppingAppDALLibrary.dll
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\obj\Debug\net8.0\ShoppingAppDALLibrary.pdb
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppDALLibrary\obj\Debug\net8.0\ref\ShoppingAppDALLibrary.dll

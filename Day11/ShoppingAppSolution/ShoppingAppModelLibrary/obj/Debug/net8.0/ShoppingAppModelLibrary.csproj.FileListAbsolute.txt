@@ -1,0 +1,12 @@
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppModelLibrary\bin\Debug\net8.0\ShoppingAppModelLibrary.deps.json
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppModelLibrary\bin\Debug\net8.0\ShoppingAppModelLibrary.dll
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppModelLibrary\bin\Debug\net8.0\ShoppingAppModelLibrary.pdb
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppModelLibrary\obj\Debug\net8.0\ShoppingAppModelLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppModelLibrary\obj\Debug\net8.0\ShoppingAppModelLibrary.AssemblyInfoInputs.cache
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppModelLibrary\obj\Debug\net8.0\ShoppingAppModelLibrary.AssemblyInfo.cs
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppModelLibrary\obj\Debug\net8.0\ShoppingAppModelLibrary.csproj.CoreCompileInputs.cache
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppModelLibrary\obj\Debug\net8.0\ShoppingAppModelLibrary.sourcelink.json
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppModelLibrary\obj\Debug\net8.0\ShoppingAppModelLibrary.dll
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppModelLibrary\obj\Debug\net8.0\refint\ShoppingAppModelLibrary.dll
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppModelLibrary\obj\Debug\net8.0\ShoppingAppModelLibrary.pdb
+C:\dotNet\Day11\ShoppingAppSolution\ShoppingAppModelLibrary\obj\Debug\net8.0\ref\ShoppingAppModelLibrary.dll
