@@ -1,0 +1,16 @@
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\obj\Debug\net8.0\ClinicTrackerDALLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\obj\Debug\net8.0\ClinicTrackerDALLibrary.AssemblyInfoInputs.cache
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\obj\Debug\net8.0\ClinicTrackerDALLibrary.AssemblyInfo.cs
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\obj\Debug\net8.0\ClinicTrackerDALLibrary.csproj.CoreCompileInputs.cache
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\obj\Debug\net8.0\ClinicTrackerDALLibrary.sourcelink.json
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\bin\Debug\net8.0\ClinicTrackerDALLibrary.deps.json
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\bin\Debug\net8.0\ClinicTrackerDALLibrary.dll
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\bin\Debug\net8.0\ClinicTrackerDALLibrary.pdb
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\bin\Debug\net8.0\ClinicTrackerModelLibrary.dll
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\bin\Debug\net8.0\ClinicTrackerModelLibrary.pdb
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\obj\Debug\net8.0\ClinicTrackerDALLibrary.csproj.AssemblyReference.cache
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\obj\Debug\net8.0\ClinicTr.306AA329.Up2Date
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\obj\Debug\net8.0\ClinicTrackerDALLibrary.dll
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\obj\Debug\net8.0\refint\ClinicTrackerDALLibrary.dll
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\obj\Debug\net8.0\ClinicTrackerDALLibrary.pdb
+C:\dotNet\Day10\ClinicTrackerAppSolution\ClinicTrackerDALLibrary\obj\Debug\net8.0\ref\ClinicTrackerDALLibrary.dll
