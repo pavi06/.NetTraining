@@ -4,7 +4,6 @@ namespace ClinicTrackerModelLibrary
 {
     public class Doctor
     {
-        public List<Appointment> Appointments { get; set; }
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public int Age { get; set; }
@@ -21,7 +20,6 @@ namespace ClinicTrackerModelLibrary
             Experience = 0;
             Qualification = string.Empty;
             Specialization = string.Empty;
-            Appointments = new List<Appointment>();
 
         }
         public Doctor(int id)
@@ -30,7 +28,7 @@ namespace ClinicTrackerModelLibrary
         }
 
 
-        public Doctor( int id,string name, int age,string phoneNumber, int experience, string qualification, string speciality, List<Appointment> appointments) : this(id)
+        public Doctor( int id,string name, int age,string phoneNumber, int experience, string qualification, string speciality) : this(id)
         {
             Name = name;
             Age = age;
@@ -38,7 +36,6 @@ namespace ClinicTrackerModelLibrary
             Experience = experience;
             Qualification = qualification;
             Specialization = speciality;
-            Appointments = appointments;
         }
 
         public override string ToString()

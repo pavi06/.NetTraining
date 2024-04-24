@@ -20,7 +20,7 @@ namespace ClinicTrackerBLTests
         public void Setup()
         {
             doctorRepository = new DoctorRepository();
-            Doctor doctor = new Doctor() { Name = "Viji", Age = 30, PhoneNumber = "8786543453", Experience = 10, Qualification = "MBBS", Specialization = "Neurologist", Appointments = { new Appointment(1, new DateTime(2024, 05, 03), "General checkup", "Not Completed") } };
+            Doctor doctor = new Doctor() { Name = "Viji", Age = 30, PhoneNumber = "8786543453", Experience = 10, Qualification = "MBBS", Specialization = "Neurologist" };
             doctorRepository.Add(doctor);
             doctor = new Doctor() { Name = "Pavithra", Age = 30, PhoneNumber = "8786543453", Experience = 10, Qualification = "MBBS", Specialization = "Neurologist" };
             doctorRepository.Add(doctor);
@@ -31,7 +31,7 @@ namespace ClinicTrackerBLTests
         public void AddDoctorPassTest()
         {
             //Arrange
-            Doctor doctor = new Doctor() { Name = "Pavi", Age = 35, PhoneNumber = "878978553", Experience = 10, Qualification = "MBBS", Specialization = "Neurologist", Appointments = { new Appointment(2, new DateTime(2024, 05, 03), "General checkup", "Not Completed") } };
+            Doctor doctor = new Doctor() { Name = "Pavi", Age = 35, PhoneNumber = "878978553", Experience = 10, Qualification = "MBBS", Specialization = "Neurologist" };
             //action
             var addedDoctor = doctorService.AddDoctor(doctor);
             //Assert
@@ -42,7 +42,7 @@ namespace ClinicTrackerBLTests
         [Test]
         public void DoctorAlreadyExistsExceptionTest()
         {
-            Doctor doctor = new Doctor() { Id = 1, Name = "Pavi", Age = 35, PhoneNumber = "878978553", Experience = 10, Qualification = "MBBS", Specialization = "Neurologist", Appointments = { new Appointment(1, new DateTime(2024, 05, 03), "General checkup", "Not Completed") } };
+            Doctor doctor = new Doctor() { Id = 1, Name = "Pavi", Age = 35, PhoneNumber = "878978553", Experience = 10, Qualification = "MBBS", Specialization = "Neurologist" };
             //Action
             var exception = Assert.Throws<ObjectAlreadyExistsException>(() => doctorService.AddDoctor(doctor));
             //Assert
@@ -87,35 +87,6 @@ namespace ClinicTrackerBLTests
             Assert.AreEqual($"Doctor with the id {id} is not available!", exception.Message);
         }
 
-        [Test]
-        public void GetAllAppointmentByDoctorPassTest() {
-            var appointments = doctorService.GetAllAppointmentsByDoctorId(1);
-            Assert.IsNotEmpty(appointments);
-        }
-
-        [Test]
-        public void GetAllAppointmentByDoctorExceptionTest()
-        {
-            int id = 2;
-            var exception = Assert.Throws<NoAppointmentsAvailableForObjectException>(() => doctorService.GetAllAppointmentsByDoctorId(id));
-            Assert.AreEqual($"No appointments available for Doctor with id {id}!", exception.Message);
-        }
-
-        [Test]
-        public void GetAllAppointmentByDoctorIdAndStatusPassTest()
-        {
-            var appointments = doctorService.GetAllAppointmentsByDoctorIdAndStatus(1,"Not Completed");
-            Assert.IsNotEmpty(appointments);
-        }
-
-        [Test]
-        public void GetAllAppointmentByDoctorIdAndStatusExceptionTest()
-        {
-            int id = 2;
-            string status = "Completed";
-            var exception = Assert.Throws<NoAppointmentsAvailableForObjectException>(() => doctorService.GetAllAppointmentsByDoctorIdAndStatus(id, status));
-            Assert.AreEqual($"No appointments available for Doctor with id {id} and appointment status {status}!", exception.Message);
-        }
 
         [Test]
         public void UpdateDoctorPassTest()
@@ -129,7 +100,7 @@ namespace ClinicTrackerBLTests
         [Test]
         public void UpdateDoctorExceptionTest()
         {
-            Doctor doctor = new Doctor() { Id = 3, Name = "Pavi", Age = 35, PhoneNumber = "878978553", Experience = 10, Qualification = "MBBS", Specialization = "Neurologist", Appointments = { new Appointment(1, new DateTime(2024, 05, 03), "General checkup", "Not Completed") } };
+            Doctor doctor = new Doctor() { Id = 3, Name = "Pavi", Age = 35, PhoneNumber = "878978553", Experience = 10, Qualification = "MBBS", Specialization = "Neurologist" };
             var exception = Assert.Throws<ObjectNotAvailableException>(() => doctorService.UpdateDoctorByObject(doctor));
             //Assert
             Assert.AreEqual($"Doctor with the id {doctor.Id} is not available!", exception.Message);

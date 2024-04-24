@@ -46,35 +46,6 @@ namespace ClinicTrackerBLLLibrary
             throw new ObjectNotAvailableException($"Patient with the id {id} is not available!"); ;
         }
 
-        public List<Appointment> GetAllAppointmentsByPatientId(int id)
-        {
-            var patient = GetPatientById(id);
-            List<Appointment> appointmentsOfPatient = patient.Appointments;
-            if (appointmentsOfPatient.Count > 0)
-            {
-                return appointmentsOfPatient;
-            }
-            throw new NoAppointmentsAvailableForObjectException($"Patient with id {id}");
-        }
-
-        public List<Appointment> GetAllAppointmentsByPatientIdAndStatus(int id, string status)
-        {
-            var patient = GetPatientById(id);
-            List<Appointment> appointmentsOfPatient = new List<Appointment>();
-            foreach (Appointment appointment in patient.Appointments)
-            {
-                if (appointment.AppointmentStatus == status)
-                {
-                    appointmentsOfPatient.Add(appointment);
-                }
-            }
-            if (appointmentsOfPatient.Count > 0)
-            {
-                return appointmentsOfPatient;
-            }
-            throw new NoAppointmentsAvailableForObjectException($"Patient with id {id} and appointment status {status}");
-        }
-
         public Patient UpdatePatientByObject(Patient patient)
         {
             var updatedPatient = _patientRepository.Update(patient);

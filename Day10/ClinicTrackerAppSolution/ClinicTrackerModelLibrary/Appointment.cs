@@ -15,9 +15,11 @@ namespace ClinicTrackerModelLibrary
         public string AppointmentDescription { get; set; }
         public string AppointmentStatus { get; set; }
 
-        public Appointment( int id,DateTime appointmentDateAndTime, string appointmentDescription, string appointmentStatus)
+        public Appointment( int id,Patient patient, Doctor doctor, DateTime appointmentDateAndTime, string appointmentDescription, string appointmentStatus)
         { 
             Id = id;
+            Patient = patient;
+            Doctor = doctor;
             AppointmentDateAndTime = appointmentDateAndTime;
             AppointmentDescription = appointmentDescription;
             AppointmentStatus = appointmentStatus;

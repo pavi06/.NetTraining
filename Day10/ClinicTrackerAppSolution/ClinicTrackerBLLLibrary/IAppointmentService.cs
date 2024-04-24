@@ -25,6 +25,14 @@ namespace ClinicTrackerBLLLibrary
         //returns the list of apoointments
         List<Appointment> GetAllAppointments();
         List<Appointment> GetAllAppointmentsByStatus(string status);
+
+        List<Appointment> GetAllAppointmentsByPatientId(int patientId);
+
+        List<Appointment> GetAllAppointmentsByPatientIdAndStatus(int patientId,  string status);
+
+        List<Appointment> GetAllAppointmentsByDoctorId(int doctorId);
+
+        List<Appointment> GetAllAppointmentsByDoctorIdAndStatus(int doctorId, string status);
         //delete apoointment by the id passed to it and return the deleted object
         Appointment DeleteAppointmentById(int id);
         //update appointment and return the object 

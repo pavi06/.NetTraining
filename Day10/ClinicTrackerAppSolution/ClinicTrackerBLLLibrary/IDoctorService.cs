@@ -24,15 +24,6 @@ namespace ClinicTrackerBLLLibrary
         Doctor GetDoctorById(int id);
 
         /// <summary>
-        /// method to get all appointments for the doctor
-        /// </summary>
-        /// <param name="id">id of int datatype</param>
-        /// <returns>returns the list of appointment</returns>
-        List<Appointment> GetAllAppointmentsByDoctorId(int id);
-
-        List<Appointment> GetAllAppointmentsByDoctorIdAndStatus(int id, string status);
-
-        /// <summary>
         /// method to delete the doctor object
         /// </summary>
         /// <param name="id">id of int datatype</param>

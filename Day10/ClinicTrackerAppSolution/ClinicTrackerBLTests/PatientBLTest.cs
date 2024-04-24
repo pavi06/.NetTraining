@@ -15,7 +15,7 @@ namespace ClinicTrackerBLTests
         public void Setup()
         {
             patientRepository = new PatientRepository();
-            Patient patient = new Patient() { Name = "Pavithra", Age = 25, Address = "No.3 sai street, Korattur, Chennai", BloodGroup = "AB+ve", Gender = "Female", PhoneNumber = "9897654343" , Appointments = { new Appointment(1,new DateTime(2024,5,2),"General checkup","Not Completed")} };
+            Patient patient = new Patient() { Name = "Pavithra", Age = 25, Address = "No.3 sai street, Korattur, Chennai", BloodGroup = "AB+ve", Gender = "Female", PhoneNumber = "9897654343" };
             patientRepository.Add(patient);
             patient = new Patient() { Name = "Sai", Age = 35, Address = "No.5 sai street, Korattur, Chennai", BloodGroup = "O+ve", Gender = "Male", PhoneNumber = "9897654343" };
             patientRepository.Add(patient);
@@ -37,7 +37,7 @@ namespace ClinicTrackerBLTests
         public void AddPatientFailTest()
         {
             //Arrange
-            Patient patient = new Patient() { Id = 1, Name = "Pavithra", Age = 25, Address = "No.3 sai street, Korattur, Chennai", BloodGroup = "AB+ve", Gender = "Female", PhoneNumber = "9897654343", Appointments = { new Appointment(1, new DateTime(2024, 5, 2), "General checkup", "Not Completed") } };
+            Patient patient = new Patient() { Id = 1, Name = "Pavithra", Age = 25, Address = "No.3 sai street, Korattur, Chennai", BloodGroup = "AB+ve", Gender = "Female", PhoneNumber = "9897654343" };
             //action
             int addedPatient = -1;
             try {
@@ -53,7 +53,7 @@ namespace ClinicTrackerBLTests
         [Test]
         public void PatientAlreadyExistsExceptionTest()
         {
-            Patient patient = new Patient() { Id = 1, Name = "Pavithra", Age = 25, Address = "No.3 sai street, Korattur, Chennai", BloodGroup = "AB+ve", Gender = "Female", PhoneNumber = "9897654343", Appointments = { new Appointment(1, new DateTime(2024, 5, 2), "General checkup", "Not Completed") } };
+            Patient patient = new Patient() { Id = 1, Name = "Pavithra", Age = 25, Address = "No.3 sai street, Korattur, Chennai", BloodGroup = "AB+ve", Gender = "Female", PhoneNumber = "9897654343" };
             //Action
             var exception = Assert.Throws<ObjectAlreadyExistsException>(() => patientService.AddPatient(patient));
             //Assert
@@ -129,60 +129,6 @@ namespace ClinicTrackerBLTests
             Assert.AreEqual($"Patient with the id {id} is not available!", exception.Message);
         }
 
-        [Test]
-        public void GetAllAppointmentByPatientPassTest() {
-            var appointments = patientService.GetAllAppointmentsByPatientId(1);
-            Assert.IsNotEmpty(appointments);
-        }
-
-        [Test]
-        public void GetAllAppointmentByPatientFailTest()
-        {
-            var appointments = new List<Appointment>();
-            try
-            {
-                appointments = patientService.GetAllAppointmentsByPatientId(2);
-            }
-            catch (NoAppointmentsAvailableForObjectException e) { }            
-            Assert.AreEqual(0,appointments.Count);
-        }
-
-        [Test]
-        public void GetAllAppointmentByPatientExceptionTest()
-        {
-            int id = 2;
-            var exception = Assert.Throws<NoAppointmentsAvailableForObjectException>(() => patientService.GetAllAppointmentsByPatientId(id));
-            Assert.AreEqual($"No appointments available for Patient with id {id}!", exception.Message);
-        }
-
-        [Test]
-        public void GetAllAppointmentByPatientIdAndStatusPassTest()
-        {
-            var appointments = patientService.GetAllAppointmentsByPatientIdAndStatus(1,"Not Completed");
-            Assert.IsNotEmpty(appointments);
-        }
-
-        [Test]
-        public void GetAllAppointmentByPatientIdAndStatusFailTest()
-        {
-            var appointments = new List<Appointment>();
-            try {
-                appointments = patientService.GetAllAppointmentsByPatientIdAndStatus(1, "Completed");
-            }
-            catch (NoAppointmentsAvailableForObjectException e) { 
-            
-            }
-            Assert.AreEqual(0,appointments.Count);
-        }
-
-        [Test]
-        public void GetAllAppointmentByPatientIdAndStatusExceptionTest()
-        {
-            int id = 2;
-            string status = "Completed";
-            var exception = Assert.Throws<NoAppointmentsAvailableForObjectException>(() => patientService.GetAllAppointmentsByPatientIdAndStatus(id, status));
-            Assert.AreEqual($"No appointments available for Patient with id {id} and appointment status {status}!", exception.Message);
-        }
 
         [Test]
         public void UpdatePatientPassTest() { 
@@ -197,7 +143,7 @@ namespace ClinicTrackerBLTests
         {
             Patient updatedPatient =null;
             try {
-                Patient patient = new Patient() { Id = 3, Name = "Pavithra", Age = 25, Address = "No.3 sai street, Korattur, Chennai", BloodGroup = "AB+ve", Gender = "Female", PhoneNumber = "9897654343", Appointments = { new Appointment(1, new DateTime(2024, 5, 2), "General checkup", "Not Completed") } };
+                Patient patient = new Patient() { Id = 3, Name = "Pavithra", Age = 25, Address = "No.3 sai street, Korattur, Chennai", BloodGroup = "AB+ve", Gender = "Female", PhoneNumber = "9897654343" };
                 patient.Name = "Pavithra Pazhanivel";
                 updatedPatient = patientService.UpdatePatientByObject(patient);
             }
@@ -208,7 +154,7 @@ namespace ClinicTrackerBLTests
         [Test]
         public void UpdatePatientExceptionTest()
         {
-            Patient patient = new Patient() {Id=3, Name = "Pavithra Pazhanivel", Age = 25, Address = "No.3 sai street, Korattur, Chennai", BloodGroup = "AB+ve", Gender = "Female", PhoneNumber = "9897654343", Appointments = { new Appointment(1, new DateTime(2024, 5, 2), "General checkup", "Not Completed") } };
+            Patient patient = new Patient() {Id=3, Name = "Pavithra Pazhanivel", Age = 25, Address = "No.3 sai street, Korattur, Chennai", BloodGroup = "AB+ve", Gender = "Female", PhoneNumber = "9897654343" };
             var exception = Assert.Throws<ObjectNotAvailableException>(() => patientService.UpdatePatientByObject(patient));
             //Assert
             Assert.AreEqual($"Patient with the id {patient.Id} is not available!", exception.Message);

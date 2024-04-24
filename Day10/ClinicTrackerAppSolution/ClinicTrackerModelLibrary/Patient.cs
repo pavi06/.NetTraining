@@ -8,7 +8,6 @@ namespace ClinicTrackerModelLibrary
 {
     public class Patient
     {
-        public List<Appointment> Appointments { get; set; } = new List<Appointment>();
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public int Age { get; set; }
@@ -33,7 +32,7 @@ namespace ClinicTrackerModelLibrary
         public Patient(int id) { 
             Id = id;
         }
-        public Patient(string name, int age, string gender, string address,string phonenumber,string bloodGroup, List<Appointment> appointments) 
+        public Patient(string name, int age, string gender, string address,string phonenumber,string bloodGroup) 
         {
             Name = name;
             Age = age;
@@ -41,7 +40,6 @@ namespace ClinicTrackerModelLibrary
             Address = address;
             PhoneNumber = phonenumber;
             BloodGroup = bloodGroup;
-            Appointments = appointments;
         }
         /// <summary>
         /// Overridden method for displaying Patient details.

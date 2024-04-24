@@ -46,6 +46,77 @@ namespace ClinicTrackerBLLLibrary
             throw new NoAppointmentsAvailableException();
         }
 
+        public List<Appointment> GetAllAppointmentsByDoctorId(int doctorId)
+        {
+            var appointments = GetAllAppointments();
+            List<Appointment> appointmentsOfDoctor = new List<Appointment>();
+            foreach (var appointment in appointments)
+            {
+                if (appointment.Doctor.Id == doctorId)
+                {
+                    appointmentsOfDoctor.Add(appointment);
+                }
+            }
+            if (appointmentsOfDoctor.Count > 0)
+            {
+                return appointmentsOfDoctor;
+            }
+            throw new NoAppointmentsAvailableForObjectException($"Doctor with id {doctorId}");
+        }
+
+        public List<Appointment> GetAllAppointmentsByDoctorIdAndStatus(int doctorId, string status)
+        {
+            var appointments = GetAllAppointments();
+            List<Appointment> appointmentsOfDoctor = new List<Appointment>();
+            foreach (var appointment in appointments)
+            {
+                if (appointment.Doctor.Id == doctorId && appointment.AppointmentStatus == status)
+                {
+                    appointmentsOfDoctor.Add(appointment);
+                }
+            }
+            if (appointmentsOfDoctor.Count > 0)
+            {
+                return appointmentsOfDoctor;
+            }
+            throw new NoAppointmentsAvailableForObjectException($"Doctor with id {doctorId} and appointment status {status}");
+        }
+
+        public List<Appointment> GetAllAppointmentsByPatientId(int patientId)
+        {
+            var appointments = GetAllAppointments();
+            List<Appointment> appointmentsOfPatient = new List<Appointment>();
+            foreach (var appointment in appointments)
+            {
+                if (appointment.Patient.Id == patientId) { 
+                    appointmentsOfPatient.Add(appointment);
+                }
+            }
+            if (appointmentsOfPatient.Count > 0)
+            {
+                return appointmentsOfPatient;
+            }
+            throw new NoAppointmentsAvailableForObjectException($"Patient with id {patientId}");
+        }
+
+        public List<Appointment> GetAllAppointmentsByPatientIdAndStatus(int patientId, string status)
+        {
+            var appointments = GetAllAppointments();
+            List<Appointment> appointmentsOfPatient = new List<Appointment>();
+            foreach (var appointment in appointments)
+            {
+                if (appointment.Patient.Id == patientId && appointment.AppointmentStatus == status)
+                {
+                    appointmentsOfPatient.Add(appointment);
+                }
+            }
+            if (appointmentsOfPatient.Count > 0)
+            {
+                return appointmentsOfPatient;
+            }
+            throw new NoAppointmentsAvailableForObjectException($"Patient with id {patientId} and appointment status {status}");
+        }
+
         public List<Appointment> GetAllAppointmentsByStatus(string status)
         {
             var appointmentList = GetAllAppointments();
