@@ -10,11 +10,10 @@
         public int QuantityInHand { get; set; }
         public override string ToString()
         {
-            return "Id : " + Id +
-                "\nName : " + Name +
-                "\n Category : "+Category +
-                "\nPrice : $" + Price +
-                "\nNos in Stock : " + QuantityInHand;
+            return "Id : " + Id +"|  Name : " + Name +
+                "|  Category : "+Category +
+                "|  Price : $" + Price +
+                "|  Nos in Stock : " + QuantityInHand;
         }
 
         public override bool Equals(object? obj)

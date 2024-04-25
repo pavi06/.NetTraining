@@ -51,7 +51,7 @@ namespace ShoppingAppModelLibrary
 
         public override string ToString()
         {
-            return "Product Id : "+ProductId + "Quantity : "+Quantity+"Price : "+Price+"Discount : "+Discount+"Price Expiry Date: "+PriceExpiryDate;
+            return "Product Id : "+ProductId + " Quantity : "+Quantity+" Price : "+Price+" Discount : "+Discount+"PriceExpiryDate: "+PriceExpiryDate;
         }
     }
 }

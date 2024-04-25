@@ -17,5 +17,6 @@ namespace ShoppingAppBLLLibrary
         Customer UpdateCustomer(Customer customer);
         bool UpdateCustomerPhoneNumberById(int id, string newPhoneNumber);
         bool UpdateCustomerAddressById(int id, string newAddress);
+        List<int> GetAllCustomerId();
     }
 }

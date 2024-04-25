@@ -36,7 +36,7 @@ namespace ShoppingAppDALLibrary
 
         public override CartItem GetByKey(int key)
         {
-
+            Console.WriteLine(items);
             CartItem cartItem = items.FirstOrDefault( i => i.CartId == key);
             return cartItem;
         }

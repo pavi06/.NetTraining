@@ -127,7 +127,7 @@ namespace ShoppingAppBLLLibrary
 
         public double GetDiscountAmount(int cartItems, double price)
         {
-            double discountAmount = 0.0;
+            double discountAmount = price;
             if (cartItems == 3 && price == 1500)
             {
                 discountAmount = price - (0.05 * price);

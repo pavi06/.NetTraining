@@ -138,7 +138,7 @@ namespace ShoppingAppBLLLibrary
             var products = GetAllProduct();
             foreach ( var p in products )
             {
-                productNames.Add(p.Name);
+                productNames.Add(p.Name.ToLower());
             }
             if(productNames.Count > 0)
             {
@@ -153,7 +153,7 @@ namespace ShoppingAppBLLLibrary
             var products = GetAllProduct();
             foreach (var p in products)
             {
-                catagories.Add(p.Category);
+                catagories.Add(p.Category.ToLower());
             }
             if (catagories.Count > 0)
             {

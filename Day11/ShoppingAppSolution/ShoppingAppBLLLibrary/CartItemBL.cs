@@ -23,18 +23,21 @@ namespace ShoppingAppBLLLibrary
 
         public int AddCartItem(CartItem cartItem)
         {
-          
+
             var retrivedCart = _cartItemRepository.Add(cartItem);
             if (retrivedCart != null)
             {
-                Cart cart;
-                cart = _cartRepository.GetByKey(cartItem.CartId);
-                if (cart.CartItems.Count() < 5)
-                    cart.CartItems.Add(cartItem);
-                else
-                    throw new CartLimitExceedsException();
+                Cart cart = _cartRepository.GetByKey(cartItem.CartId);
+                if (cart != null)
+                {
+                    if (cart.CartItems.Count() < 5)
+                        cart.CartItems.Add(cartItem);
+                    else
+                        throw new CartLimitExceedsException();
+                }
                 var updatedCart = _cartRepository.Update(cart);
-                if (updatedCart == null)
+
+                if (updatedCart == null && cart!=null)
                 {
                     throw new ObjectNotAvailableException($"Cart with id - {cart.Id} not Available!");
                 }

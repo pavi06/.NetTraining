@@ -24,6 +24,8 @@ namespace ShoppingAppBLLLibrary
             var retrivedCustomer = _customerRepository.Add(customer);
             if (retrivedCustomer != null)
             {
+                Cart cart = new Cart(retrivedCustomer.Id,retrivedCustomer,new List<CartItem>());
+                _cartRepository.Add(cart);
                 return retrivedCustomer.Id;
             }
             throw new ObjectAlreadyExistsException("Customer");
@@ -47,6 +49,20 @@ namespace ShoppingAppBLLLibrary
                 return customerList.ToList();
             }
             throw new NoObjectsAvailableException("No Customers Available!");
+        }
+
+        public List<int> GetAllCustomerId()
+        {
+            List<int> customerIds = new List<int>();
+            foreach (var customer in GetAllCustomer())
+            {
+                customerIds.Add(customer.Id);
+            }
+            if(customerIds!=null)
+            {
+                return customerIds.ToList();
+            }
+            throw new NoObjectsAvailableException("No customers Available!");
         }
 
         public List<CartItem> GetCartByCustomerId(int id)

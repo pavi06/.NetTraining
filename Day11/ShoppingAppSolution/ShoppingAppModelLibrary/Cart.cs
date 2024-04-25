@@ -11,7 +11,7 @@ namespace ShoppingAppModelLibrary
         public int Id { get; set; }
         public int CustomerId { get; set; }
         public Customer Customer { get; set; } = new Customer();
-        public List<CartItem> CartItems { get; set; } = new List<CartItem>();
+        public List<CartItem> CartItems { get; set; } 
 
         public Cart() { }
 
