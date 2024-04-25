@@ -10,16 +10,15 @@ namespace ShoppingAppDALLibrary
 {
     public class ProductRepository : AbstractRepository<int, Product>
     {
-        //public override Product Add(Product item)
-        //{
-        //    foreach (var i in items) { 
-        //        if(i.Name == item.Name && i.Price==item.Price && i.Category == item.Category && i.Image == item.Image && i.)
-        //        {
-
-        //        }
-        //    }
-        //    return base.Add(item);
-        //}
+        public override Product Add(Product item)
+        {
+            if (items.ToList().Exists(p => p.Name == item.Name && p.Category == item.Category && p.Price == item.Price && p.Image == item.Image && p.QuantityInHand == item.QuantityInHand))
+            {
+                return null;
+            }
+            item.Id = items.Max(p => p.Id) + 1;
+            return base.Add(item);
+        }
         public override Product Delete(int key)
         {
             Product product = GetByKey(key);

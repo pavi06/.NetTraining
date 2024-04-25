@@ -12,7 +12,6 @@ namespace ShoppingAppBLLLibrary
     public class CustomerBL : ICustomerService
     {
         readonly IRepository<int, Customer> _customerRepository;
-        public static int idCount = 0;
 
         public CustomerBL(IRepository<int, Customer> customerRepository)
         {
@@ -20,7 +19,6 @@ namespace ShoppingAppBLLLibrary
         }
         public int AddCustomer(Customer customer)
         {
-            customer.Id = ++idCount;
             var retrivedCustomer = _customerRepository.Add(customer);
             if (retrivedCustomer != null)
             {

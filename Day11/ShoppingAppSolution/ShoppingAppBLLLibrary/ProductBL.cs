@@ -12,7 +12,6 @@ namespace ShoppingAppBLLLibrary
     public class ProductBL : IProductService
     {
         readonly IRepository<int, Product> _productRepository;
-        public static int idCount = 0;
 
         public ProductBL(IRepository<int, Product> productRepository)
         {
@@ -21,7 +20,7 @@ namespace ShoppingAppBLLLibrary
 
         public int AddProduct(Product product)
         {
-            product.Id = ++idCount;
+        
             var retrivedProduct = _productRepository.Add(product);
             if (retrivedProduct != null)
             {

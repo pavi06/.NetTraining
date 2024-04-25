@@ -9,6 +9,15 @@ namespace ShoppingAppDALLibrary
 {
     public class CartRepository : AbstractRepository<int, Cart>
     {
+        public override Cart Add(Cart item)
+        {
+            if (items.ToList().Exists(c=> c.CustomerId == item.CustomerId && c.Customer == item.Customer && c.CartItems == item.CartItems))
+            {
+                return null;
+            }
+            item.Id = items.Max(c => c.Id) + 1;
+            return base.Add(item);
+        }
         public override Cart Delete(int key)
         {
             Cart cart = GetByKey(key);

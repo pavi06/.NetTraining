@@ -12,7 +12,6 @@ namespace ShoppingAppBLLLibrary
     public class CartItemBL : ICartItemService
     {
         readonly IRepository<int, CartItem> _cartItemRepository;
-        public static int idCount = 0;
 
         public CartItemBL(IRepository<int, CartItem> cartItemRepository)
         {
@@ -21,7 +20,7 @@ namespace ShoppingAppBLLLibrary
 
         public int AddCartItem(CartItem cartItem)
         {
-            cartItem.Id = ++idCount;
+          
             var retrivedCart = _cartItemRepository.Add(cartItem);
             if (retrivedCart != null)
             {
