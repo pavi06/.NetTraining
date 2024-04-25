@@ -10,16 +10,34 @@ namespace ShoppingAppModelLibrary
     {
         public int Id { get; set; }
         public int CustomerId { get; set; }
-        public Customer Customer { get; set; }//Navigation property
-        public List<CartItem> CartItems { get; set; }//Navigation property
+        public Customer Customer { get; set; } = new Customer();
+        public List<CartItem> CartItems { get; set; } = new List<CartItem>();
 
         public Cart() { }
-        public Cart(int id, int customerId, Customer customer, List<CartItem> cartItems)
+
+        public Cart(int customerId,Customer customer,List<CartItem> cartItems)
+        {
+            CustomerId = customerId;
+            Customer = customer;
+            CartItems = cartItems;
+        }
+        public Cart(int id, int customerId,Customer customer,List<CartItem> cartItems)
         {
             Id = id;
             CustomerId = customerId;
             Customer = customer;
             CartItems = cartItems;
+        }
+
+        public override bool Equals(object? obj)
+        {
+            Cart Obj1 = obj as Cart;
+            return this.CustomerId == Obj1.CustomerId && this.Customer == Obj1.Customer && this.CartItems == Obj1.CartItems;
+        }
+
+        public override string ToString()
+        {
+            return "Id: "+Id+"Customer ID : "+CustomerId;
         }
     }
 }

@@ -2,10 +2,11 @@
 {
     public abstract class AbstractRepository<K, T> : IRepository<K, T>
     {
-        protected IList<T> items = new List<T>();
+        protected List<T> items = new List<T>();
         public virtual T Add(T item)
         {
             items.Add(item);
+            Console.WriteLine("added successfully");
             return item;
         }
         public virtual ICollection<T> GetAll()

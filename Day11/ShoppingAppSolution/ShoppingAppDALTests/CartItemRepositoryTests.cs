@@ -16,7 +16,7 @@ namespace ShoppingAppDALTests
         public void Setup()
         {
             cartItemRepository = new CartItemRepository();
-            CartItem cartItem = new CartItem(1,1,1, new Product(1, "Apple", 45.0, "Food", 10),2,90, new DateTime(2024, 07, 03));
+            CartItem cartItem = new CartItem(1,1,1, new Product(1, "Apple", 45.0, "Food", 10),2,90, 0,new DateTime(2024, 07, 03));
             cartItemRepository.Add(cartItem);
         }
 
@@ -24,7 +24,7 @@ namespace ShoppingAppDALTests
         public void AddCartItemSuccessTest()
         {
             //Arrange 
-            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90, new DateTime(2024, 07, 03));
+            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90,0, new DateTime(2024, 07, 03));
             //Action
             var result = cartItemRepository.Add(cartItem);
             //Assert
@@ -35,7 +35,7 @@ namespace ShoppingAppDALTests
         public void AddCartItemFailTest()
         {
             //Arrange 
-            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90, new DateTime(2024, 07, 03));
+            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90,0, new DateTime(2024, 07, 03));
             //Action
             var result = cartItemRepository.Add(cartItem);
             //Assert
@@ -73,7 +73,7 @@ namespace ShoppingAppDALTests
         [Test]
         public void UpdateCartItemByIdPassTest()
         {
-            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90, new DateTime(2024, 07, 03));
+            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90,0, new DateTime(2024, 07, 03));
             CartItem updatedCartItem = cartItemRepository.Update(cartItem);
             Assert.IsNotNull(updatedCartItem);
         }
@@ -81,7 +81,7 @@ namespace ShoppingAppDALTests
         [Test]
         public void UpdateCartItemByIdFailTest()
         {
-            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90, new DateTime(2024, 07, 03));
+            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90,0, new DateTime(2024, 07, 03));
             CartItem updatedCartItem = cartItemRepository.Update(cartItem);
             Assert.IsNull(updatedCartItem);
         }

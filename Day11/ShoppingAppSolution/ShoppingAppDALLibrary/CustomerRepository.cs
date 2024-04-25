@@ -12,10 +12,18 @@ namespace ShoppingAppDALLibrary
     {
         public override Customer Add(Customer item)
         {
-            if (items.ToList().Exists(c => c.Name == item.Name && c.PhoneNumber == item.PhoneNumber && c.Address == item.Address)) {
+            if (items.Contains(item))
+            {
                 return null;
             }
-            item.Id = items.Max(c => c.Id) +1 ;
+            if(items.Count() > 0)
+            {
+                item.Id = items.Max(c => c.Id) + 1;
+            }
+            else
+            {
+                item.Id = 1;
+            }
             return base.Add(item);
         }
         public override Customer Delete(int key)

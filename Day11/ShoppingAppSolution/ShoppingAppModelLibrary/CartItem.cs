@@ -14,18 +14,30 @@ namespace ShoppingAppModelLibrary
         public Product Product { get; set; }//Navigation property
         public int Quantity { get; set; }
         public double Price { get; set; }
+        public double Discount { get; set; }
         public DateTime PriceExpiryDate { get; set; }
 
-        public CartItem(int cartId, int productId, Product product, int quantity, double price,  DateTime priceExpiryDate)
+        public CartItem(int productId, Product product, int quantity, double price, double discount, DateTime priceExpiryDate)
+        {
+            
+            ProductId = productId;
+            Product = product;
+            Quantity = quantity;
+            Price = price;
+            Discount = discount;
+            PriceExpiryDate = priceExpiryDate;
+        }
+        public CartItem(int cartId, int productId, Product product, int quantity, double price, double discount, DateTime priceExpiryDate)
         {
             CartId = cartId;
             ProductId = productId;
             Product = product;
             Quantity = quantity;
             Price = price;
+            Discount = discount;
             PriceExpiryDate = priceExpiryDate;
         }
-        public CartItem(int id,int cartId, int productId, Product product, int quantity, double price, DateTime priceExpiryDate)
+        public CartItem(int id,int cartId, int productId, Product product, int quantity, double price, double discount, DateTime priceExpiryDate)
         {
             Id = id;
             CartId = cartId;
@@ -33,7 +45,13 @@ namespace ShoppingAppModelLibrary
             Product = product;
             Quantity = quantity;
             Price = price;
+            Discount = discount;
             PriceExpiryDate = priceExpiryDate;
+        }
+
+        public override string ToString()
+        {
+            return "Product Id : "+ProductId + "Quantity : "+Quantity+"Price : "+Price+"Discount : "+Discount+"Price Expiry Date: "+PriceExpiryDate;
         }
     }
 }

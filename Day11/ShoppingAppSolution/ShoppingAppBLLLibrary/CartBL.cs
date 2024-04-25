@@ -68,6 +68,18 @@ namespace ShoppingAppBLLLibrary
             throw new NoObjectsAvailableException("No Items where added to the cart");
         }
 
+        public List<CartItem> GetAllCartItemsWithDiscount(int cartId)
+        {
+            var cartItems = GetCartItemsByCartId(cartId);
+            var itemsWithDiscount = from c in cartItems
+                                    where c.Discount > 0
+                                    select c;
+            if (itemsWithDiscount.Count() > 0) { 
+                return itemsWithDiscount.ToList();
+            }
+            throw new NoObjectsAvailableException("No Items with discount where added to the cart");
+        }
+
         public int GetCartItemsCount(int cartId)
         {
             var count = GetCartItemsByCartId(cartId).Count();
@@ -100,9 +112,10 @@ namespace ShoppingAppBLLLibrary
             double totalAmount = 0.0;
             foreach (var item in cartItems)
             {
+                double price = item.Price - (item.Discount / 100) * item.Price;
                 if (item.PriceExpiryDate > DateTime.Now)
-                {
-                    totalAmount += item.Price * item.Quantity;
+                {                    
+                    totalAmount += price * item.Quantity;
                 }
                 else
                 {
@@ -129,6 +142,24 @@ namespace ShoppingAppBLLLibrary
                 return 100;
             }
             return 0;
+        }
+
+        public List<Cart> GetAllCarts()
+        {
+            var cartList = _cartRepository.GetAll();
+            if(cartList != null)
+            {
+                return cartList.ToList();
+            }
+            throw new NoObjectsAvailableException("No carts Available!");
+        }
+
+        public Cart GetCartByCustomerId(int customerId)
+        {
+            var carts = GetAllCarts();
+            var customerCart = carts.FirstOrDefault(c => c.CustomerId == customerId);
+            return customerCart;
+            
         }
     }
 }

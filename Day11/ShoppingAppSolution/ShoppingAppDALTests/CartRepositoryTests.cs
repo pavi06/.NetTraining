@@ -20,7 +20,7 @@ namespace ShoppingAppDALTests
         {
             cartRepository = new CartRepository();
             List<CartItem> cartItems = new List<CartItem>();
-            cartItems.Add(new CartItem(0,0,new Product(0,"Stick Pen Box", 240.0, "Stationary",40),2,480,new DateTime(2024,05,12)));
+            cartItems.Add(new CartItem(1,0,new Product(0,"Stick Pen Box", 240.0, "Stationary",40),2,480,0,new DateTime(2024,05,12)));
             Cart cart = new Cart() { CustomerId = 0, Customer = new Customer(0,"Pavi","78786756456", "no.3 nehru street, chennai"), CartItems = cartItems };
             cartRepository.Add(cart);
         }
@@ -30,7 +30,7 @@ namespace ShoppingAppDALTests
         {
             //Arrange 
             List<CartItem> cartItems = new List<CartItem>();
-            cartItems.Add(new CartItem(1, 0, new Product(1, "Sketch Pen", 150.0, "Stationary", 40), 2, 300, new DateTime(2024, 05, 12)));
+            cartItems.Add(new CartItem(1, 0, new Product(1, "Sketch Pen", 150.0, "Stationary", 40), 2, 300,0, new DateTime(2024, 05, 12)));
             Cart cart = new Cart() { CustomerId = 1, Customer = new Customer(0,"Pavi", "97866464" , "no.5 guru nagar, chennai"), CartItems = cartItems };
             //Action
             var result = cartRepository.Add(cart);
@@ -43,8 +43,8 @@ namespace ShoppingAppDALTests
         {
             //Arrange 
             List<CartItem> cartItems = new List<CartItem>();
-            cartItems.Add(new CartItem(1, 0, new Product(1, "Sketch Pen", 150.0, "Stationary", 40), 2, 300, new DateTime(2024, 05, 12)));
-            Cart cart = new Cart() { Id=0, CustomerId = 1, Customer = new Customer(0, "Pavi","97866464", "no.5 guru nagar, chennai"), CartItems = cartItems };
+            cartItems.Add(new CartItem(1, 0, new Product(1, "Sketch Pen", 150.0, "Stationary", 40), 2, 300,0, new DateTime(2024, 05, 12)));
+            Cart cart = new Cart() { CustomerId = 1, Customer = new Customer(0, "Pavi","97866464", "no.5 guru nagar, chennai"), CartItems = cartItems };
             //Action
             var result = cartRepository.Add(cart);
             //Assert
@@ -82,17 +82,16 @@ namespace ShoppingAppDALTests
         [Test]
         public void UpdateCartByIdPassTest()
         {
-            List<CartItem> cartItems = new List<CartItem>();
-            Cart cart = new Cart() { Id = 0, CustomerId = 1, Customer = new Customer(0, "Pavithra", "978675644", "no.5 guru nagar, chennai"), CartItems = cartItems };
+            Cart cart = cartRepository.GetByKey(1);
+            cart.CustomerId = 2;
             Cart updatedCart = cartRepository.Update(cart);
             Assert.IsNotNull(updatedCart);
         }
 
         [Test]
-        public void UpdateProductByIdFailTest()
+        public void UpdateCartByIdFailTest()
         {
-            List<CartItem> cartItems = new List<CartItem>();
-            Cart cart = new Cart() { Id = 2, CustomerId = 2, Customer = new Customer(0, "Pavi", "97866464", "no.5 guru nagar, chennai"), CartItems = cartItems };
+            Cart cart = cartRepository.GetByKey(3);
             Cart updatedCart = cartRepository.Update(cart);
             Assert.IsNull(updatedCart);
         }
@@ -100,14 +99,14 @@ namespace ShoppingAppDALTests
         [Test]
         public void GetAllCartsPassTest()
         {
-            List<Cart> cartList = (List<Cart>)cartRepository.GetAll();
+            List<Cart> cartList = cartRepository.GetAll().ToList();
             Assert.IsNotEmpty(cartList);
         }
 
         [Test]
         public void GetAllCartsFailTest()
         {
-            List<Cart> products = (List<Cart>)cartRepository.GetAll();
+            List<Cart> products = cartRepository.GetAll().ToList();
             Assert.IsEmpty(products);
         }
     }

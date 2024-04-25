@@ -21,7 +21,7 @@ namespace ShoppingAppBLLTests
 
             cartRepository = new CartRepository();
             List<CartItem> cartItems = new List<CartItem>();
-            cartItems.Add(new CartItem(0, 0, new Product(0, "Stick Pen Box", 240.0, "Stationary", 40), 2, 480, new DateTime(2024, 05, 12)));
+            cartItems.Add(new CartItem(0, 0, new Product(0, "Stick Pen Box", 240.0, "Stationary", 40), 2, 480,0, new DateTime(2024, 05, 12)));
             Cart cart = new Cart() { CustomerId = 0, Customer = new Customer(0, "Pavi", "78786756456", "no.3 nehru street, chennai"), CartItems = cartItems };
             cartRepository.Add(cart);
             cartService = new CartBL(cartRepository);
@@ -32,7 +32,7 @@ namespace ShoppingAppBLLTests
         {
             //Arrange
             List<CartItem> cartItems = new List<CartItem>();
-            cartItems.Add(new CartItem(0, 0, new Product(0, "Stick Pen Box", 240.0, "Stationary", 40), 2, 480, new DateTime(2024, 05, 12)));
+            cartItems.Add(new CartItem(0, 0, new Product(0, "Stick Pen Box", 240.0, "Stationary", 40), 2, 480,0, new DateTime(2024, 05, 12)));
             Cart cart = new Cart() { CustomerId = 0, Customer = new Customer(0, "Pavi", "78786756456", "no.3 nehru street, chennai"), CartItems = cartItems };
             //action
             var addedCart = cartService.AddCart(cart);
@@ -45,8 +45,8 @@ namespace ShoppingAppBLLTests
         public void CartAlreadyExistsExceptionTest()
         {
             List<CartItem> cartItems = new List<CartItem>();
-            cartItems.Add(new CartItem(0, 0, new Product(0, "Stick Pen Box", 240.0, "Stationary", 40), 2, 480, new DateTime(2024, 05, 12)));
-            Cart cart = new Cart() {Id =1, CustomerId = 0, Customer = new Customer(0, "Pavi", "78786756456", "no.3 nehru street, chennai"), CartItems = cartItems };
+            cartItems.Add(new CartItem(0, 0, new Product(0, "Stick Pen Box", 240.0, "Stationary", 40), 2, 480,0, new DateTime(2024, 05, 12)));
+            Cart cart = new Cart() { CustomerId = 0, Customer = new Customer(0, "Pavi", "78786756456", "no.3 nehru street, chennai"), CartItems = cartItems };
             //Action
             var exception = Assert.Throws<ObjectAlreadyExistsException>(() => cartService.AddCart(cart));
             //Assert
@@ -69,7 +69,7 @@ namespace ShoppingAppBLLTests
             int id = 3;
             var exception = Assert.Throws<ObjectNotAvailableException>(() => cartService.GetCartById(id));
             //Assert
-            Assert.AreEqual($"Cart with id - {id} not available!", exception.Message);
+            Assert.AreEqual($"Cart with id - {id} not Available!", exception.Message);
         }
 
         [Test]
@@ -88,7 +88,7 @@ namespace ShoppingAppBLLTests
             int id = 3;
             var exception = Assert.Throws<ObjectNotAvailableException>(() => cartService.DeleteCartById(id));
             //Assert
-            Assert.AreEqual($"Cart with id - {id} not available!", exception.Message);
+            Assert.AreEqual($"Cart with id - {id} not Available!", exception.Message);
         }
 
 
@@ -105,11 +105,11 @@ namespace ShoppingAppBLLTests
         public void UpdateCartItemExceptionTest()
         {
             List<CartItem> cartItems = new List<CartItem>();
-            cartItems.Add(new CartItem(0, 0, new Product(0, "Stick Pen Box", 240.0, "Stationary", 40), 2, 480, new DateTime(2024, 05, 12)));
+            cartItems.Add(new CartItem(0, 0, new Product(0, "Stick Pen Box", 240.0, "Stationary", 40), 2, 480,0, new DateTime(2024, 05, 12)));
             Cart cart = new Cart() { Id = 1,CustomerId = 0, Customer = new Customer(0, "Pavi", "78786756456", "no.3 nehru street, chennai"), CartItems = cartItems };
             var exception = Assert.Throws<ObjectNotAvailableException>(() => cartService.UpdateCart(cart));
             //Assert
-            Assert.AreEqual($"Cart with id - {cart.Id} not available!", exception.Message);
+            Assert.AreEqual($"Cart with id - {cart.Id} not Available!", exception.Message);
         }
 
         

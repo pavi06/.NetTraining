@@ -14,6 +14,7 @@ namespace ShoppingAppBLLTests
     {
 
         IRepository<int, CartItem> cartItemRepository;
+        IRepository<int, Cart> cartRepository;
         ICartItemService cartItemService;
 
         [SetUp]
@@ -21,18 +22,19 @@ namespace ShoppingAppBLLTests
         {
 
             cartItemRepository = new CartItemRepository();
-            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90, new DateTime(2024, 07, 03));
+            cartRepository = new CartRepository();
+            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90,0, new DateTime(2024, 07, 03));
             cartItemRepository.Add(cartItem);
-            cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90, new DateTime(2024, 07, 03));
+            cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90,0, new DateTime(2024, 07, 03));
             cartItemRepository.Add(cartItem);
-            cartItemService = new CartItemBL(cartItemRepository);
+            cartItemService = new CartItemBL(cartItemRepository,cartRepository);
         }
 
         [Test]
         public void AddCartItemPassTest()
         {
             //Arrange
-            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90, new DateTime(2024, 07, 03));
+            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90,0, new DateTime(2024, 07, 03));
             //action
             var addedCustomer = cartItemService.AddCartItem(cartItem);
             //Assert
@@ -43,7 +45,7 @@ namespace ShoppingAppBLLTests
         [Test]
         public void CartItemAlreadyExistsExceptionTest()
         {
-            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90, new DateTime(2024, 07, 03));
+            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90,0, new DateTime(2024, 07, 03));
             //Action
             var exception = Assert.Throws<ObjectAlreadyExistsException>(() => cartItemService.AddCartItem(cartItem));
             //Assert
@@ -92,7 +94,7 @@ namespace ShoppingAppBLLTests
         [Test]
         public void UpdateCartItemPassTest()
         {
-            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90, new DateTime(2024, 07, 03));
+            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90,0, new DateTime(2024, 07, 03));
             var updatedProduct = cartItemService.UpdateCartItem(cartItem);
             Assert.IsNotNull(updatedProduct);
 
@@ -100,7 +102,7 @@ namespace ShoppingAppBLLTests
         [Test]
         public void UpdateCartItemExceptionTest()
         {
-            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90, new DateTime(2024, 07, 03));
+            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90,0, new DateTime(2024, 07, 03));
             var exception = Assert.Throws<ObjectNotAvailableException>(() => cartItemService.UpdateCartItem(cartItem));
             //Assert
             Assert.AreEqual($"CartItem with id - {cartItem.Id} not available!", exception.Message);
@@ -109,7 +111,7 @@ namespace ShoppingAppBLLTests
         [Test]
         public void UpdateQuantityPassTest()
         {
-            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 50), 2, 90, new DateTime(2024, 07, 03));
+            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 50), 2, 90,0, new DateTime(2024, 07, 03));
             var updatedCart = cartItemService.UpdateCartItem(cartItem);
             Assert.IsNotNull(updatedCart);
 
@@ -117,7 +119,7 @@ namespace ShoppingAppBLLTests
         [Test]
         public void UpdateQuantityExceptionTest()
         {
-            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90, new DateTime(2024, 07, 03));
+            CartItem cartItem = new CartItem(1, 1, 1, new Product(1, "Apple", 45.0, "Food", 10), 2, 90,0, new DateTime(2024, 07, 03));
             var exception = Assert.Throws<ObjectNotAvailableException>(() => cartItemService.UpdateCartItem(cartItem));
             //Assert
             Assert.AreEqual($"CartItem with id - {cartItem.Id} not available!", exception.Message);

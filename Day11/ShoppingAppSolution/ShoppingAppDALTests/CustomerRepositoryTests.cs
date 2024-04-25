@@ -14,9 +14,9 @@ namespace ShoppingAppDALTests
         [SetUp]
         public void Setup()
         {
-            customerRepository = new CustomerRepository();
-            Customer customer = new Customer() { Name = "Pavi", PhoneNumber = "97677646", Address = "no.3 chennai"};
-            customerRepository.Add(customer);
+            //customerRepository = new CustomerRepository();
+            //Customer customer = new Customer() { Name = "Pavi", PhoneNumber = "97677646", Address = "no.3 chennai"};
+            //customerRepository.Add(customer);
         }
 
         [Test]
@@ -34,7 +34,7 @@ namespace ShoppingAppDALTests
         public void AddCustomerFailTest()
         {
             //Arrange 
-            Customer customer = new Customer() { Id = 1, Name = "Pavi", PhoneNumber = "97677646", Address = "no.3 chennai" };
+            Customer customer = new Customer() { Name = "Pavi", PhoneNumber = "97677646", Address = "no.3 chennai" };
             //Action
             var result = customerRepository.Add(customer);
             //Assert
@@ -89,14 +89,14 @@ namespace ShoppingAppDALTests
         [Test]
         public void GetAllCustomersPassTest()
         {
-            List<Customer> customers = (List<Customer>)customerRepository.GetAll();
+            List<Customer> customers = customerRepository.GetAll().ToList();
             Assert.IsNotEmpty(customers);
         }
 
         [Test]
         public void GetAllCustomersFailTest()
         {
-            List<Customer> customers = (List<Customer>)customerRepository.GetAll();
+            List<Customer> customers = customerRepository.GetAll().ToList();
             Assert.IsEmpty(customers);
         }
     }

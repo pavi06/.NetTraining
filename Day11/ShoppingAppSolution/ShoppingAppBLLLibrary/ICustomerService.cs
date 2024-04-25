@@ -11,6 +11,7 @@ namespace ShoppingAppBLLLibrary
     {
         int AddCustomer(Customer customer);
         Customer GetCustomerById(int id);
+        List<CartItem> GetCartByCustomerId(int id);
         List<Customer> GetAllCustomer();
         Customer DeleteCustomerById(int id);
         Customer UpdateCustomer(Customer customer);

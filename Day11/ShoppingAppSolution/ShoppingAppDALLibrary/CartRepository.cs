@@ -11,11 +11,17 @@ namespace ShoppingAppDALLibrary
     {
         public override Cart Add(Cart item)
         {
-            if (items.ToList().Exists(c=> c.CustomerId == item.CustomerId && c.Customer == item.Customer && c.CartItems == item.CartItems))
+            if (items.Contains(item))
             {
                 return null;
             }
-            item.Id = items.Max(c => c.Id) + 1;
+            if (items.Count() > 0)
+            {
+                item.Id = items.Max(c => c.Id) + 1;
+            }
+            else { 
+                item.Id = 1;
+            }
             return base.Add(item);
         }
         public override Cart Delete(int key)

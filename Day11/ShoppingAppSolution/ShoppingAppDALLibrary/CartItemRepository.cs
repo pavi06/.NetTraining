@@ -15,7 +15,13 @@ namespace ShoppingAppDALLibrary
             {
                 return null;
             }
-            item.Id = items.Max(c => c.Id) + 1;
+            if (items.Count() > 0)
+            {
+                item.Id = items.Max(c => c.Id) + 1;
+            }
+            else {
+                item.Id = 1;
+            }
             return base.Add(item);
         }
         public override CartItem Delete(int key)

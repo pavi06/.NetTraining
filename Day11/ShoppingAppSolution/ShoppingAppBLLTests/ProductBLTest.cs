@@ -40,7 +40,7 @@ namespace ShoppingAppBLLTests
 
 
         [Test]
-        public void ProductAlreadyExistsExceptionTest()
+        public void AddProductExceptionTest()
         {
             Product product = new Product() { Name = "Painting Canvas", Category = "Stationary", Price = 350.0, Image = "https://demoWaterBottle/w1", QuantityInHand = 40 };
             //Action
@@ -59,7 +59,7 @@ namespace ShoppingAppBLLTests
         }
 
         [Test]
-        public void ProductNotAvailableExceptionTest()
+        public void GetProductExceptionTest()
         {
             //Action
             int id = 3;
@@ -78,7 +78,7 @@ namespace ShoppingAppBLLTests
         }
 
         [Test]
-        public void DeleteProductNotAvailableExceptionTest()
+        public void DeleteProductExceptionTest()
         {
             //Action
             int id = 3;
@@ -91,7 +91,8 @@ namespace ShoppingAppBLLTests
         [Test]
         public void UpdateProductPassTest()
         {
-            Product product = new Product() { Id=1,Name = "Painting Canvas", Category = "Stationary", Price = 350.0, Image = "https://demoWaterBottle/w1", QuantityInHand = 40 };
+            Product product = productService.GetProductById(1);
+            product.Category = "Necessity";
             var updatedProduct = productService.UpdateProduct(product);
             Assert.IsNotNull(updatedProduct);
 
@@ -108,7 +109,8 @@ namespace ShoppingAppBLLTests
         [Test]
         public void UpdateProductPricePassTest()
         {
-            Product product = new Product() { Id=1,Name = "Painting Canvas", Category = "Stationary", Price = 350.0, Image = "https://demoWaterBottle/w1", QuantityInHand = 40 };
+            Product product = productService.GetProductById(1);
+            product.Price = 450.89; 
             var updatedProduct = productService.UpdateProduct(product);
             Assert.IsNotNull(updatedProduct);
 
@@ -116,10 +118,30 @@ namespace ShoppingAppBLLTests
         [Test]
         public void UpdateProductPriceExceptionTest()
         {
-            Product product = new Product() { Id=3,Name = "Painting Canvas", Category = "Stationary", Price = 350.0, Image = "https://demoWaterBottle/w1", QuantityInHand = 40 };
+            Product product = productService.GetProductById(1);
+            product.Price = 450.89; 
             var exception = Assert.Throws<ObjectNotAvailableException>(() => productService.UpdateProduct(product));
             //Assert
-            Assert.AreEqual($"Customer with id - {product.Id} not available!", exception.Message);
+            Assert.AreEqual($"Product with id - {product.Id} not available!", exception.Message);
+        }
+
+        [Test]
+        public void UpdateProductQuantityPassTest()
+        {
+            Product product = productService.GetProductById(1);
+            product.QuantityInHand = 450;
+            var updatedProduct = productService.UpdateProduct(product);
+            Assert.IsNotNull(updatedProduct);
+
+        }
+        [Test]
+        public void UpdateProductQuantityExceptionTest()
+        {
+            Product product = productService.GetProductById(3);
+            product.QuantityInHand = 45;
+            var exception = Assert.Throws<ObjectNotAvailableException>(() => productService.UpdateProduct(product));
+            //Assert
+            Assert.AreEqual($"Product with id - {product.Id} not available!", exception.Message);
         }
 
     }

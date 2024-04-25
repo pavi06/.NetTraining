@@ -1,0 +1,15 @@
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\bin\Debug\net8.0\LINQBasics.exe
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\bin\Debug\net8.0\LINQBasics.deps.json
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\bin\Debug\net8.0\LINQBasics.runtimeconfig.json
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\bin\Debug\net8.0\LINQBasics.dll
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\bin\Debug\net8.0\LINQBasics.pdb
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\obj\Debug\net8.0\LINQBasics.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\obj\Debug\net8.0\LINQBasics.AssemblyInfoInputs.cache
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\obj\Debug\net8.0\LINQBasics.AssemblyInfo.cs
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\obj\Debug\net8.0\LINQBasics.csproj.CoreCompileInputs.cache
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\obj\Debug\net8.0\LINQBasics.sourcelink.json
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\obj\Debug\net8.0\LINQBasics.dll
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\obj\Debug\net8.0\refint\LINQBasics.dll
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\obj\Debug\net8.0\LINQBasics.pdb
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\obj\Debug\net8.0\LINQBasics.genruntimeconfig.cache
+C:\dotNet\Day12\LINQBasicsSolution\LINQBasics\obj\Debug\net8.0\ref\LINQBasics.dll

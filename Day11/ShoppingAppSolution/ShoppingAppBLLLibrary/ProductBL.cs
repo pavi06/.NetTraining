@@ -60,6 +60,33 @@ namespace ShoppingAppBLLLibrary
             throw new NoObjectsAvailableException("No Products Available!");
         }
 
+        public List<Product> GetAllProductByAttribute(string attribute, string attributeValue)
+        {
+            
+            var products = GetAllProduct();
+            if (attribute.ToLower() == "category")
+            {
+                var productListByCategory = from p in products
+                                            where p.Category.ToLower() == attributeValue.ToLower()
+                                            select p;
+                if (productListByCategory.Count() > 0)
+                    return productListByCategory.ToList();
+            }
+            else if (attribute.ToLower() == "name") {
+                var productListByCategory = from p in products
+                                            where p.Name.ToLower() == attributeValue.ToLower()
+                                            select p;
+                if (productListByCategory.Count() > 0)
+                    return productListByCategory.ToList();
+            }
+            else
+            {
+                throw new NullValueException("No such item can be found!"); 
+            }
+            
+            throw new NoObjectsAvailableException($"No Products Available under {attributeValue} {attribute}!"); 
+        }
+
         public Product UpdateProduct(Product product)
         {
             var updatedProduct = _productRepository.Update(product);
@@ -93,5 +120,54 @@ namespace ShoppingAppBLLLibrary
             return false;
         }
 
+        public List<Product> GetAllProductByCategoryAndPriceLimit(string category, double price)
+        {
+            var products = GetAllProductByAttribute("category", category);
+            var filteredProducts = from p in products
+                                   where p.Price <=price
+                                   select p;
+            if (filteredProducts.ToList().Count() > 0) { 
+                return filteredProducts.ToList();
+            }
+            throw new NoObjectsAvailableException($"No {category} Available under {price} price!"); ;
+        }
+
+        public List<string> GetAllProductsName()
+        {
+            List<string> productNames = new List<string>();
+            var products = GetAllProduct();
+            foreach ( var p in products )
+            {
+                productNames.Add(p.Name);
+            }
+            if(productNames.Count > 0)
+            {
+                return productNames;
+            }
+            throw new NoObjectsAvailableException("No products Available!");
+        }
+
+        public List<string> GetAllCategoriesAvailable()
+        {
+            List<string> catagories = new List<string>();
+            var products = GetAllProduct();
+            foreach (var p in products)
+            {
+                catagories.Add(p.Category);
+            }
+            if (catagories.Count > 0)
+            {
+                return catagories;
+            }
+            throw new NoObjectsAvailableException("No products Available!");
+        }
+
+        //public List<Product> GetAllProductByDiscount()
+        //{
+        //    var products = GetAllProduct();
+        //    var filteredProducts = from p in products
+        //                           where p
+        //    throw new NotImplementedException();
+        //}
     }
 }

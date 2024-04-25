@@ -15,6 +15,7 @@ namespace ShoppingAppBLLLibrary
         CartItem UpdateCartItem(CartItem cartItem);
         bool UpdateQuantityById(int cartId, int quantity);
         bool UpdatePriceExpiryDateById(int cartId, DateTime dateTime);
+        bool UpdateDiscountById(int id, double discount);
         bool UpdateCartIdById(int newCartId, int id);
 
     }

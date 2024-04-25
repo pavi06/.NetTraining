@@ -12,10 +12,12 @@ namespace ShoppingAppBLLLibrary
     public class CustomerBL : ICustomerService
     {
         readonly IRepository<int, Customer> _customerRepository;
+        readonly IRepository<int, Cart> _cartRepository;
 
-        public CustomerBL(IRepository<int, Customer> customerRepository)
+        public CustomerBL(IRepository<int, Customer> customerRepository, IRepository<int, Cart> cartRepository)
         {
             _customerRepository = customerRepository;
+            _cartRepository = cartRepository;
         }
         public int AddCustomer(Customer customer)
         {
@@ -45,6 +47,16 @@ namespace ShoppingAppBLLLibrary
                 return customerList.ToList();
             }
             throw new NoObjectsAvailableException("No Customers Available!");
+        }
+
+        public List<CartItem> GetCartByCustomerId(int id)
+        {
+            var cartList = _cartRepository.GetAll();
+            //if (cartList.Any(c => c.CustomerId == id)) { 
+            //    return cartList.First(c => c.CustomerId == id).CartItems;
+            //}
+            return cartList.FirstOrDefault(c => c.CustomerId == id).CartItems;
+            //throw new ObjectNotAvailableException($"Cart for the customer id - {id} is not available!");
         }
 
         public Customer GetCustomerById(int id)

@@ -1,6 +1,6 @@
 ﻿namespace ShoppingAppModelLibrary
 {
-    public class Product : IEquatable<Product>
+    public class Product
     {
         public int Id { get; set; }
         public double Price { get; set; }
@@ -17,9 +17,10 @@
                 "\nNos in Stock : " + QuantityInHand;
         }
 
-        public bool Equals(Product? other)
+        public override bool Equals(object? obj)
         {
-            return this.Id.Equals(other.Id);
+            Product obj1 = obj as Product;
+            return this.Name == obj1.Name && this.Price == obj1.Price && this.Category == obj1.Category && this.Image == obj1.Image && this.QuantityInHand==obj1.QuantityInHand;
         }
 
         public Product()

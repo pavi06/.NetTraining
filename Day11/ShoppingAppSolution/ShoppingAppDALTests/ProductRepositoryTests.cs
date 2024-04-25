@@ -10,9 +10,9 @@ namespace ShoppingAppDALTests
         [SetUp]
         public void Setup()
         {
-            productRepository = new ProductRepository();
-            Product product = new Product() { Name = "Painting Canvas", Category = "Stationary", Price = 350.0, Image = "https://demoWaterBottle/w1", QuantityInHand = 40 };
-            productRepository.Add(product);
+            //productRepository = new ProductRepository();
+            //Product product = new Product() { Name = "Painting Canvas", Category = "Stationary", Price = 350.0, Image = "https://demoWaterBottle/w1", QuantityInHand = 40 };
+            //productRepository.Add(product);
         }
 
         [Test]
@@ -83,14 +83,14 @@ namespace ShoppingAppDALTests
         [Test]
         public void GetAllProductsPassTest()
         {
-            List<Product> products = (List<Product>)productRepository.GetAll();
+            var products = productRepository.GetAll().ToList();
             Assert.IsNotEmpty(products);
         }
 
         [Test]
         public void GetAllProductsFailTest()
         {
-            List<Product> products = (List<Product>)productRepository.GetAll();
+            var products =productRepository.GetAll().ToList();
             Assert.IsEmpty(products);
         }
 

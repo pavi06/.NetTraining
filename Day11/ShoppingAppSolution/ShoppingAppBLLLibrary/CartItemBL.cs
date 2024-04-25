@@ -12,10 +12,13 @@ namespace ShoppingAppBLLLibrary
     public class CartItemBL : ICartItemService
     {
         readonly IRepository<int, CartItem> _cartItemRepository;
+        readonly IRepository<int, Cart> _cartRepository;
 
-        public CartItemBL(IRepository<int, CartItem> cartItemRepository)
+        public CartItemBL(IRepository<int, CartItem> cartItemRepository, IRepository<int, Cart> cartRepository)
         {
             _cartItemRepository = cartItemRepository;
+            _cartRepository = cartRepository;
+            CartBL cartBl = new CartBL(_cartRepository);
         }
 
         public int AddCartItem(CartItem cartItem)
@@ -24,6 +27,17 @@ namespace ShoppingAppBLLLibrary
             var retrivedCart = _cartItemRepository.Add(cartItem);
             if (retrivedCart != null)
             {
+                Cart cart;
+                cart = _cartRepository.GetByKey(cartItem.CartId);
+                if (cart.CartItems.Count() < 5)
+                    cart.CartItems.Add(cartItem);
+                else
+                    throw new CartLimitExceedsException();
+                var updatedCart = _cartRepository.Update(cart);
+                if (updatedCart == null)
+                {
+                    throw new ObjectNotAvailableException($"Cart with id - {cart.Id} not Available!");
+                }
                 return retrivedCart.Id;
             }
             throw new ObjectAlreadyExistsException("CartItem");
@@ -31,10 +45,18 @@ namespace ShoppingAppBLLLibrary
 
         public CartItem DeleteCartItem(int cartId)
         {
-            var cart = _cartItemRepository.Delete(cartId);
-            if (cart != null)
+            var cartItem = _cartItemRepository.Delete(cartId);
+            if (cartItem != null)
             {
-                return cart;
+                Cart cart = new Cart();
+                cart = _cartRepository.GetByKey(cartItem.CartId);
+                cart.CartItems.Remove(cartItem);
+                var updatedCart = _cartRepository.Update(cart);
+                if (updatedCart == null)
+                {
+                    throw new ObjectNotAvailableException($"Cart with id - {cart.Id} not Available!");
+                }
+                return cartItem;
             }
             throw new ObjectNotAvailableException($"CartItem with id - {cartId} not Available!");
         }
@@ -87,6 +109,18 @@ namespace ShoppingAppBLLLibrary
         {
             var cartItem = GetCartItemById(cartId);
             cartItem.Quantity = quantity;
+            var updateProduct = UpdateCartItem(cartItem);
+            if (updateProduct != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool UpdateDiscountById(int id, double discount)
+        {
+            var cartItem = GetCartItemById(id);
+            cartItem.Discount = discount;
             var updateProduct = UpdateCartItem(cartItem);
             if (updateProduct != null)
             {
