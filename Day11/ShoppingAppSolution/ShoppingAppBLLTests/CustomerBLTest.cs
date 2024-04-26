@@ -22,18 +22,21 @@ namespace ShoppingAppBLLTests
             customerRepository.Add(customer);
             customer = new Customer() { Id = 2, Name = "Viji", PhoneNumber = "97677646", Address = "no.5 chennai" };
             customerRepository.Add(customer);
+            Cart cart = new Cart() { CustomerId = 1, Customer = new Customer(1, "Pavi", "78786756456", "no.3 nehru street, chennai"), CartItems = new List<CartItem>() };
+            cartRepository.Add(cart);
             customerService = new CustomerBL(customerRepository, cartRepository);
         }
 
         [Test]
         public void AddCustomerPassTest()
         {
-            //Arrange
-            Customer customer = new Customer() { Name = "Pavithra ", PhoneNumber = "9769878646", Address = "no.3 chennai" };
+            //Arrange`
+            Customer customer = new Customer(4, "Pavithra Pazhanivel", "9769878646",  "no.3 chennai" );
             //action
-            var addedCustomer = customerService.AddCustomer(customer);
+            int addedCustomer = 0;
+            addedCustomer = customerService.AddCustomer(customer);
             //Assert
-            Assert.IsNotNull(addedCustomer);
+            Assert.AreEqual(4,addedCustomer);
         }
 
 
@@ -126,18 +129,15 @@ namespace ShoppingAppBLLTests
         [Test]
         public void UpdateCustomerAddressPassTest()
         {
-            var customer = customerService.GetCustomerById(1);
-            customer.Address = "no.3 chennai, tamilNadu"; 
-            var updatedCustomer = customerService.UpdateCustomer(customer);
-            Assert.IsNotNull(updatedCustomer);
+            var result = customerService.UpdateCustomerAddressById(1, "786456545646");
+            Assert.IsTrue(result);
 
         }
         [Test]
         public void UpdateCustomerAddressExceptionTest()
         {
             var customer = customerService.GetCustomerById(3);
-            customer.Address = "no.3 chennai, tamilNadu";
-            var exception = Assert.Throws<ObjectNotAvailableException>(() => customerService.UpdateCustomerAddressById(customer));
+            var exception = Assert.Throws<ObjectNotAvailableException>(() => customerService.UpdateCustomerAddressById(customer.Id, "no.3 chennai, tamilNadu"));
             //Assert
             Assert.AreEqual($"Customer with id - {customer.Id} not Available!", exception.Message);
         }
@@ -145,20 +145,17 @@ namespace ShoppingAppBLLTests
         [Test]
         public void UpdateCustomerPhoneNumberPassTest()
         {
-            var customer = customerService.GetCustomerById(3);
-            customer.PhoneNumber = "98966746465"; 
-            var updatedCustomer = customerService.UpdateCustomer(customer);
-            Assert.IsNotNull(updatedCustomer);
+            var result = customerService.UpdateCustomerPhoneNumberById(1,"786456545646");
+            Assert.IsTrue(result);
 
         }
         [Test]
         public void UpdateCustomerPhoneNumberExceptionTest()
         {
-            var customer = customerService.GetCustomerById(3);
-            customer.PhoneNumber = "98966746465"; 
-            var exception = Assert.Throws<ObjectNotAvailableException>(() => customerService.UpdateCustomer(customer));
+          
+            var exception = Assert.Throws<ObjectNotAvailableException>(() => customerService.UpdateCustomerPhoneNumberById(5, "786456545646"));
             //Assert
-            Assert.AreEqual($"Customer with id - {customer.Id} not Available!", exception.Message);
+            Assert.AreEqual($"Customer with id - 5 not Available!", exception.Message);
         }
 
         [Test]
@@ -170,7 +167,7 @@ namespace ShoppingAppBLLTests
         [Test]
         public void GetCartByCustomerIdFailTest()
         {
-            var cart = customerService.GetCartByCustomerId(1);
+            var cart = customerService.GetCartByCustomerId(5);
             Assert.IsNull(cart);
         }
 

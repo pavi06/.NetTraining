@@ -22,7 +22,9 @@ namespace ShoppingAppBLLLibrary
         public int GetCartItemsCount(int cartId);
         public double GetTotalAmountOfCartItems(int cartId);
         public double GetShippingCharges(double totalAmount);
+        public double GetDiscountPercent(int cartItems, double price);
         public double GetDiscountAmount(int cartItems, double price);
+        public Product DeleteCartItemByCutsomerIdAndProductId(int customerId,int productId);
         
     }
 }

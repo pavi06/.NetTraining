@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\dotNet\\Day11\\ShoppingAppSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C662CAF-230A-4C2D-A92B-F53F2013E87C}|ShoppingApp\\ShoppingApp.csproj|c:\\dotnet\\day11\\shoppingappsolution\\shoppingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C662CAF-230A-4C2D-A92B-F53F2013E87C}|ShoppingApp\\ShoppingApp.csproj|solutionrelative:shoppingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59F97A99-3197-417C-854A-8B13BA92E95A}|ShoppingAppBLLTests\\ShoppingAppBLLTests.csproj|c:\\dotnet\\day11\\shoppingappsolution\\shoppingappblltests\\cartitembltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59F97A99-3197-417C-854A-8B13BA92E95A}|ShoppingAppBLLTests\\ShoppingAppBLLTests.csproj|solutionrelative:shoppingappblltests\\cartitembltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59F97A99-3197-417C-854A-8B13BA92E95A}|ShoppingAppBLLTests\\ShoppingAppBLLTests.csproj|c:\\dotnet\\day11\\shoppingappsolution\\shoppingappblltests\\cartbltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59F97A99-3197-417C-854A-8B13BA92E95A}|ShoppingAppBLLTests\\ShoppingAppBLLTests.csproj|solutionrelative:shoppingappblltests\\cartbltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0387AE7-7EF3-4E60-8829-6520F17B0841}|ShoppingAppBLLLibrary\\ShoppingAppBLLLibrary.csproj|c:\\dotnet\\day11\\shoppingappsolution\\shoppingappblllibrary\\cartbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0387AE7-7EF3-4E60-8829-6520F17B0841}|ShoppingAppBLLLibrary\\ShoppingAppBLLLibrary.csproj|solutionrelative:shoppingappblllibrary\\cartbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dotNet\\Day11\\ShoppingAppSolution\\ShoppingApp\\Program.cs",
-              "RelativeDocumentMoniker": "ShoppingApp\\Program.cs",
-              "ToolTip": "C:\\dotNet\\Day11\\ShoppingAppSolution\\ShoppingApp\\Program.cs",
-              "RelativeToolTip": "ShoppingApp\\Program.cs",
-              "ViewState": "AQIAANgAAAAAAAAAAAAIwAwAAAAaAAAA",
+              "DocumentIndex": 2,
+              "Title": "CartBL.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day11\\ShoppingAppSolution\\ShoppingAppBLLLibrary\\CartBL.cs",
+              "RelativeDocumentMoniker": "ShoppingAppBLLLibrary\\CartBL.cs",
+              "ToolTip": "C:\\dotNet\\Day11\\ShoppingAppSolution\\ShoppingAppBLLLibrary\\CartBL.cs",
+              "RelativeToolTip": "ShoppingAppBLLLibrary\\CartBL.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAwwFkAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T11:32:04.31Z",
+              "WhenOpened": "2024-04-26T12:41:47.748Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartItemBLTests.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day11\\ShoppingAppSolution\\ShoppingAppBLLTests\\CartItemBLTests.cs",
+              "RelativeDocumentMoniker": "ShoppingAppBLLTests\\CartItemBLTests.cs",
+              "ToolTip": "C:\\dotNet\\Day11\\ShoppingAppSolution\\ShoppingAppBLLTests\\CartItemBLTests.cs",
+              "RelativeToolTip": "ShoppingAppBLLTests\\CartItemBLTests.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAIwHcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T13:22:41.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartBLTests.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day11\\ShoppingAppSolution\\ShoppingAppBLLTests\\CartBLTests.cs",
+              "RelativeDocumentMoniker": "ShoppingAppBLLTests\\CartBLTests.cs",
+              "ToolTip": "C:\\dotNet\\Day11\\ShoppingAppSolution\\ShoppingAppBLLTests\\CartBLTests.cs",
+              "RelativeToolTip": "ShoppingAppBLLTests\\CartBLTests.cs",
+              "ViewState": "AQIAAMIAAAAAAAAAAAAgwJcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T12:21:04.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             }
           ]
         }

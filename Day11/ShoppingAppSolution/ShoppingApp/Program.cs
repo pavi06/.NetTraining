@@ -156,13 +156,14 @@ namespace ShoppingApp
                     {
                         Console.WriteLine(c);
                     }
-                    double totalAmount = cartBl.GetTotalAmountOfCartItems(cart.Id);
-                    double discountAmount = cartBl.GetDiscountAmount(cartBl.GetCartItemsCount(cart.Id), totalAmount);
-                    double shippingCharges = cartBl.GetShippingCharges(totalAmount);
-                    Console.WriteLine("Total Amount : " + Math.Round(totalAmount,2));
-                    Console.WriteLine("After Discount : " + Math.Round(discountAmount,2));
-                    Console.WriteLine("Shipping charges : " + Math.Round(shippingCharges,2));
-                    Console.WriteLine("\nFinal Amount : " + Math.Round(discountAmount + shippingCharges,2));
+                    //double totalAmount = cartBl.GetTotalAmountOfCartItems(cart.Id);
+                    //double discountAmount = cartBl.GetDiscountAmount(cartBl.GetCartItemsCount(cart.Id), totalAmount);
+                    //double shippingCharges = cartBl.GetShippingCharges(totalAmount);
+                    Console.WriteLine("Price : $" + Math.Round(cart.TotalAmount,2));
+                    Console.WriteLine("Discount Percent : -"+Math.Round(cartBl.GetDiscountPercent(cartBl.GetCartItemsCount(cart.Id), cart.TotalAmount),2)+"%");
+                    Console.WriteLine("After Discount: $"+ Math.Round(cart.DiscountAmount,2));
+                    Console.WriteLine("Shipping charges : " + Math.Round(cart.ShippingCharges,2));
+                    Console.WriteLine("\nTotal Amount : " + Math.Round(cart.DiscountAmount + cart.ShippingCharges,2));
                     Console.WriteLine("Want to PLACE ORDER ??\nEnter Y/N");
                     string userInput = GetYOrNoFromUser();
                     if(userInput.ToLower() == "y")
@@ -172,6 +173,18 @@ namespace ShoppingApp
                         var updateCart = cartBl.GetCartByCustomerId(id);
                         updateCart.CartItems.Clear();
                         cartBl.UpdateCart(updateCart);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Want to Remove any product from cart ? Enter Y/N :");
+                        string userInputFromConsole = GetYOrNoFromUser();
+                        if(userInputFromConsole.ToLower() == "y")
+                        {
+                            Console.WriteLine("Provide the Product Id : ");
+                            int prodId = GetNumericInputFromUser();
+                            var product = cartBl.DeleteCartItemByCutsomerIdAndProductId(id, prodId);
+                            Console.WriteLine("Deleted Product from cart"+product);
+                        }
                     }                    
                 }             
             }

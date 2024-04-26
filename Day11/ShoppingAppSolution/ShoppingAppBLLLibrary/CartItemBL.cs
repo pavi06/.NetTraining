@@ -13,12 +13,13 @@ namespace ShoppingAppBLLLibrary
     {
         readonly IRepository<int, CartItem> _cartItemRepository;
         readonly IRepository<int, Cart> _cartRepository;
+        CartBL cartBl;
 
         public CartItemBL(IRepository<int, CartItem> cartItemRepository, IRepository<int, Cart> cartRepository)
         {
             _cartItemRepository = cartItemRepository;
             _cartRepository = cartRepository;
-            CartBL cartBl = new CartBL(_cartRepository);
+            cartBl = new CartBL(_cartRepository);
         }
 
         public int AddCartItem(CartItem cartItem)
@@ -31,7 +32,13 @@ namespace ShoppingAppBLLLibrary
                 if (cart != null)
                 {
                     if (cart.CartItems.Count() < 5)
+                    {
                         cart.CartItems.Add(cartItem);
+                        cart.TotalAmount = cartBl.GetTotalAmountOfCartItems(cartItem.CartId);
+                        cart.Discount = cartBl.GetDiscountPercent(cart.CartItems.Count(),cart.TotalAmount);
+                        cart.DiscountAmount = cartBl.GetDiscountAmount(cartBl.GetCartItemsCount(cartItem.CartId),cart.TotalAmount);
+                        cart.ShippingCharges = cartBl.GetShippingCharges(cart.TotalAmount);
+                    }                        
                     else
                         throw new CartLimitExceedsException();
                 }
@@ -54,6 +61,10 @@ namespace ShoppingAppBLLLibrary
                 Cart cart = new Cart();
                 cart = _cartRepository.GetByKey(cartItem.CartId);
                 cart.CartItems.Remove(cartItem);
+                cart.TotalAmount = cartBl.GetTotalAmountOfCartItems(cartItem.CartId);
+                cart.Discount = cartBl.GetDiscountPercent(cart.CartItems.Count(), cart.TotalAmount);
+                cart.DiscountAmount = cartBl.GetDiscountAmount(cartBl.GetCartItemsCount(cartItem.CartId), cart.TotalAmount);
+                cart.ShippingCharges = cartBl.GetShippingCharges(cart.TotalAmount);
                 var updatedCart = _cartRepository.Update(cart);
                 if (updatedCart == null)
                 {

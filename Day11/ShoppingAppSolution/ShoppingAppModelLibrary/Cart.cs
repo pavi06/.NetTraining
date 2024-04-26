@@ -12,21 +12,31 @@ namespace ShoppingAppModelLibrary
         public int CustomerId { get; set; }
         public Customer Customer { get; set; } = new Customer();
         public List<CartItem> CartItems { get; set; } 
+        public double TotalAmount { get; set; }
+        public double Discount { get; set; }
+        public double DiscountAmount { get; set; }
+        public double ShippingCharges { get; set; }
 
         public Cart() { }
 
-        public Cart(int customerId,Customer customer,List<CartItem> cartItems)
+        public Cart(int customerId,Customer customer,List<CartItem> cartItems,double totalAmount,double discount,double shippingCharges)
         {
             CustomerId = customerId;
             Customer = customer;
             CartItems = cartItems;
+            TotalAmount = totalAmount;
+            Discount = discount;
+            ShippingCharges = shippingCharges;
         }
-        public Cart(int id, int customerId,Customer customer,List<CartItem> cartItems)
+        public Cart(int id, int customerId,Customer customer,List<CartItem> cartItems, double totalAmount,double discount, double shippingCharges)
         {
             Id = id;
             CustomerId = customerId;
             Customer = customer;
             CartItems = cartItems;
+            TotalAmount = totalAmount;
+            Discount = discount;
+            ShippingCharges = shippingCharges;
         }
 
         public override bool Equals(object? obj)

@@ -68,7 +68,7 @@ namespace ShoppingAppBLLTests
             int id = 3;
             var exception = Assert.Throws<ObjectNotAvailableException>(() => cartItemService.GetCartItemById(id));
             //Assert
-            Assert.AreEqual($"CartItem with id - {id} not available!", exception.Message);
+            Assert.AreEqual($"CartItem with id - {id} not Available!", exception.Message);
         }
 
         [Test]
@@ -87,7 +87,7 @@ namespace ShoppingAppBLLTests
             int id = 3;
             var exception = Assert.Throws<ObjectNotAvailableException>(() => cartItemService.DeleteCartItem(id));
             //Assert
-            Assert.AreEqual($"CartItem with id - {id} not available!", exception.Message);
+            Assert.AreEqual($"CartItem with id - {id} not Available!", exception.Message);
         }
 
 

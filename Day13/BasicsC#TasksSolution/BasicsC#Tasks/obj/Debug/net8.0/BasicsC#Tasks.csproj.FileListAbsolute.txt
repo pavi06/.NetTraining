@@ -1,0 +1,15 @@
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\bin\Debug\net8.0\BasicsC#Tasks.exe
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\bin\Debug\net8.0\BasicsC#Tasks.deps.json
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\bin\Debug\net8.0\BasicsC#Tasks.runtimeconfig.json
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\bin\Debug\net8.0\BasicsC#Tasks.dll
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\bin\Debug\net8.0\BasicsC#Tasks.pdb
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\obj\Debug\net8.0\BasicsC#Tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\obj\Debug\net8.0\BasicsC#Tasks.AssemblyInfoInputs.cache
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\obj\Debug\net8.0\BasicsC#Tasks.AssemblyInfo.cs
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\obj\Debug\net8.0\BasicsC#Tasks.csproj.CoreCompileInputs.cache
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\obj\Debug\net8.0\BasicsC#Tasks.sourcelink.json
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\obj\Debug\net8.0\BasicsC#Tasks.dll
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\obj\Debug\net8.0\refint\BasicsC#Tasks.dll
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\obj\Debug\net8.0\BasicsC#Tasks.pdb
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\obj\Debug\net8.0\BasicsC#Tasks.genruntimeconfig.cache
+C:\dotNet\Day13\BasicsC#TasksSolution\BasicsC#Tasks\obj\Debug\net8.0\ref\BasicsC#Tasks.dll

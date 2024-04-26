@@ -24,7 +24,7 @@ namespace ShoppingAppBLLLibrary
             var retrivedCustomer = _customerRepository.Add(customer);
             if (retrivedCustomer != null)
             {
-                Cart cart = new Cart(retrivedCustomer.Id,retrivedCustomer,new List<CartItem>());
+                Cart cart = new Cart(retrivedCustomer.Id,retrivedCustomer,new List<CartItem>(),0,0,0);
                 _cartRepository.Add(cart);
                 return retrivedCustomer.Id;
             }
@@ -44,7 +44,7 @@ namespace ShoppingAppBLLLibrary
         public List<Customer> GetAllCustomer()
         {
             var customerList = _customerRepository.GetAll();
-            if (customerList.Count > 0)
+            if (customerList!=null)
             {
                 return customerList.ToList();
             }

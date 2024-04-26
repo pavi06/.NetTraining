@@ -129,7 +129,7 @@ namespace ShoppingAppBLLLibrary
             if (filteredProducts.ToList().Count() > 0) { 
                 return filteredProducts.ToList();
             }
-            throw new NoObjectsAvailableException($"No {category} Available under {price} price!"); ;
+            throw new NoObjectsAvailableException($"No {category} products Available under {price} price!"); ;
         }
 
         public List<string> GetAllProductsName()

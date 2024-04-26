@@ -74,7 +74,7 @@ namespace ShoppingAppBLLLibrary
             var itemsWithDiscount = from c in cartItems
                                     where c.Discount > 0
                                     select c;
-            if (itemsWithDiscount.Count() > 0) { 
+            if (itemsWithDiscount!= null) { 
                 return itemsWithDiscount.ToList();
             }
             throw new NoObjectsAvailableException("No Items with discount where added to the cart");
@@ -124,6 +124,14 @@ namespace ShoppingAppBLLLibrary
             }
             return totalAmount;
         }
+        public double GetDiscountPercent(int cartItems, double price)
+        {
+            if (cartItems == 3 && price == 1500)
+            {
+                return 5;
+            }
+            return 0.0;
+        }
 
         public double GetDiscountAmount(int cartItems, double price)
         {
@@ -159,6 +167,25 @@ namespace ShoppingAppBLLLibrary
             var carts = GetAllCarts();
             var customerCart = carts.FirstOrDefault(c => c.CustomerId == customerId);
             return customerCart;
+            
+        }
+
+        public Product DeleteCartItemByCutsomerIdAndProductId(int customerId, int productId)
+        {
+            var cart = GetCartByCustomerId(customerId);
+            if (cart != null)
+            {
+                var cartItem = cart.CartItems.FirstOrDefault(c => c.ProductId == productId);
+                if(cartItem != null)
+                {
+                    var product = cartItem.Product;
+                    cart.CartItems.Remove(cartItem);
+                    _cartRepository.Update(cart);
+                    return product;
+                }
+                throw new ObjectNotAvailableException("Product is not available in your cart!");
+            }
+            throw new NullValueException("Your Cart is Empty!");
             
         }
     }
