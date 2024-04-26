@@ -12,6 +12,22 @@ namespace ShoppingApp
 {
     internal class Program
     {
+        public int GetNumericInputFromUser() {
+            int userInput;
+            while(!int.TryParse(Console.ReadLine(),out userInput))
+                Console.WriteLine("Invalid Input! Provide numeric values alone.");
+            return userInput;
+        }
+        public string GetYOrNoFromUser()
+        {
+            string userInput = Console.ReadLine();
+            while (userInput.ToLower() != "n" && userInput.ToLower() != "y")
+            {
+                Console.WriteLine("Invalid input! Enter Either 'Y' or 'N'..");
+                userInput = Console.ReadLine();
+            }
+            return userInput;
+        }
         public void UpdateProduct(ProductBL productBl, Cart cart)
         {
             try
@@ -147,18 +163,16 @@ namespace ShoppingApp
                     Console.WriteLine("After Discount : " + Math.Round(discountAmount,2));
                     Console.WriteLine("Shipping charges : " + Math.Round(shippingCharges,2));
                     Console.WriteLine("\nFinal Amount : " + Math.Round(discountAmount + shippingCharges,2));
-                    Console.WriteLine(" Want to PLACE ORDER ??\nEnter Y/N");
-                    string userInput = Console.ReadLine();
-                    while (userInput.Any(char.IsDigit))
+                    Console.WriteLine("Want to PLACE ORDER ??\nEnter Y/N");
+                    string userInput = GetYOrNoFromUser();
+                    if(userInput.ToLower() == "y")
                     {
-                        Console.WriteLine("Invalid Input.Enter Again!");
-                        userInput = Console.ReadLine();
-                    }
-                    Console.WriteLine("-----------Order Placed Successfully!!-----------------");
-                    UpdateProduct(productBl,cart);
-                    var updateCart = cartBl.GetCartByCustomerId(id);
-                    updateCart.CartItems.Clear();
-                    cartBl.UpdateCart(updateCart);
+                        Console.WriteLine("-----------Order Placed Successfully!!-----------------");
+                        UpdateProduct(productBl, cart);
+                        var updateCart = cartBl.GetCartByCustomerId(id);
+                        updateCart.CartItems.Clear();
+                        cartBl.UpdateCart(updateCart);
+                    }                    
                 }             
             }
             catch (ObjectNotAvailableException e)
@@ -175,7 +189,7 @@ namespace ShoppingApp
         {
             string userInput;
             Console.WriteLine("Enter your Id : ");
-            int custId = Convert.ToInt32(Console.ReadLine());
+            int custId = GetNumericInputFromUser();
             while (!customerBl.GetAllCustomerId().Contains(custId)) {
                 Console.WriteLine("Invalid Customer ID. Enter Again!");
                 custId = Convert.ToInt32(Console.ReadLine());
@@ -186,15 +200,16 @@ namespace ShoppingApp
                 do
                 {                    
                     Console.WriteLine("Provide the product id : ");
-                    int id = Convert.ToInt32(Console.ReadLine());
+                    int id = GetNumericInputFromUser();
                     Console.WriteLine("Enter the quanity you want : ");
-                    int quantity = Convert.ToInt32(Console.ReadLine());
+                    int quantity = GetNumericInputFromUser();
                     var product = productBl.GetProductById(id);
                     var cart = cartBl.GetAllCarts().Find(c=>c.CustomerId == custId);
                     CartItem cartItem = new CartItem(cart.Id, id, product, quantity, product.Price, 0.0, new DateTime(2024, 06, 12));
                     cartItemBl.AddCartItem(cartItem);
                     Console.WriteLine("Want to add more??\nEnter Y/N");
-                    userInput = Console.ReadLine();
+                    userInput = GetYOrNoFromUser();
+
                 } while (userInput.ToLower() != "n");
             }
             catch (ObjectNotAvailableException e)
@@ -218,16 +233,21 @@ namespace ShoppingApp
             do
             {
                 Console.WriteLine("-------------Menu-------------\n1.Get Products\n2.Add Items to cart\n3.Get Cart\n4.Exit");
-                n = Convert.ToInt32(Console.ReadLine());
+                n = GetNumericInputFromUser();
                 switch (n)
                 {
                     case 1:
                         Console.WriteLine("Want any specific Products ?? \nPress Y/N");
-                        string userInput = Console.ReadLine();
+                        string userInput = GetYOrNoFromUser();
                         if (userInput.ToLower() == "y")
                         {
                             Console.WriteLine("Enter Category/ProductName : ");
                             string category = Console.ReadLine();
+                            while (category.Any(char.IsDigit))
+                            {
+                                Console.WriteLine("Invalid Input.Enter Again!");
+                                category = Console.ReadLine();
+                            }
                             GetSpcificProducts(productBl, category);
                         }
                         else
@@ -240,7 +260,7 @@ namespace ShoppingApp
                         break;
                     case 3:
                         Console.WriteLine("Enter your Id : ");
-                        int id = Convert.ToInt32(Console.ReadLine());
+                        int id = GetNumericInputFromUser();
                         GetMyCart(customerBl, cartBl, productBl, id);
                         break;
                     case 4:
