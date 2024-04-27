@@ -32,7 +32,7 @@ namespace ShoppingApp
         {
             try
             {
-                var productList = productBl.GetAllProduct();
+                var productList = productBl.GetAllProduct().Result;
                 foreach (var cartItem in cart.CartItems)
                 {
                     var product = productList.FirstOrDefault(x => x.Id == cartItem.Id);
@@ -98,7 +98,7 @@ namespace ShoppingApp
         public void GetAllProduct(ProductBL productBl) {
             try
             {
-                var productList = productBl.GetAllProduct();
+                var productList = productBl.GetAllProduct().Result;
                 Console.WriteLine("----------Product List-----------");
                 foreach (var prod in productList)
                 {
@@ -120,10 +120,10 @@ namespace ShoppingApp
             {
                 Console.WriteLine("---------------Products Based on Your Search----------------");
                 List<Product> products = new List<Product>();
-                if (productBl.GetAllCategoriesAvailable().Contains(category.ToLower()))
-                    products = productBl.GetAllProductByAttribute("Category", category);
+                if (productBl.GetAllCategoriesAvailable().Result.Contains(category.ToLower()))
+                    products = productBl.GetAllProductByAttribute("Category", category).Result;
                 else
-                    products = productBl.GetAllProductByAttribute("Name", category);
+                    products = productBl.GetAllProductByAttribute("Name", category).Result;
                 foreach (var product in products)
                 {
                     Console.WriteLine(product+"\n");
@@ -143,8 +143,8 @@ namespace ShoppingApp
         {
             try
             {
-                var cart = cartBl.GetCartByCustomerId(id);
-                var cartList = customerBl.GetCartByCustomerId(id);
+                var cart = cartBl.GetCartByCustomerId(id).Result;
+                var cartList = customerBl.GetCartByCustomerId(id).Result;
                 if (cartList.Count() == 0)
                 {
                     Console.WriteLine("Your cart is Empty!");
@@ -160,17 +160,18 @@ namespace ShoppingApp
                     //double discountAmount = cartBl.GetDiscountAmount(cartBl.GetCartItemsCount(cart.Id), totalAmount);
                     //double shippingCharges = cartBl.GetShippingCharges(totalAmount);
                     Console.WriteLine("Price : $" + Math.Round(cart.TotalAmount,2));
-                    Console.WriteLine("Discount Percent : -"+Math.Round(cartBl.GetDiscountPercent(cartBl.GetCartItemsCount(cart.Id), cart.TotalAmount),2)+"%");
+                    Console.WriteLine("Discount Percent : -"+Math.Round(cartBl.GetDiscountPercent(cartBl.GetCartItemsCount(cart.Id).Result, cart.TotalAmount),2)+"%");
                     Console.WriteLine("After Discount: $"+ Math.Round(cart.DiscountAmount,2));
                     Console.WriteLine("Shipping charges : " + Math.Round(cart.ShippingCharges,2));
                     Console.WriteLine("\nTotal Amount : " + Math.Round(cart.DiscountAmount + cart.ShippingCharges,2));
+                    Console.WriteLine("--------------------------------------------------");
                     Console.WriteLine("Want to PLACE ORDER ??\nEnter Y/N");
                     string userInput = GetYOrNoFromUser();
                     if(userInput.ToLower() == "y")
                     {
                         Console.WriteLine("-----------Order Placed Successfully!!-----------------");
                         UpdateProduct(productBl, cart);
-                        var updateCart = cartBl.GetCartByCustomerId(id);
+                        var updateCart = cartBl.GetCartByCustomerId(id).Result;
                         updateCart.CartItems.Clear();
                         cartBl.UpdateCart(updateCart);
                     }
@@ -182,7 +183,7 @@ namespace ShoppingApp
                         {
                             Console.WriteLine("Provide the Product Id : ");
                             int prodId = GetNumericInputFromUser();
-                            var product = cartBl.DeleteCartItemByCutsomerIdAndProductId(id, prodId);
+                            var product = cartBl.DeleteCartItemByCutsomerIdAndProductId(id, prodId).Result;
                             Console.WriteLine("Deleted Product from cart"+product);
                         }
                     }                    
@@ -203,7 +204,7 @@ namespace ShoppingApp
             string userInput;
             Console.WriteLine("Enter your Id : ");
             int custId = GetNumericInputFromUser();
-            while (!customerBl.GetAllCustomerId().Contains(custId)) {
+            while (!customerBl.GetAllCustomerId().Result.Contains(custId)) {
                 Console.WriteLine("Invalid Customer ID. Enter Again!");
                 custId = Convert.ToInt32(Console.ReadLine());
             }             
@@ -216,8 +217,8 @@ namespace ShoppingApp
                     int id = GetNumericInputFromUser();
                     Console.WriteLine("Enter the quanity you want : ");
                     int quantity = GetNumericInputFromUser();
-                    var product = productBl.GetProductById(id);
-                    var cart = cartBl.GetAllCarts().Find(c=>c.CustomerId == custId);
+                    var product = productBl.GetProductById(id).Result;
+                    var cart = cartBl.GetAllCarts().Result.Find(c=>c.CustomerId == custId);
                     CartItem cartItem = new CartItem(cart.Id, id, product, quantity, product.Price, 0.0, new DateTime(2024, 06, 12));
                     cartItemBl.AddCartItem(cartItem);
                     Console.WriteLine("Want to add more??\nEnter Y/N");

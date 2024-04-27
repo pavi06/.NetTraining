@@ -9,18 +9,18 @@ namespace ShoppingAppBLLLibrary
 {
     public interface IProductService
     {
-        int AddProduct(Product product);
-        Product GetProductById(int id);
-        List<Product> GetAllProduct();
-        List<Product> GetAllProductByAttribute(string attribute , string attributeValue);
-        List<Product> GetAllProductByCategoryAndPriceLimit(string category, double price);
+        Task<int> AddProduct(Product product);
+        Task<Product> GetProductById(int id);
+        Task<List<Product>> GetAllProduct();
+        Task<List<Product>> GetAllProductByAttribute(string attribute , string attributeValue);
+        Task<List<Product>> GetAllProductByCategoryAndPriceLimit(string category, double price);
         //List<Product> GetAllProductByDiscount();
-        Product DeleteProductById(int id);
-        Product UpdateProduct(Product product);       
-        bool UpdateProductPriceById(int id, double newPrice);
-        bool UpdateProductQuantityById(int id, int newQuantity);
-        List<string> GetAllProductsName();
-        List<string> GetAllCategoriesAvailable();
+        Task<Product> DeleteProductById(int id);
+        Task<Product> UpdateProduct(Product product);       
+        Task<bool> UpdateProductPriceById(int id, double newPrice);
+        Task<bool> UpdateProductQuantityById(int id, int newQuantity);
+        Task<List<string>> GetAllProductsName();
+        Task<List<string>> GetAllCategoriesAvailable();
 
     }
 }

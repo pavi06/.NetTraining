@@ -10,7 +10,7 @@ namespace ShoppingAppDALLibrary
 {
     public class CustomerRepository : AbstractRepository<int, Customer>
     {
-        public override Customer Add(Customer item)
+        public override async Task<Customer> Add(Customer item)
         {
             if (items.Contains(item))
             {
@@ -24,11 +24,11 @@ namespace ShoppingAppDALLibrary
             {
                 item.Id = 1;
             }
-            return base.Add(item);
+            return base.Add(item).Result;
         }
-        public override Customer Delete(int key)
+        public override async Task<Customer> Delete(int key)
         {
-            Customer customer = GetByKey(key);
+            Customer customer = GetByKey(key).Result;
             if (customer != null)
             {
                 items.Remove(customer);
@@ -36,13 +36,13 @@ namespace ShoppingAppDALLibrary
             return customer;
         }
 
-        public override Customer GetByKey(int key)
+        public override async Task<Customer> GetByKey(int key)
         {
             Customer customer = items.FirstOrDefault(c => c.Id == key);
             return customer;
         }
 
-        public override Customer Update(Customer item)
+        public override async Task<Customer> Update(Customer item)
         {
             int index = items.IndexOf(item);
             if (index != -1)

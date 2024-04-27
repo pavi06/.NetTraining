@@ -9,7 +9,7 @@ namespace ShoppingAppDALLibrary
 {
     public class CartItemRepository : AbstractRepository<int, CartItem>
     {
-        public override CartItem Add(CartItem item)
+        public override async Task<CartItem> Add(CartItem item)
         {
             if (items.ToList().Exists(c => c.ProductId == item.ProductId && c.CartId == item.CartId && c.Product == item.Product && c.Quantity == item.Quantity && c.Price == item.Price && c.PriceExpiryDate == item.PriceExpiryDate))
             {
@@ -22,11 +22,11 @@ namespace ShoppingAppDALLibrary
             else {
                 item.Id = 1;
             }
-            return base.Add(item);
+            return base.Add(item).Result;
         }
-        public override CartItem Delete(int key)
+        public override async Task<CartItem> Delete(int key)
         {
-            CartItem cartItem = GetByKey(key);
+            CartItem cartItem = GetByKey(key).Result;
             if (cartItem != null)
             {
                 items.Remove(cartItem);
@@ -34,14 +34,14 @@ namespace ShoppingAppDALLibrary
             return cartItem;
         }
 
-        public override CartItem GetByKey(int key)
+        public override async Task<CartItem> GetByKey(int key)
         {
             Console.WriteLine(items);
             CartItem cartItem = items.FirstOrDefault( i => i.CartId == key);
             return cartItem;
         }
 
-        public override CartItem Update(CartItem item)
+        public override async Task<CartItem> Update(CartItem item)
         {
             int index = items.IndexOf(item);
             if (index != -1)

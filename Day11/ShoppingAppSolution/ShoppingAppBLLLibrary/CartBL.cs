@@ -12,15 +12,17 @@ namespace ShoppingAppBLLLibrary
     public class CartBL : ICartService
     {
         readonly IRepository<int, Cart> _cartRepository;
+        readonly IRepository<int, CartItem> _cartItemRepository;
 
         public CartBL(IRepository<int, Cart> cartRepository)
         {
             _cartRepository = cartRepository;
+            _cartItemRepository = new CartItemRepository();
         }
-        public int AddCart(Cart cart)
+        public async Task<int> AddCart(Cart cart)
         {
             
-            var retrivedCart = _cartRepository.Add(cart);
+            var retrivedCart = await _cartRepository.Add(cart);
             if (retrivedCart != null)
             {
                 return retrivedCart.Id;
@@ -28,9 +30,9 @@ namespace ShoppingAppBLLLibrary
             throw new ObjectAlreadyExistsException("Cart");
         }
 
-        public Cart GetCartById(int cartId)
+        public async Task<Cart> GetCartById(int cartId)
         {
-            var retrivedCart = _cartRepository.GetByKey(cartId);
+            var retrivedCart = await _cartRepository.GetByKey(cartId);
             if (retrivedCart != null)
             {
                 return retrivedCart;
@@ -38,9 +40,9 @@ namespace ShoppingAppBLLLibrary
             throw new ObjectNotAvailableException($"Cart with id - {cartId} not Available!");
         }
 
-        public Cart DeleteCartById(int cartId)
+        public async Task<Cart> DeleteCartById(int cartId)
         {
-            var cart = _cartRepository.Delete(cartId);
+            var cart = await _cartRepository.Delete(cartId);
             if (cart != null)
             {
                 return cart;
@@ -48,9 +50,9 @@ namespace ShoppingAppBLLLibrary
             throw new ObjectNotAvailableException($"Cart with id - {cartId} not Available!");
         }
 
-        public Cart UpdateCart(Cart cart)
+        public async Task<Cart> UpdateCart(Cart cart)
         {
-            var updatedCart = _cartRepository.Update(cart);
+            var updatedCart = await _cartRepository.Update(cart);
             if (updatedCart != null)
             {
                 return updatedCart;
@@ -58,9 +60,9 @@ namespace ShoppingAppBLLLibrary
             throw new ObjectNotAvailableException($"Cart with id - {cart.Id} not Available!");
         }
 
-        public List<CartItem> GetCartItemsByCartId(int cartId)
+        public async Task<List<CartItem>> GetCartItemsByCartId(int cartId)
         {
-            var cart = GetCartById(cartId);
+            var cart = await GetCartById(cartId);
             if (cart.CartItems.ToList().Count() > 0)
             {
                 return cart.CartItems.ToList();
@@ -68,9 +70,9 @@ namespace ShoppingAppBLLLibrary
             throw new NoObjectsAvailableException("No Items where added to the cart");
         }
 
-        public List<CartItem> GetAllCartItemsWithDiscount(int cartId)
+        public async Task<List<CartItem>> GetAllCartItemsWithDiscount(int cartId)
         {
-            var cartItems = GetCartItemsByCartId(cartId);
+            var cartItems = await GetCartItemsByCartId(cartId);
             var itemsWithDiscount = from c in cartItems
                                     where c.Discount > 0
                                     select c;
@@ -80,19 +82,19 @@ namespace ShoppingAppBLLLibrary
             throw new NoObjectsAvailableException("No Items with discount where added to the cart");
         }
 
-        public int GetCartItemsCount(int cartId)
+        public async Task<int> GetCartItemsCount(int cartId)
         {
-            var count = GetCartItemsByCartId(cartId).Count();
-            if (count > 0)
+            var items = await GetCartItemsByCartId(cartId);
+            if (items.Count() > 0)
             {
-                return count;
+                return items.Count();
             }
             throw new NoObjectsAvailableException("No Items where added to the cart");
         }
 
-        public Customer GetCustomerByCartId(int cartId)
+        public async Task<Customer> GetCustomerByCartId(int cartId)
         {
-            var cart = GetCartById(cartId);
+            var cart = await GetCartById(cartId);
             if (cart.Customer != null)
             {
                 return cart.Customer;
@@ -100,15 +102,15 @@ namespace ShoppingAppBLLLibrary
             throw new NullValueException("Customer value is null. Customer is Not associated properly with the cart");
         }
 
-        public int GetCustomerIdByCartId(int cartId)
+        public async Task<int> GetCustomerIdByCartId(int cartId)
         {
-            var customer = GetCustomerByCartId(cartId);
+            var customer = await GetCustomerByCartId(cartId);
             return customer.Id;
 
         }
-        public double GetTotalAmountOfCartItems(int cartId)
+        public async Task<double> GetTotalAmountOfCartItems(int cartId)
         {
-            var cartItems = GetCartItemsByCartId(cartId);
+            var cartItems = await GetCartItemsByCartId(cartId);
             double totalAmount = 0.0;
             foreach (var item in cartItems)
             {
@@ -152,9 +154,9 @@ namespace ShoppingAppBLLLibrary
             return 0;
         }
 
-        public List<Cart> GetAllCarts()
+        public async Task<List<Cart>> GetAllCarts()
         {
-            var cartList = _cartRepository.GetAll();
+            var cartList = await _cartRepository.GetAll();
             if(cartList != null)
             {
                 return cartList.ToList();
@@ -162,17 +164,17 @@ namespace ShoppingAppBLLLibrary
             throw new NoObjectsAvailableException("No carts Available!");
         }
 
-        public Cart GetCartByCustomerId(int customerId)
+        public async Task<Cart> GetCartByCustomerId(int customerId)
         {
-            var carts = GetAllCarts();
+            var carts = await GetAllCarts();
             var customerCart = carts.FirstOrDefault(c => c.CustomerId == customerId);
             return customerCart;
             
         }
 
-        public Product DeleteCartItemByCutsomerIdAndProductId(int customerId, int productId)
+        public async Task<Product> DeleteCartItemByCutsomerIdAndProductId(int customerId, int productId)
         {
-            var cart = GetCartByCustomerId(customerId);
+            var cart = await GetCartByCustomerId(customerId);
             if (cart != null)
             {
                 var cartItem = cart.CartItems.FirstOrDefault(c => c.ProductId == productId);
@@ -180,6 +182,7 @@ namespace ShoppingAppBLLLibrary
                 {
                     var product = cartItem.Product;
                     cart.CartItems.Remove(cartItem);
+                    _cartItemRepository.Delete(cartItem.Id);
                     _cartRepository.Update(cart);
                     return product;
                 }

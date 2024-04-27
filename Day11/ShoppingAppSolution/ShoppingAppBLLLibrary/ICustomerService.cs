@@ -9,14 +9,14 @@ namespace ShoppingAppBLLLibrary
 {
     public interface ICustomerService
     {
-        int AddCustomer(Customer customer);
-        Customer GetCustomerById(int id);
-        List<CartItem> GetCartByCustomerId(int id);
-        List<Customer> GetAllCustomer();
-        Customer DeleteCustomerById(int id);
-        Customer UpdateCustomer(Customer customer);
-        bool UpdateCustomerPhoneNumberById(int id, string newPhoneNumber);
-        bool UpdateCustomerAddressById(int id, string newAddress);
-        List<int> GetAllCustomerId();
+        Task<int> AddCustomer(Customer customer);
+        Task<Customer> GetCustomerById(int id);
+        Task<List<CartItem>> GetCartByCustomerId(int id);
+        Task<List<Customer>> GetAllCustomer();
+        Task<Customer> DeleteCustomerById(int id);
+        Task<Customer> UpdateCustomer(Customer customer);
+        Task<bool> UpdateCustomerPhoneNumberById(int id, string newPhoneNumber);
+        Task<bool> UpdateCustomerAddressById(int id, string newAddress);
+        Task<List<int>> GetAllCustomerId();
     }
 }

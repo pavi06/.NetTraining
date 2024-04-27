@@ -9,22 +9,22 @@ namespace ShoppingAppBLLLibrary
 {
     public interface ICartService
     {
-        int AddCart(Cart cart);
-        Cart GetCartById(int cartId);
-        Cart DeleteCartById(int cartId);
-        Cart UpdateCart(Cart cart);
-        List<Cart> GetAllCarts();   
-        Cart GetCartByCustomerId(int customerId);
-        Customer GetCustomerByCartId(int cartId);
-        int GetCustomerIdByCartId(int cartId);        
-        List<CartItem> GetCartItemsByCartId(int cartId);
-        List<CartItem> GetAllCartItemsWithDiscount(int cartId);
-        public int GetCartItemsCount(int cartId);
-        public double GetTotalAmountOfCartItems(int cartId);
+        Task<int> AddCart(Cart cart);
+        Task<Cart> GetCartById(int cartId);
+        Task<Cart> DeleteCartById(int cartId);
+        Task<Cart> UpdateCart(Cart cart);
+        Task<List<Cart>> GetAllCarts();   
+        Task<Cart> GetCartByCustomerId(int customerId);
+        Task<Customer> GetCustomerByCartId(int cartId);
+        Task<int> GetCustomerIdByCartId(int cartId);        
+        Task<List<CartItem>> GetCartItemsByCartId(int cartId);
+        Task<List<CartItem>> GetAllCartItemsWithDiscount(int cartId);
+        public Task<int> GetCartItemsCount(int cartId);
+        public Task<double> GetTotalAmountOfCartItems(int cartId);
         public double GetShippingCharges(double totalAmount);
         public double GetDiscountPercent(int cartItems, double price);
         public double GetDiscountAmount(int cartItems, double price);
-        public Product DeleteCartItemByCutsomerIdAndProductId(int customerId,int productId);
+        public Task<Product> DeleteCartItemByCutsomerIdAndProductId(int customerId,int productId);
         
     }
 }

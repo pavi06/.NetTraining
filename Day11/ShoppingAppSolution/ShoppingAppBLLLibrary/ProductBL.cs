@@ -18,10 +18,10 @@ namespace ShoppingAppBLLLibrary
             _productRepository = productRepository;
         }
 
-        public int AddProduct(Product product)
+        public async Task<int> AddProduct(Product product)
         {
         
-            var retrivedProduct = _productRepository.Add(product);
+            var retrivedProduct = await _productRepository.Add(product);
             if (retrivedProduct != null)
             {
                 return retrivedProduct.Id;
@@ -29,9 +29,9 @@ namespace ShoppingAppBLLLibrary
             throw new ObjectAlreadyExistsException("Product");
         }
 
-        public Product DeleteProductById(int id)
+        public async Task<Product> DeleteProductById(int id)
         {
-            var product = _productRepository.Delete(id);
+            var product = await _productRepository.Delete(id);
             if (product != null)
             {
                 return product;
@@ -39,9 +39,9 @@ namespace ShoppingAppBLLLibrary
             throw new ObjectNotAvailableException($"Product with id - {id} not available!");
         }
 
-        public Product GetProductById(int id)
+        public async Task<Product> GetProductById(int id)
         {
-            var product = _productRepository.GetByKey(id);
+            var product = await _productRepository.GetByKey(id);
             if (product != null)
             {
                 return product;
@@ -50,9 +50,9 @@ namespace ShoppingAppBLLLibrary
             
         }
 
-        public List<Product> GetAllProduct()
+        public async Task<List<Product>> GetAllProduct()
         {
-            var productList = _productRepository.GetAll();
+            var productList = await _productRepository.GetAll();
             if (productList.Count > 0)
             {
                 return productList.ToList();
@@ -60,10 +60,10 @@ namespace ShoppingAppBLLLibrary
             throw new NoObjectsAvailableException("No Products Available!");
         }
 
-        public List<Product> GetAllProductByAttribute(string attribute, string attributeValue)
+        public async Task<List<Product>> GetAllProductByAttribute(string attribute, string attributeValue)
         {
             
-            var products = GetAllProduct();
+            var products = await GetAllProduct();
             if (attribute.ToLower() == "category")
             {
                 var productListByCategory = from p in products
@@ -87,9 +87,9 @@ namespace ShoppingAppBLLLibrary
             throw new NoObjectsAvailableException($"No Products Available under {attributeValue} {attribute}!"); 
         }
 
-        public Product UpdateProduct(Product product)
+        public async Task<Product> UpdateProduct(Product product)
         {
-            var updatedProduct = _productRepository.Update(product);
+            var updatedProduct = await _productRepository.Update(product);
             if (updatedProduct != null)
             {
                 return updatedProduct;
@@ -97,9 +97,9 @@ namespace ShoppingAppBLLLibrary
             throw new ObjectNotAvailableException($"Product with id - {product.Id} not available!");
         }
 
-        public bool UpdateProductPriceById(int id, double newPrice)
+        public async Task<bool> UpdateProductPriceById(int id, double newPrice)
         {
-            var product = GetProductById(id);
+            var product = await GetProductById(id);
             product.Price = newPrice;
             var updateProduct = UpdateProduct(product);
             if (updateProduct != null) {
@@ -108,11 +108,11 @@ namespace ShoppingAppBLLLibrary
             return false;
         }
 
-        public bool UpdateProductQuantityById(int id, int newQuantity)
+        public async Task<bool> UpdateProductQuantityById(int id, int newQuantity)
         {
-            var product = GetProductById(id);
+            var product = await GetProductById(id);
             product.QuantityInHand = newQuantity;
-            var updateProduct = UpdateProduct(product);
+            var updateProduct = await UpdateProduct(product);
             if (updateProduct != null)
             {
                 return true;
@@ -120,9 +120,9 @@ namespace ShoppingAppBLLLibrary
             return false;
         }
 
-        public List<Product> GetAllProductByCategoryAndPriceLimit(string category, double price)
+        public async Task<List<Product>> GetAllProductByCategoryAndPriceLimit(string category, double price)
         {
-            var products = GetAllProductByAttribute("category", category);
+            var products = await GetAllProductByAttribute("category", category);
             var filteredProducts = from p in products
                                    where p.Price <=price
                                    select p;
@@ -132,10 +132,10 @@ namespace ShoppingAppBLLLibrary
             throw new NoObjectsAvailableException($"No {category} products Available under {price} price!"); ;
         }
 
-        public List<string> GetAllProductsName()
+        public async Task<List<string>> GetAllProductsName()
         {
             List<string> productNames = new List<string>();
-            var products = GetAllProduct();
+            var products = await GetAllProduct();
             foreach ( var p in products )
             {
                 productNames.Add(p.Name.ToLower());
@@ -147,10 +147,10 @@ namespace ShoppingAppBLLLibrary
             throw new NoObjectsAvailableException("No products Available!");
         }
 
-        public List<string> GetAllCategoriesAvailable()
+        public async Task<List<string>> GetAllCategoriesAvailable()
         {
             List<string> catagories = new List<string>();
-            var products = GetAllProduct();
+            var products = await GetAllProduct();
             foreach (var p in products)
             {
                 catagories.Add(p.Category.ToLower());

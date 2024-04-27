@@ -19,9 +19,9 @@ namespace ShoppingAppBLLLibrary
             _customerRepository = customerRepository;
             _cartRepository = cartRepository;
         }
-        public int AddCustomer(Customer customer)
+        public async Task<int> AddCustomer(Customer customer)
         {
-            var retrivedCustomer = _customerRepository.Add(customer);
+            var retrivedCustomer = await _customerRepository.Add(customer);
             if (retrivedCustomer != null)
             {
                 Cart cart = new Cart(retrivedCustomer.Id,retrivedCustomer,new List<CartItem>(),0,0,0);
@@ -31,9 +31,9 @@ namespace ShoppingAppBLLLibrary
             throw new ObjectAlreadyExistsException("Customer");
         }
 
-        public Customer DeleteCustomerById(int id)
+        public async Task<Customer> DeleteCustomerById(int id)
         {
-            var customer = _customerRepository.Delete(id);
+            var customer = _customerRepository.Delete(id).Result;
             if (customer != null)
             {
                 return customer;
@@ -41,9 +41,9 @@ namespace ShoppingAppBLLLibrary
             throw new ObjectNotAvailableException($"Customer with id - {id} not available!");
         }
 
-        public List<Customer> GetAllCustomer()
+        public async Task<List<Customer>> GetAllCustomer()
         {
-            var customerList = _customerRepository.GetAll();
+            var customerList = _customerRepository.GetAll().Result;
             if (customerList!=null)
             {
                 return customerList.ToList();
@@ -51,10 +51,10 @@ namespace ShoppingAppBLLLibrary
             throw new NoObjectsAvailableException("No Customers Available!");
         }
 
-        public List<int> GetAllCustomerId()
+        public async Task<List<int>> GetAllCustomerId()
         {
             List<int> customerIds = new List<int>();
-            foreach (var customer in GetAllCustomer())
+            foreach (var customer in await GetAllCustomer())
             {
                 customerIds.Add(customer.Id);
             }
@@ -65,19 +65,16 @@ namespace ShoppingAppBLLLibrary
             throw new NoObjectsAvailableException("No customers Available!");
         }
 
-        public List<CartItem> GetCartByCustomerId(int id)
+        public async Task<List<CartItem>> GetCartByCustomerId(int id)
         {
-            var cartList = _cartRepository.GetAll();
-            //if (cartList.Any(c => c.CustomerId == id)) { 
-            //    return cartList.First(c => c.CustomerId == id).CartItems;
-            //}
+            var cartList = await _cartRepository.GetAll();
             return cartList.FirstOrDefault(c => c.CustomerId == id).CartItems;
             //throw new ObjectNotAvailableException($"Cart for the customer id - {id} is not available!");
         }
 
-        public Customer GetCustomerById(int id)
+        public async Task<Customer> GetCustomerById(int id)
         {
-            var customer = _customerRepository.GetByKey(id);
+            var customer = await _customerRepository.GetByKey(id);
             if (customer != null)
             {
                 return customer;
@@ -85,9 +82,9 @@ namespace ShoppingAppBLLLibrary
             throw new ObjectNotAvailableException($"Customer with id - {id} not available!");
         }
 
-        public Customer UpdateCustomer(Customer customer)
+        public async Task<Customer> UpdateCustomer(Customer customer)
         {
-            var updatedCustomer = _customerRepository.Update(customer);
+            var updatedCustomer = _customerRepository.Update(customer).Result;
             if (updatedCustomer != null)
             {
                 return updatedCustomer;
@@ -95,9 +92,9 @@ namespace ShoppingAppBLLLibrary
             throw new ObjectNotAvailableException($"Customer with id - {customer.Id} not available!");
         }
 
-        public bool UpdateCustomerAddressById(int id, string newAddress)
+        public async Task<bool> UpdateCustomerAddressById(int id, string newAddress)
         {
-            var customer = GetCustomerById(id);
+            var customer = await GetCustomerById(id);
             customer.Address = newAddress;
             var updatedCustomer = UpdateCustomer(customer);
             if (updatedCustomer != null)
@@ -107,9 +104,9 @@ namespace ShoppingAppBLLLibrary
             return false;
         }
 
-        public bool UpdateCustomerPhoneNumberById(int id, string newPhoneNumber)
+        public async Task<bool> UpdateCustomerPhoneNumberById(int id, string newPhoneNumber)
         {
-            var customer = GetCustomerById(id);
+            var customer = await GetCustomerById(id);
             customer.PhoneNumber = newPhoneNumber;
             var updateCustomer = UpdateCustomer(customer);
             if (updateCustomer != null)

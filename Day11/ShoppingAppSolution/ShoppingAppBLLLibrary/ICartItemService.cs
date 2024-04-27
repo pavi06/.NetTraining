@@ -9,14 +9,14 @@ namespace ShoppingAppBLLLibrary
 {
     public interface ICartItemService
     {
-        int AddCartItem(CartItem cartItem);
-        CartItem GetCartItemById(int cartId);
-        CartItem DeleteCartItem(int cartId);
-        CartItem UpdateCartItem(CartItem cartItem);
-        bool UpdateQuantityById(int cartId, int quantity);
-        bool UpdatePriceExpiryDateById(int cartId, DateTime dateTime);
-        bool UpdateDiscountById(int id, double discount);
-        bool UpdateCartIdById(int newCartId, int id);
+        Task<int> AddCartItem(CartItem cartItem);
+        Task<CartItem> GetCartItemById(int cartId);
+        Task<CartItem> DeleteCartItem(int cartId);
+        Task<CartItem> UpdateCartItem(CartItem cartItem);
+        Task<bool> UpdateQuantityById(int cartId, int quantity);
+        Task<bool> UpdatePriceExpiryDateById(int cartId, DateTime dateTime);
+        Task<bool> UpdateDiscountById(int id, double discount);
+        Task<bool> UpdateCartIdById(int newCartId, int id);
 
     }
 }
