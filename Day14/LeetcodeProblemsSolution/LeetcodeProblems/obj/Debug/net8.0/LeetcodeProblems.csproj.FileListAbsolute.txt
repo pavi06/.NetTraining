@@ -1,0 +1,15 @@
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\obj\Debug\net8.0\LeetcodeProblems.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\obj\Debug\net8.0\LeetcodeProblems.AssemblyInfoInputs.cache
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\obj\Debug\net8.0\LeetcodeProblems.AssemblyInfo.cs
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\obj\Debug\net8.0\LeetcodeProblems.csproj.CoreCompileInputs.cache
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\obj\Debug\net8.0\LeetcodeProblems.sourcelink.json
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\bin\Debug\net8.0\LeetcodeProblems.exe
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\bin\Debug\net8.0\LeetcodeProblems.deps.json
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\bin\Debug\net8.0\LeetcodeProblems.runtimeconfig.json
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\bin\Debug\net8.0\LeetcodeProblems.dll
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\bin\Debug\net8.0\LeetcodeProblems.pdb
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\obj\Debug\net8.0\LeetcodeProblems.dll
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\obj\Debug\net8.0\refint\LeetcodeProblems.dll
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\obj\Debug\net8.0\LeetcodeProblems.pdb
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\obj\Debug\net8.0\LeetcodeProblems.genruntimeconfig.cache
+C:\dotNet\Day14\LeetcodeProblemsSolution\LeetcodeProblems\obj\Debug\net8.0\ref\LeetcodeProblems.dll
