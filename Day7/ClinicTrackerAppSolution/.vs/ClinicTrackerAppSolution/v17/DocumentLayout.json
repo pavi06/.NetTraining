@@ -1,12 +1,41 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\dotNet\\Day7\\ClinicTrackerAppSolution\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC163593-DAFB-4B95-BBCC-C30BE4EAF6D6}|ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj|c:\\dotnet\\day7\\clinictrackerappsolution\\clinictrackerdallibrary\\clinictrackerdallibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DC163593-DAFB-4B95-BBCC-C30BE4EAF6D6}|ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj|solutionrelative:clinictrackerdallibrary\\clinictrackerdallibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClinicTrackerDALLibrary",
+              "DocumentMoniker": "C:\\dotNet\\Day7\\ClinicTrackerAppSolution\\ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj",
+              "RelativeDocumentMoniker": "ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj",
+              "ToolTip": "C:\\dotNet\\Day7\\ClinicTrackerAppSolution\\ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj",
+              "RelativeToolTip": "ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-08T08:48:14.878Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
