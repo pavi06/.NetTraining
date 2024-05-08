@@ -41,12 +41,7 @@ namespace ClinicTrackerDALLibrary
 
         public Appointment Get(int key)
         {
-            var appointment = clinicContext.Appointments.FirstOrDefault(a => a.Id == key);
-            if (appointment != null)
-            {
-                return appointment;
-            }
-            return null;
+            return clinicContext.Appointments.FirstOrDefault(a => a.Id == key);
         }
 
         public List<Appointment> GetAll()

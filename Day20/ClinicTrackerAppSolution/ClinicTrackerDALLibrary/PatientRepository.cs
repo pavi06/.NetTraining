@@ -36,12 +36,7 @@ namespace ClinicTrackerDALLibrary
 
         public Patient Get(int key)
         {
-            var patient = clinicContext.Patients.FirstOrDefault(p => p.Id == key);
-            if (patient != null)
-            {
-                return patient;
-            }
-            return null;
+            return clinicContext.Patients.FirstOrDefault(p => p.Id == key);
         }
 
         public List<Patient> GetAll()

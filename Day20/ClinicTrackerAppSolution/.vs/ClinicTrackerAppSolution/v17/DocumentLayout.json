@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5CBAC907-01EF-4B2F-8CE5-44EBC6739502}|ClinicTrackerBLLLibrary\\ClinicTrackerBLLLibrary.csproj|c:\\dotnet\\day20\\clinictrackerappsolution\\clinictrackerblllibrary\\patientbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CBAC907-01EF-4B2F-8CE5-44EBC6739502}|ClinicTrackerBLLLibrary\\ClinicTrackerBLLLibrary.csproj|solutionrelative:clinictrackerblllibrary\\patientbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PatientBL.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerBLLLibrary\\PatientBL.cs",
+              "RelativeDocumentMoniker": "ClinicTrackerBLLLibrary\\PatientBL.cs",
+              "ToolTip": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerBLLLibrary\\PatientBL.cs",
+              "RelativeToolTip": "ClinicTrackerBLLLibrary\\PatientBL.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAA7wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T16:46:29.243Z",
+              "EditorCaption": ""
             }
           ]
         }
