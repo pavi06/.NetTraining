@@ -1,0 +1,16 @@
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\bin\Debug\net6.0\EmployeeTrackerDALLibrary.deps.json
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\bin\Debug\net6.0\EmployeeTrackerDALLibrary.dll
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\bin\Debug\net6.0\EmployeeTrackerDALLibrary.pdb
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\bin\Debug\net6.0\EmployeeTrackerModelLibrary.dll
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\bin\Debug\net6.0\EmployeeTrackerModelLibrary.pdb
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\obj\Debug\net6.0\EmployeeTrackerDALLibrary.csproj.AssemblyReference.cache
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\obj\Debug\net6.0\EmployeeTrackerDALLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\obj\Debug\net6.0\EmployeeTrackerDALLibrary.AssemblyInfoInputs.cache
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\obj\Debug\net6.0\EmployeeTrackerDALLibrary.AssemblyInfo.cs
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\obj\Debug\net6.0\EmployeeTrackerDALLibrary.csproj.CoreCompileInputs.cache
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\obj\Debug\net6.0\EmployeeTrackerDALLibrary.sourcelink.json
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\obj\Debug\net6.0\Employee.D0F4B5D3.Up2Date
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\obj\Debug\net6.0\EmployeeTrackerDALLibrary.dll
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\obj\Debug\net6.0\refint\EmployeeTrackerDALLibrary.dll
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\obj\Debug\net6.0\EmployeeTrackerDALLibrary.pdb
+C:\dotNet\Day21\EmployeeTrackerFCASolution\EmployeeTrackerDALLibrary\obj\Debug\net6.0\ref\EmployeeTrackerDALLibrary.dll
