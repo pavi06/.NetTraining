@@ -21,5 +21,10 @@ namespace ClinicTrackerDALLibrary.Model
             return this.AppointmentDateTime == obj1.AppointmentDateTime && this.AppointmentDescription == obj1.AppointmentDescription
                 && this.AppointmentStatus == obj1.AppointmentStatus && this.PatientId == obj1.PatientId && this.DoctorId == obj1.DoctorId;
         }
+
+        public override string ToString()
+        {
+            return $"Id: {Id}\nAppointmentDateTime : {AppointmentDateTime}\nAppointmentDescription : {AppointmentDescription}\nAppointmentStatus: {AppointmentStatus}\nPatientId : {PatientId}\nDoctorId : {DoctorId}";
+        }
     }
 }

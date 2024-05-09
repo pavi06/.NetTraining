@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "ClinicTrackerBLLLibrary/1.0.0": {
         "dependencies": {
-          "ClinicTrackerDALLibrary": "1.0.0",
-          "ClinicTrackerModelLibrary": "1.0.0"
+          "ClinicTrackerDALLibrary": "1.0.0"
         },
         "runtime": {
           "ClinicTrackerBLLLibrary.dll": {}
@@ -465,16 +464,10 @@
       },
       "ClinicTrackerDALLibrary/1.0.0": {
         "dependencies": {
-          "ClinicTrackerModelLibrary": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.29"
         },
         "runtime": {
           "ClinicTrackerDALLibrary.dll": {}
-        }
-      },
-      "ClinicTrackerModelLibrary/1.0.0": {
-        "runtime": {
-          "ClinicTrackerModelLibrary.dll": {}
         }
       }
     }
@@ -766,11 +759,6 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "ClinicTrackerDALLibrary/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ClinicTrackerModelLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

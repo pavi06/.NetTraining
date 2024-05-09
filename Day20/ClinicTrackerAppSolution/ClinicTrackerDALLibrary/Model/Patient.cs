@@ -27,5 +27,10 @@ namespace ClinicTrackerDALLibrary.Model
                 this.PhoneNumber == obj1.PhoneNumber && this.BloodGroup == obj1.BloodGroup;
 
         }
+
+        public override string ToString()
+        {
+            return $"Id: {Id}\nName : {PatientName}\nAge : {Age}\nGender : {Gender}\nContactAddress : {ContactAddress}\nPhoneNumber : {PhoneNumber}\nBloodGroup : {BloodGroup}";
+        }
     }
 }

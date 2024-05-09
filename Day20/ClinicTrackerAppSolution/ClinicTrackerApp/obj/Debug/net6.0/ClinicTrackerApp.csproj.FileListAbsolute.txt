@@ -59,8 +59,6 @@ C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerApp\bin\Debug\net6.0\runti
 C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerApp\bin\Debug\net6.0\ClinicTrackerBLLLibrary.dll
 C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerApp\bin\Debug\net6.0\ClinicTrackerDALLibrary.dll
-C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerApp\bin\Debug\net6.0\ClinicTrackerModelLibrary.dll
 C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerApp\bin\Debug\net6.0\ClinicTrackerBLLLibrary.pdb
 C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerApp\bin\Debug\net6.0\ClinicTrackerDALLibrary.pdb
-C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerApp\bin\Debug\net6.0\ClinicTrackerModelLibrary.pdb
 C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerApp\obj\Debug\net6.0\ClinicTrackerApp.csproj.AssemblyReference.cache

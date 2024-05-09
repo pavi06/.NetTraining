@@ -27,5 +27,10 @@ namespace ClinicTrackerDALLibrary.Model
                 this.PhoneNumber == obj1.PhoneNumber && this.Experience == obj1.Experience &&
                 this.Specialization == obj1.Specialization && this.Qualification == obj1.Qualification;
         }
+
+        public override string ToString()
+        {
+            return $"Id: {Id}\nName: {DocName}\nAge : {Age}\nPhoneNumber : {PhoneNumber}\nExperience : {Experience}\nSpecialization : {Specialization}\nQualification : {Qualification}";
+        }
     }
 }

@@ -2,9 +2,7 @@ C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerBLLLibrary\bin\Debug\net6.
 C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerBLLLibrary\bin\Debug\net6.0\ClinicTrackerBLLLibrary.dll
 C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerBLLLibrary\bin\Debug\net6.0\ClinicTrackerBLLLibrary.pdb
 C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerBLLLibrary\bin\Debug\net6.0\ClinicTrackerDALLibrary.dll
-C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerBLLLibrary\bin\Debug\net6.0\ClinicTrackerModelLibrary.dll
 C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerBLLLibrary\bin\Debug\net6.0\ClinicTrackerDALLibrary.pdb
-C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerBLLLibrary\bin\Debug\net6.0\ClinicTrackerModelLibrary.pdb
 C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerBLLLibrary\obj\Debug\net6.0\ClinicTrackerBLLLibrary.csproj.AssemblyReference.cache
 C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerBLLLibrary\obj\Debug\net6.0\ClinicTrackerBLLLibrary.GeneratedMSBuildEditorConfig.editorconfig
 C:\dotNet\Day20\ClinicTrackerAppSolution\ClinicTrackerBLLLibrary\obj\Debug\net6.0\ClinicTrackerBLLLibrary.AssemblyInfoInputs.cache
