@@ -13,17 +13,25 @@ namespace ClinicTrackerApp
             PatientBL patientBl = new PatientBL(patientRepository);
             try
             {
-                //Patient patient = new Patient() { PatientName = "Sai", Age = 15, Gender = "Male", ContactAddress = "Chennai", BloodGroup = "A+ve", PhoneNumber = "7857453434" };
-                //var addedPatient = patientBl.AddPatient(patient);
+                //dbClinicContext context = new dbClinicContext();
+                //Console.WriteLine(context.Patients.GetType()); 
+                //var patients = context.Patients.ToList();
+                //foreach (var pat in patients)
+                //{
+                //    Console.WriteLine(pat.ToString());
+                //}
+
+                Patient patient = new Patient() { PatientName = "Sai", Age = 15, Gender = "Male", ContactAddress = "Chennai", BloodGroup = "A+ve", PhoneNumber = "7857453434" };
+                var addedPatient = patientBl.AddPatient(patient);
                 //Console.WriteLine("Patient Added Successfully!");
                 //var patientObject = patientBl.GetPatientById(1);
-                //Console.WriteLine(patientObject.ToString());
+                //Console.WriteLine(addedPatient.ToString());
                 //if(patientBl.UpdatePatientAddressById(2,"Korattur chennai"))
                 //{
                 //    Console.WriteLine("Patient Updated successfully!");
                 //}
-                var patient = patientBl.DeletePatientById(3);
-                Console.WriteLine(patient.ToString());
+                //var patient = patientBl.DeletePatientById(6);
+                //Console.WriteLine(patient.ToString());
             }
             catch (ObjectAlreadyExistsException e)
             {

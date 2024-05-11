@@ -16,6 +16,8 @@
         }
         public ICollection<Request> RequestsRaised { get; set; }//No effect on the table - navigation
         public ICollection<Request> RequestsClosed { get; set; }//No effect on the table - navigation
+        public ICollection<RequestSolution> SolutionsProvided { get; set; }
+        public ICollection<SolutionFeedback> FeedbacksGiven { get; set; }
 
     }
 }

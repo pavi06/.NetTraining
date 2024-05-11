@@ -23,7 +23,7 @@ namespace ClinicTrackerDALLibrary.Model
         public override bool Equals(object? obj)
         {
             Patient obj1 = obj as Patient;
-            return obj1.PatientName == this.PatientName && obj1.Age == this.Age && obj1.Gender == this.Gender && obj1.ContactAddress == this.ContactAddress && 
+            return obj1.PatientName == this.PatientName && obj1.Age == this.Age && obj1.Gender == this.Gender && obj1.ContactAddress == this.ContactAddress &&
                 this.PhoneNumber == obj1.PhoneNumber && this.BloodGroup == obj1.BloodGroup;
 
         }

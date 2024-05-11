@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5CBAC907-01EF-4B2F-8CE5-44EBC6739502}|ClinicTrackerBLLLibrary\\ClinicTrackerBLLLibrary.csproj|c:\\dotnet\\day20\\clinictrackerappsolution\\clinictrackerblllibrary\\patientbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CBAC907-01EF-4B2F-8CE5-44EBC6739502}|ClinicTrackerBLLLibrary\\ClinicTrackerBLLLibrary.csproj|solutionrelative:clinictrackerblllibrary\\patientbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3213D1DC-98C1-44C1-A9FB-BE6394BEB749}|ClinicTrackerApp\\ClinicTrackerApp.csproj|c:\\dotnet\\day20\\clinictrackerappsolution\\clinictrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3213D1DC-98C1-44C1-A9FB-BE6394BEB749}|ClinicTrackerApp\\ClinicTrackerApp.csproj|solutionrelative:clinictrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FD86EE37-921B-4FAA-81EA-AB9DEB7C0D12}|ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj|c:\\dotnet\\day20\\clinictrackerappsolution\\clinictrackerdallibrary\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD86EE37-921B-4FAA-81EA-AB9DEB7C0D12}|ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj|solutionrelative:clinictrackerdallibrary\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD86EE37-921B-4FAA-81EA-AB9DEB7C0D12}|ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj|c:\\dotnet\\day20\\clinictrackerappsolution\\clinictrackerdallibrary\\model\\dbcliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD86EE37-921B-4FAA-81EA-AB9DEB7C0D12}|ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj|solutionrelative:clinictrackerdallibrary\\model\\dbcliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FD86EE37-921B-4FAA-81EA-AB9DEB7C0D12}|ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj|c:\\dotnet\\day20\\clinictrackerappsolution\\clinictrackerdallibrary\\model\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD86EE37-921B-4FAA-81EA-AB9DEB7C0D12}|ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj|solutionrelative:clinictrackerdallibrary\\model\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD86EE37-921B-4FAA-81EA-AB9DEB7C0D12}|ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj|c:\\dotnet\\day20\\clinictrackerappsolution\\clinictrackerdallibrary\\model\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD86EE37-921B-4FAA-81EA-AB9DEB7C0D12}|ClinicTrackerDALLibrary\\ClinicTrackerDALLibrary.csproj|solutionrelative:clinictrackerdallibrary\\model\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,28 +43,76 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PatientBL.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerBLLLibrary\\PatientBL.cs",
+              "RelativeDocumentMoniker": "ClinicTrackerBLLLibrary\\PatientBL.cs",
+              "ToolTip": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerBLLLibrary\\PatientBL.cs",
+              "RelativeToolTip": "ClinicTrackerBLLLibrary\\PatientBL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T02:24:30.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerDALLibrary\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "ClinicTrackerDALLibrary\\PatientRepository.cs",
+              "ToolTip": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerDALLibrary\\PatientRepository.cs",
+              "RelativeToolTip": "ClinicTrackerDALLibrary\\PatientRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T02:22:07.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbClinicContext.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerDALLibrary\\Model\\dbClinicContext.cs",
+              "RelativeDocumentMoniker": "ClinicTrackerDALLibrary\\Model\\dbClinicContext.cs",
+              "ToolTip": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerDALLibrary\\Model\\dbClinicContext.cs",
+              "RelativeToolTip": "ClinicTrackerDALLibrary\\Model\\dbClinicContext.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAAApwIYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T02:18:44.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerDALLibrary\\Model\\Doctor.cs",
+              "RelativeDocumentMoniker": "ClinicTrackerDALLibrary\\Model\\Doctor.cs",
+              "ToolTip": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerDALLibrary\\Model\\Doctor.cs",
+              "RelativeToolTip": "ClinicTrackerDALLibrary\\Model\\Doctor.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA7wBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T02:17:58.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerApp\\Program.cs",
               "RelativeDocumentMoniker": "ClinicTrackerApp\\Program.cs",
               "ToolTip": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerApp\\Program.cs",
               "RelativeToolTip": "ClinicTrackerApp\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T02:10:19.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Appointment.cs",
               "DocumentMoniker": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerDALLibrary\\Model\\Appointment.cs",
               "RelativeDocumentMoniker": "ClinicTrackerDALLibrary\\Model\\Appointment.cs",
               "ToolTip": "C:\\dotNet\\Day20\\ClinicTrackerAppSolution\\ClinicTrackerDALLibrary\\Model\\Appointment.cs",
               "RelativeToolTip": "ClinicTrackerDALLibrary\\Model\\Appointment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T02:06:18.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T02:06:18.884Z"
             }
           ]
         }

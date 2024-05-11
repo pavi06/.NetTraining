@@ -26,5 +26,7 @@ namespace EmployeeTrackerModelLibrary
         public int RequestClosedBy { get; set; }
 
         public Employee RequestClosedByEmployee { get; set; } //navigation
+
+        public ICollection<RequestSolution> RequestSolutions { get; set; } //navigation
     }
 }

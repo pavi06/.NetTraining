@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C22D6BD-6570-4CA1-9FF9-182E072A0B2E}|EmployeeTrackerDALLibrary\\EmployeeTrackerDALLibrary.csproj|c:\\dotnet\\day21\\employeetrackerfcasolution\\employeetrackerdallibrary\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C22D6BD-6570-4CA1-9FF9-182E072A0B2E}|EmployeeTrackerDALLibrary\\EmployeeTrackerDALLibrary.csproj|solutionrelative:employeetrackerdallibrary\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B2E24FC-AF0C-458E-BA5A-BED3F134311D}|EmployeeTrackerModelLibrary\\EmployeeTrackerModelLibrary.csproj|c:\\dotnet\\day21\\employeetrackerfcasolution\\employeetrackermodellibrary\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2E24FC-AF0C-458E-BA5A-BED3F134311D}|EmployeeTrackerModelLibrary\\EmployeeTrackerModelLibrary.csproj|solutionrelative:employeetrackermodellibrary\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1614B97-43F5-48F7-9B21-05E1A7461E68}|EmployeeTrackerApp\\EmployeeTrackerApp.csproj|c:\\dotnet\\day21\\employeetrackerfcasolution\\employeetrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1614B97-43F5-48F7-9B21-05E1A7461E68}|EmployeeTrackerApp\\EmployeeTrackerApp.csproj|solutionrelative:employeetrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B2E24FC-AF0C-458E-BA5A-BED3F134311D}|EmployeeTrackerModelLibrary\\EmployeeTrackerModelLibrary.csproj|c:\\dotnet\\day21\\employeetrackerfcasolution\\employeetrackermodellibrary\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2E24FC-AF0C-458E-BA5A-BED3F134311D}|EmployeeTrackerModelLibrary\\EmployeeTrackerModelLibrary.csproj|solutionrelative:employeetrackermodellibrary\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2E24FC-AF0C-458E-BA5A-BED3F134311D}|EmployeeTrackerModelLibrary\\EmployeeTrackerModelLibrary.csproj|c:\\dotnet\\day21\\employeetrackerfcasolution\\employeetrackermodellibrary\\requestsolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2E24FC-AF0C-458E-BA5A-BED3F134311D}|EmployeeTrackerModelLibrary\\EmployeeTrackerModelLibrary.csproj|solutionrelative:employeetrackermodellibrary\\requestsolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2E24FC-AF0C-458E-BA5A-BED3F134311D}|EmployeeTrackerModelLibrary\\EmployeeTrackerModelLibrary.csproj|c:\\dotnet\\day21\\employeetrackerfcasolution\\employeetrackermodellibrary\\requesttrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2E24FC-AF0C-458E-BA5A-BED3F134311D}|EmployeeTrackerModelLibrary\\EmployeeTrackerModelLibrary.csproj|solutionrelative:employeetrackermodellibrary\\requesttrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2E24FC-AF0C-458E-BA5A-BED3F134311D}|EmployeeTrackerModelLibrary\\EmployeeTrackerModelLibrary.csproj|c:\\dotnet\\day21\\employeetrackerfcasolution\\employeetrackermodellibrary\\solutionfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2E24FC-AF0C-458E-BA5A-BED3F134311D}|EmployeeTrackerModelLibrary\\EmployeeTrackerModelLibrary.csproj|solutionrelative:employeetrackermodellibrary\\solutionfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2E24FC-AF0C-458E-BA5A-BED3F134311D}|EmployeeTrackerModelLibrary\\EmployeeTrackerModelLibrary.csproj|c:\\dotnet\\day21\\employeetrackerfcasolution\\employeetrackermodellibrary\\migrations\\20240509101108_seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2E24FC-AF0C-458E-BA5A-BED3F134311D}|EmployeeTrackerModelLibrary\\EmployeeTrackerModelLibrary.csproj|solutionrelative:employeetrackermodellibrary\\migrations\\20240509101108_seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,29 +42,76 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RequestRepository.cs",
-              "DocumentMoniker": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerDALLibrary\\RequestRepository.cs",
-              "RelativeDocumentMoniker": "EmployeeTrackerDALLibrary\\RequestRepository.cs",
-              "ToolTip": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerDALLibrary\\RequestRepository.cs",
-              "RelativeToolTip": "EmployeeTrackerDALLibrary\\RequestRepository.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAowAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "RequestSolution.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerModelLibrary\\RequestSolution.cs",
+              "RelativeDocumentMoniker": "EmployeeTrackerModelLibrary\\RequestSolution.cs",
+              "ToolTip": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerModelLibrary\\RequestSolution.cs",
+              "RelativeToolTip": "EmployeeTrackerModelLibrary\\RequestSolution.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBcAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T14:59:23.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T04:13:38.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestTrackerContext.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerModelLibrary\\RequestTrackerContext.cs",
+              "RelativeDocumentMoniker": "EmployeeTrackerModelLibrary\\RequestTrackerContext.cs",
+              "ToolTip": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerModelLibrary\\RequestTrackerContext.cs",
+              "RelativeToolTip": "EmployeeTrackerModelLibrary\\RequestTrackerContext.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAowEoAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T04:38:31.724Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerApp\\Program.cs",
-              "RelativeDocumentMoniker": "EmployeeTrackerApp\\Program.cs",
-              "ToolTip": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerApp\\Program.cs",
-              "RelativeToolTip": "EmployeeTrackerApp\\Program.cs",
+              "Title": "Request.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerModelLibrary\\Request.cs",
+              "RelativeDocumentMoniker": "EmployeeTrackerModelLibrary\\Request.cs",
+              "ToolTip": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerModelLibrary\\Request.cs",
+              "RelativeToolTip": "EmployeeTrackerModelLibrary\\Request.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBcAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T04:14:21.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerModelLibrary\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeeTrackerModelLibrary\\Employee.cs",
+              "ToolTip": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerModelLibrary\\Employee.cs",
+              "RelativeToolTip": "EmployeeTrackerModelLibrary\\Employee.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T04:14:19.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SolutionFeedback.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerModelLibrary\\SolutionFeedback.cs",
+              "RelativeDocumentMoniker": "EmployeeTrackerModelLibrary\\SolutionFeedback.cs",
+              "ToolTip": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerModelLibrary\\SolutionFeedback.cs",
+              "RelativeToolTip": "EmployeeTrackerModelLibrary\\SolutionFeedback.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T05:10:27.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240509101108_seeddata.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerModelLibrary\\Migrations\\20240509101108_seeddata.cs",
+              "RelativeDocumentMoniker": "EmployeeTrackerModelLibrary\\Migrations\\20240509101108_seeddata.cs",
+              "ToolTip": "C:\\dotNet\\Day21\\EmployeeTrackerFCASolution\\EmployeeTrackerModelLibrary\\Migrations\\20240509101108_seeddata.cs",
+              "RelativeToolTip": "EmployeeTrackerModelLibrary\\Migrations\\20240509101108_seeddata.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T14:55:35.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T07:34:07.928Z"
             }
           ]
         }
