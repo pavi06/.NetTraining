@@ -21,11 +21,11 @@ namespace ClinicTrackerApp
                 //    Console.WriteLine(pat.ToString());
                 //}
 
-                Patient patient = new Patient() { PatientName = "Sai", Age = 15, Gender = "Male", ContactAddress = "Chennai", BloodGroup = "A+ve", PhoneNumber = "7857453434" };
-                var addedPatient = patientBl.AddPatient(patient);
+                //Patient patient = new Patient() { PatientName = "Sai", Age = 15, Gender = "Male", ContactAddress = "Chennai", BloodGroup = "A+ve", PhoneNumber = "7857453434" };
+                //var addedPatient = patientBl.AddPatient(patient);
                 //Console.WriteLine("Patient Added Successfully!");
-                //var patientObject = patientBl.GetPatientById(1);
-                //Console.WriteLine(addedPatient.ToString());
+                var patientObject = patientBl.GetPatientById(1);
+                Console.WriteLine(patientObject.ToString());
                 //if(patientBl.UpdatePatientAddressById(2,"Korattur chennai"))
                 //{
                 //    Console.WriteLine("Patient Updated successfully!");

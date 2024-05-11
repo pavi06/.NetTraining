@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClinicTrackerApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57683d2ca3096ad13bb5ae197bc283c568230347")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83562620c7fb94fce2a8ffea5186cec6623f5e8b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClinicTrackerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClinicTrackerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -18,11 +18,7 @@ namespace ClinicTrackerDALLibrary
 
         public Appointment Add(Appointment item)
         {
-            if (clinicContext.Appointments.Contains(item))
-            {
-                return null;
-            }
-            clinicContext.Appointments.Add(item);
+            clinicContext.Add(item);
             clinicContext.SaveChanges();
             return item;
         }

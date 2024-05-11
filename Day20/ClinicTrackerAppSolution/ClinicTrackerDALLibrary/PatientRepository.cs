@@ -13,11 +13,7 @@ namespace ClinicTrackerDALLibrary
 
         public Patient Add(Patient item)
         {
-            if (clinicContext.Patients.Contains(item))
-            {
-                return null;
-            }
-            clinicContext.Patients.Add(item);
+            clinicContext.Add(item);
             clinicContext.SaveChanges();
             return item;
         }

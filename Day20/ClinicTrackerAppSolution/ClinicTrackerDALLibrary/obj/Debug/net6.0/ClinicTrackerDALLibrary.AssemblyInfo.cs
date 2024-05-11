@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClinicTrackerDALLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57683d2ca3096ad13bb5ae197bc283c568230347")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83562620c7fb94fce2a8ffea5186cec6623f5e8b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClinicTrackerDALLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClinicTrackerDALLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
