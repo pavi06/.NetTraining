@@ -20,14 +20,6 @@ namespace ClinicTrackerDALLibrary.Model
 
         public virtual ICollection<Appointment> Appointments { get; set; }
 
-        //public override bool Equals(object? obj)
-        //{
-        //    Doctor obj1 = obj as Doctor;
-        //    return this.DocName == obj1.DocName && this.Age == obj1.Age &&
-        //        this.PhoneNumber == obj1.PhoneNumber && this.Experience == obj1.Experience &&
-        //        this.Specialization == obj1.Specialization && this.Qualification == obj1.Qualification;
-        //}
-
         public override string ToString()
         {
             return $"Id: {Id}\nName: {DocName}\nAge : {Age}\nPhoneNumber : {PhoneNumber}\nExperience : {Experience}\nSpecialization : {Specialization}\nQualification : {Qualification}";
