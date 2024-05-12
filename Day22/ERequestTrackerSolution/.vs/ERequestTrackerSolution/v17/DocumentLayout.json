@@ -1,0 +1,290 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{476C354C-1697-468F-BE41-015371835D72}|ERequestTrackerApp\\ERequestTrackerApp.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{476C354C-1697-468F-BE41-015371835D72}|ERequestTrackerApp\\ERequestTrackerApp.csproj|solutionrelative:erequesttrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CD92843-D32E-41DF-B0A9-93AC41CD2299}|ERequestTrackerDALLibrary\\ERequestTrackerDALLibrary.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackerdallibrary\\employeeadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CD92843-D32E-41DF-B0A9-93AC41CD2299}|ERequestTrackerDALLibrary\\ERequestTrackerDALLibrary.csproj|solutionrelative:erequesttrackerdallibrary\\employeeadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CD92843-D32E-41DF-B0A9-93AC41CD2299}|ERequestTrackerDALLibrary\\ERequestTrackerDALLibrary.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackerdallibrary\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CD92843-D32E-41DF-B0A9-93AC41CD2299}|ERequestTrackerDALLibrary\\ERequestTrackerDALLibrary.csproj|solutionrelative:erequesttrackerdallibrary\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CD92843-D32E-41DF-B0A9-93AC41CD2299}|ERequestTrackerDALLibrary\\ERequestTrackerDALLibrary.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackerdallibrary\\employeerequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CD92843-D32E-41DF-B0A9-93AC41CD2299}|ERequestTrackerDALLibrary\\ERequestTrackerDALLibrary.csproj|solutionrelative:erequesttrackerdallibrary\\employeerequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CD92843-D32E-41DF-B0A9-93AC41CD2299}|ERequestTrackerDALLibrary\\ERequestTrackerDALLibrary.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackerdallibrary\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CD92843-D32E-41DF-B0A9-93AC41CD2299}|ERequestTrackerDALLibrary\\ERequestTrackerDALLibrary.csproj|solutionrelative:erequesttrackerdallibrary\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CD92843-D32E-41DF-B0A9-93AC41CD2299}|ERequestTrackerDALLibrary\\ERequestTrackerDALLibrary.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackerdallibrary\\requestsolutionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CD92843-D32E-41DF-B0A9-93AC41CD2299}|ERequestTrackerDALLibrary\\ERequestTrackerDALLibrary.csproj|solutionrelative:erequesttrackerdallibrary\\requestsolutionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CD92843-D32E-41DF-B0A9-93AC41CD2299}|ERequestTrackerDALLibrary\\ERequestTrackerDALLibrary.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackerdallibrary\\solutionfeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CD92843-D32E-41DF-B0A9-93AC41CD2299}|ERequestTrackerDALLibrary\\ERequestTrackerDALLibrary.csproj|solutionrelative:erequesttrackerdallibrary\\solutionfeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EDD1EF-BA6C-4C06-BEF2-19D985A82F74}|ERequestTrackerBLLLibrary\\ERequestTrackerBLLLibrary.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackerblllibrary\\employeeadminbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5EDD1EF-BA6C-4C06-BEF2-19D985A82F74}|ERequestTrackerBLLLibrary\\ERequestTrackerBLLLibrary.csproj|solutionrelative:erequesttrackerblllibrary\\employeeadminbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{476C354C-1697-468F-BE41-015371835D72}|ERequestTrackerApp\\ERequestTrackerApp.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackerapp\\employeeadminmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{476C354C-1697-468F-BE41-015371835D72}|ERequestTrackerApp\\ERequestTrackerApp.csproj|solutionrelative:erequesttrackerapp\\employeeadminmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACBFA497-FE9F-4DE5-B703-A4A800B139E5}|ERequestTrackerModelLibrary\\ERequestTrackerModelLibrary.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackermodellibrary\\requesttrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACBFA497-FE9F-4DE5-B703-A4A800B139E5}|ERequestTrackerModelLibrary\\ERequestTrackerModelLibrary.csproj|solutionrelative:erequesttrackermodellibrary\\requesttrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{476C354C-1697-468F-BE41-015371835D72}|ERequestTrackerApp\\ERequestTrackerApp.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackerapp\\employeemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{476C354C-1697-468F-BE41-015371835D72}|ERequestTrackerApp\\ERequestTrackerApp.csproj|solutionrelative:erequesttrackerapp\\employeemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EDD1EF-BA6C-4C06-BEF2-19D985A82F74}|ERequestTrackerBLLLibrary\\ERequestTrackerBLLLibrary.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackerblllibrary\\employeerequestbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5EDD1EF-BA6C-4C06-BEF2-19D985A82F74}|ERequestTrackerBLLLibrary\\ERequestTrackerBLLLibrary.csproj|solutionrelative:erequesttrackerblllibrary\\employeerequestbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACBFA497-FE9F-4DE5-B703-A4A800B139E5}|ERequestTrackerModelLibrary\\ERequestTrackerModelLibrary.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackermodellibrary\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACBFA497-FE9F-4DE5-B703-A4A800B139E5}|ERequestTrackerModelLibrary\\ERequestTrackerModelLibrary.csproj|solutionrelative:erequesttrackermodellibrary\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACBFA497-FE9F-4DE5-B703-A4A800B139E5}|ERequestTrackerModelLibrary\\ERequestTrackerModelLibrary.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackermodellibrary\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACBFA497-FE9F-4DE5-B703-A4A800B139E5}|ERequestTrackerModelLibrary\\ERequestTrackerModelLibrary.csproj|solutionrelative:erequesttrackermodellibrary\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EDD1EF-BA6C-4C06-BEF2-19D985A82F74}|ERequestTrackerBLLLibrary\\ERequestTrackerBLLLibrary.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackerblllibrary\\iemployeeadminbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5EDD1EF-BA6C-4C06-BEF2-19D985A82F74}|ERequestTrackerBLLLibrary\\ERequestTrackerBLLLibrary.csproj|solutionrelative:erequesttrackerblllibrary\\iemployeeadminbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACBFA497-FE9F-4DE5-B703-A4A800B139E5}|ERequestTrackerModelLibrary\\ERequestTrackerModelLibrary.csproj|c:\\dotnet\\day22\\erequesttrackersolution\\erequesttrackermodellibrary\\solutionfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACBFA497-FE9F-4DE5-B703-A4A800B139E5}|ERequestTrackerModelLibrary\\ERequestTrackerModelLibrary.csproj|solutionrelative:erequesttrackermodellibrary\\solutionfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerDALLibrary\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerDALLibrary\\EmployeeRepository.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerDALLibrary\\EmployeeRepository.cs",
+              "RelativeToolTip": "ERequestTrackerDALLibrary\\EmployeeRepository.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwDQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T16:01:32.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RequestRepository.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerDALLibrary\\RequestRepository.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerDALLibrary\\RequestRepository.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerDALLibrary\\RequestRepository.cs",
+              "RelativeToolTip": "ERequestTrackerDALLibrary\\RequestRepository.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T16:01:22.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RequestSolutionRepository.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerDALLibrary\\RequestSolutionRepository.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerDALLibrary\\RequestSolutionRepository.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerDALLibrary\\RequestSolutionRepository.cs",
+              "RelativeToolTip": "ERequestTrackerDALLibrary\\RequestSolutionRepository.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T16:00:47.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeAdminRepository.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerDALLibrary\\EmployeeAdminRepository.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerDALLibrary\\EmployeeAdminRepository.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerDALLibrary\\EmployeeAdminRepository.cs",
+              "RelativeToolTip": "ERequestTrackerDALLibrary\\EmployeeAdminRepository.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAhwA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T11:58:53.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerApp\\Program.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerApp\\Program.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerApp\\Program.cs",
+              "RelativeToolTip": "ERequestTrackerApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T06:46:31.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SolutionFeedbackRepository.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerDALLibrary\\SolutionFeedbackRepository.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerDALLibrary\\SolutionFeedbackRepository.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerDALLibrary\\SolutionFeedbackRepository.cs",
+              "RelativeToolTip": "ERequestTrackerDALLibrary\\SolutionFeedbackRepository.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwDIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T15:59:52.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmployeeAdminMain.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerApp\\EmployeeAdminMain.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerApp\\EmployeeAdminMain.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerApp\\EmployeeAdminMain.cs",
+              "RelativeToolTip": "ERequestTrackerApp\\EmployeeAdminMain.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG4AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T11:13:25.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeRequestRepository.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerDALLibrary\\EmployeeRequestRepository.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerDALLibrary\\EmployeeRequestRepository.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerDALLibrary\\EmployeeRequestRepository.cs",
+              "RelativeToolTip": "ERequestTrackerDALLibrary\\EmployeeRequestRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T11:57:20.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeMain.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerApp\\EmployeeMain.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerApp\\EmployeeMain.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerApp\\EmployeeMain.cs",
+              "RelativeToolTip": "ERequestTrackerApp\\EmployeeMain.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAgwLEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T07:26:07.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeeAdminBL.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerBLLLibrary\\EmployeeAdminBL.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerBLLLibrary\\EmployeeAdminBL.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerBLLLibrary\\EmployeeAdminBL.cs",
+              "RelativeToolTip": "ERequestTrackerBLLLibrary\\EmployeeAdminBL.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAswIcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T11:13:33.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Request.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerModelLibrary\\Request.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerModelLibrary\\Request.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerModelLibrary\\Request.cs",
+              "RelativeToolTip": "ERequestTrackerModelLibrary\\Request.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAawBcAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T08:50:52.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RequestTrackerContext.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerModelLibrary\\RequestTrackerContext.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerModelLibrary\\RequestTrackerContext.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerModelLibrary\\RequestTrackerContext.cs",
+              "RelativeToolTip": "ERequestTrackerModelLibrary\\RequestTrackerContext.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAApwAwAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T08:47:42.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmployeeRequestBL.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerBLLLibrary\\EmployeeRequestBL.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerBLLLibrary\\EmployeeRequestBL.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerBLLLibrary\\EmployeeRequestBL.cs",
+              "RelativeToolTip": "ERequestTrackerBLLLibrary\\EmployeeRequestBL.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T13:51:11.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerModelLibrary\\Employee.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerModelLibrary\\Employee.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerModelLibrary\\Employee.cs",
+              "RelativeToolTip": "ERequestTrackerModelLibrary\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T07:22:52.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IEmployeeAdminBL.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerBLLLibrary\\IEmployeeAdminBL.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerBLLLibrary\\IEmployeeAdminBL.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerBLLLibrary\\IEmployeeAdminBL.cs",
+              "RelativeToolTip": "ERequestTrackerBLLLibrary\\IEmployeeAdminBL.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T11:41:42.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SolutionFeedback.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerModelLibrary\\SolutionFeedback.cs",
+              "RelativeDocumentMoniker": "ERequestTrackerModelLibrary\\SolutionFeedback.cs",
+              "ToolTip": "C:\\dotNet\\Day22\\ERequestTrackerSolution\\ERequestTrackerModelLibrary\\SolutionFeedback.cs",
+              "RelativeToolTip": "ERequestTrackerModelLibrary\\SolutionFeedback.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T07:18:52.107Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

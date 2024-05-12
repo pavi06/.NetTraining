@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERequestTrackerModelLibrary", "ERequestTrackerModelLibrary\ERequestTrackerModelLibrary.csproj", "{ACBFA497-FE9F-4DE5-B703-A4A800B139E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERequestTrackerDALLibrary", "ERequestTrackerDALLibrary\ERequestTrackerDALLibrary.csproj", "{6CD92843-D32E-41DF-B0A9-93AC41CD2299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERequestTrackerBLLLibrary", "ERequestTrackerBLLLibrary\ERequestTrackerBLLLibrary.csproj", "{E5EDD1EF-BA6C-4C06-BEF2-19D985A82F74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERequestTrackerBLL1Library", "ERequestTrackerBLL1Library\ERequestTrackerBLL1Library.csproj", "{E57BBF04-F556-4798-AA1B-ABF070FF5E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERequestTrackerApp", "ERequestTrackerApp\ERequestTrackerApp.csproj", "{476C354C-1697-468F-BE41-015371835D72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACBFA497-FE9F-4DE5-B703-A4A800B139E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACBFA497-FE9F-4DE5-B703-A4A800B139E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACBFA497-FE9F-4DE5-B703-A4A800B139E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACBFA497-FE9F-4DE5-B703-A4A800B139E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD92843-D32E-41DF-B0A9-93AC41CD2299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD92843-D32E-41DF-B0A9-93AC41CD2299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD92843-D32E-41DF-B0A9-93AC41CD2299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD92843-D32E-41DF-B0A9-93AC41CD2299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5EDD1EF-BA6C-4C06-BEF2-19D985A82F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5EDD1EF-BA6C-4C06-BEF2-19D985A82F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5EDD1EF-BA6C-4C06-BEF2-19D985A82F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5EDD1EF-BA6C-4C06-BEF2-19D985A82F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E57BBF04-F556-4798-AA1B-ABF070FF5E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57BBF04-F556-4798-AA1B-ABF070FF5E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57BBF04-F556-4798-AA1B-ABF070FF5E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57BBF04-F556-4798-AA1B-ABF070FF5E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{476C354C-1697-468F-BE41-015371835D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{476C354C-1697-468F-BE41-015371835D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{476C354C-1697-468F-BE41-015371835D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{476C354C-1697-468F-BE41-015371835D72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B480A2A5-EC36-43B6-8E4D-47578888742A}
+	EndGlobalSection
+EndGlobal
