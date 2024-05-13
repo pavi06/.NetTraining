@@ -37,7 +37,7 @@ namespace ERequestTrackerDALLibrary
 
         public virtual async Task<IList<Employee>> GetAll()
         {
-            return await _context.Employees.Include(e => e.Role).ToListAsync();
+            return await _context.Employees.ToListAsync();
         }
 
         public async Task<Employee> Update(Employee entity)

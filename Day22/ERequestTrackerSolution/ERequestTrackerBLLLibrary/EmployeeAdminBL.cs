@@ -51,7 +51,7 @@ namespace ERequestTrackerBLLLibrary
 
         public async Task<List<RequestSolution>> ViewAllSolutionsProvided()
         {
-            var solutions = _reqSolRepo.GetAll().Result.Where(rs => rs.SolvedBy == LoggedUser.Id).ToList();
+            var solutions = _empAdminRepo.Get(LoggedUser.Id).Result.SolutionsProvided.ToList();
             if (solutions.Count > 0)
             {
                 return solutions;
@@ -70,14 +70,15 @@ namespace ERequestTrackerBLLLibrary
                     getAllSolutions.AddRange(await GetAllSolutionsForTheRequestRaised(req.RequestNumber));
                 }
             }
-            catch (NoObjectsAvailableException e) { }
+            catch (NoObjectsAvailableException e) {}
             try
             {
                 getAllSolutions.AddRange(await ViewAllSolutionsProvided());
             }
-            catch (NoObjectsAvailableException e) { }
+            catch (NoObjectsAvailableException e) {}
             if (getAllSolutions.Count > 0)
             {
+                await Console.Out.WriteLineAsync("----Solutions----");
                 return getAllSolutions;
             }
             throw new NoObjectsAvailableException("No solutions available !");
@@ -89,7 +90,7 @@ namespace ERequestTrackerBLLLibrary
             var flag = true;
             foreach (var request in requestSolutions)
             {
-                if (request.RequestRaiserComment != null && request.RequestRaiserComment.ToLower().Contains("solved"))
+                if (request.RequestRaiserComment != null && request.RequestRaiserComment.ToLower().Contains("solved") && !request.RequestRaiserComment.ToLower().Contains("not"))
                 {
                     flag = false;
                     await Console.Out.WriteLineAsync(UpdateRequestForClosure(request.RequestId, request.SolutionId).Result.ToString());
@@ -125,12 +126,10 @@ namespace ERequestTrackerBLLLibrary
         public async Task<List<SolutionFeedback>> ViewFeedbacks()
         {
             var reqSolutions = _reqSolRepo.GetAll().Result.ToList().FindAll(rs => rs.SolvedBy == LoggedUser.Id);
-            var allSolutions = _solutionFeedbackRepo.GetAll().Result.ToList();
             List<SolutionFeedback> allFeedbacks = new List<SolutionFeedback>();
-            //allFeedbacks = _empAdminRepo.Get(LoggedUser.Id).Result.FeedbacksGiven.ToList();
             foreach (var reqSolution in reqSolutions)
             {
-                allFeedbacks.AddRange(allSolutions.FindAll(s => s.SolutionId == reqSolution.SolutionId));
+                allFeedbacks.AddRange(reqSolution.Feedbacks);   
             }
             if (allFeedbacks.Count > 0)
             {
@@ -142,14 +141,21 @@ namespace ERequestTrackerBLLLibrary
 
         public async Task UpdateRequestRaisedByThem(int reqId)
         {
-            var req = await GetRequestRaised(reqId);
-            req.RequestClosedBy = LoggedUser.Id;
-            req.RequestStatus = "closed";
-            req.ClosedDate = DateTime.Now;
-            if(await _reqRepo.Update(req) != null)
+            try
             {
-                await Console.Out.WriteLineAsync("Request Updated successfully!");
-            }   
+                var req = await GetRequestRaised(reqId);
+                req.RequestClosedBy = LoggedUser.Id;
+                req.RequestStatus = "closed";
+                req.ClosedDate = DateTime.Now;
+                if (await _reqRepo.Update(req) != null)
+                {
+                    await Console.Out.WriteLineAsync("Request Updated successfully!");
+                }
+            }
+            catch (ObjectNotAvailableException e)
+            {
+                await Console.Out.WriteLineAsync(e.Message);
+            }
         }
     }
 }

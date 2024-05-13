@@ -18,7 +18,7 @@ namespace ERequestTrackerApp
             if (result != null)
                 await Console.Out.WriteLineAsync("Login Success");
             else
-                Console.Out.WriteLine("Invalid username or password");
+                await Console.Out.WriteLineAsync("Invalid username or password");
             return result;
         }
         async Task<Employee> GetLoginDeatils(IEmployeeLoginBL employeeLoginBl)
@@ -41,7 +41,7 @@ namespace ERequestTrackerApp
             }
             else
             {
-                Console.Out.WriteLine("Oops! Registration not successful ...Try Again later!");
+                await Console.Out.WriteLineAsync("Oops! Registration not successful ...Try Again later!");
             }
             return null;
         }
@@ -71,12 +71,12 @@ namespace ERequestTrackerApp
             if (user.Role.ToLower() == "user")
             {
                 EmployeeMain employeeMain = new EmployeeMain();
-                employeeMain.Starter(user, employeeLoginBl);
+                await employeeMain.Starter(user, employeeLoginBl);
             }
             else
             {
                 EmployeeAdminMain employeeAdminMain = new EmployeeAdminMain();
-                employeeAdminMain.Starter(user, employeeLoginBl);
+                await employeeAdminMain.Starter(user, employeeLoginBl);
             }
         }
 
@@ -94,7 +94,7 @@ namespace ERequestTrackerApp
                     if (user != null)
                     {
                         Console.WriteLine($"Logged In user : {user.Id}");
-                        program.CheckUserAndDisplayMenu(user, employeeLoginBL);
+                        await program.CheckUserAndDisplayMenu(user, employeeLoginBL);
                     }
                     else
                         Console.WriteLine("Not LoggedIn");
@@ -105,15 +105,17 @@ namespace ERequestTrackerApp
                     if (user != null)
                     {
                         Console.WriteLine($"Registered user : {user.Id}");
-                        program.CheckUserAndDisplayMenu(user, employeeLoginBL);
+                        await program.CheckUserAndDisplayMenu(user, employeeLoginBL);
                     }
                     else
                         Console.WriteLine("Not Registered");
                 }
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-         }
+
+        }
     }
 }

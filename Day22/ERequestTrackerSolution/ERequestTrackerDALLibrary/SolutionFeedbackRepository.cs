@@ -21,7 +21,7 @@ namespace ERequestTrackerDALLibrary
         public async Task<SolutionFeedback> Add(SolutionFeedback entity)
         {
             _context.Add(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return entity;
         }
 

@@ -16,11 +16,11 @@ namespace ERequestTrackerDALLibrary
         }
         public async override Task<IList<Employee>> GetAll()
         {
-            return await _context.Employees.Include(e => e.Role).Include(e => e.RequestsRaised).ToListAsync();
+            return await _context.Employees.Include(e => e.RequestsRaised).ToListAsync();
         }
         public async override Task<Employee> Get(int key)
         {
-            var employee = _context.Employees.Include(e=> e.Role).Include(e => e.RequestsRaised).SingleOrDefault(e => e.Id == key);
+            var employee = _context.Employees.Include(e => e.RequestsRaised).SingleOrDefault(e => e.Id == key);
             return employee;
         }
     }

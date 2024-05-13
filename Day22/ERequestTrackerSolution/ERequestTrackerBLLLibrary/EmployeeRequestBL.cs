@@ -16,6 +16,7 @@ namespace ERequestTrackerBLLLibrary
         protected RequestRepository _reqRepo;
         protected SolutionFeedbackRepository _solutionFeedbackRepo;
         protected RequestTrackerContext _reqTrackerContext;
+        protected EmployeeRequestRepository _employeeRequestRepository;
         protected Employee LoggedUser;
 
         public EmployeeRequestBL(Employee user) {
@@ -23,11 +24,12 @@ namespace ERequestTrackerBLLLibrary
             _requestSolutionRepo = new RequestSolutionRepository(_reqTrackerContext);
             _reqRepo = new RequestRepository(_reqTrackerContext);
             _solutionFeedbackRepo = new SolutionFeedbackRepository(_reqTrackerContext);
+            _employeeRequestRepository = new EmployeeRequestRepository(_reqTrackerContext);
             LoggedUser = user;
         }
         public async Task<List<Request>> GetAllRequestRaisedByEmployee()
         {
-            var empReqRaisedList = _reqRepo.GetAll().Result.Where(r=>r.RequestRaisedBy == LoggedUser.Id).ToList();
+            var empReqRaisedList = _employeeRequestRepository.Get(LoggedUser.Id).Result.RequestsRaised.ToList();
             if(empReqRaisedList.Count > 0)
             {
                 return empReqRaisedList;
@@ -37,7 +39,8 @@ namespace ERequestTrackerBLLLibrary
 
         public async Task<List<RequestSolution>> GetAllSolutionsForTheRequestRaised(int reqId)
         {
-            var solutionsProvided = _requestSolutionRepo.GetAll().Result.ToList().Where(rs => rs.RequestId == reqId).ToList();  
+            //var solutionsProvided = _requestSolutionRepo.GetAll().Result.ToList().Where(rs => rs.RequestId == reqId).ToList();  
+            var solutionsProvided = _reqRepo.Get(reqId).Result.RequestSolutions.ToList();
             if(solutionsProvided.Count > 0)
                 return solutionsProvided.ToList();
             throw new NoObjectsAvailableException($"No solutions were provided till now for the request id - {reqId}");
@@ -100,9 +103,9 @@ namespace ERequestTrackerBLLLibrary
             return "Your feedback is not added successfully"; 
         }
 
-        public Task<RequestSolution> GetSolutionByKey(int solId)
+        public async Task<RequestSolution> GetSolutionByKey(int solId)
         {
-            var sol = _requestSolutionRepo.Get(solId);
+            var sol = await _requestSolutionRepo.Get(solId);
             if(sol != null )
             {
                 return sol;

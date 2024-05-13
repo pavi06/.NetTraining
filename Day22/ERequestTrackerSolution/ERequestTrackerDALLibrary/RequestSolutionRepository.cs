@@ -37,22 +37,21 @@ namespace ERequestTrackerDALLibrary
 
         public async Task<RequestSolution> Get(int key)
         {
-            var reqSolution = _context.RequestSolution.SingleOrDefault(e => e.SolutionId == key);
+            var reqSolution = _context.RequestSolution.Include(rs=>rs.Feedbacks).SingleOrDefault(e => e.SolutionId == key);
             return reqSolution;
         }
 
         public async Task<IList<RequestSolution>> GetAll()
         {
-            return await _context.RequestSolution.ToListAsync();
+            return await _context.RequestSolution.Include(rs=>rs.Feedbacks).ToListAsync();
         }
 
         public async Task<RequestSolution> Update(RequestSolution entity)
         {
             if (await Get(entity.SolutionId) != null)
             {
-                //_context.Entry<RequestSolution>(entity).State = EntityState.Modified;
-                _context.RequestSolution.Update(entity);
-                _context.SaveChanges();
+                _context.Entry<RequestSolution>(entity).State = EntityState.Modified;
+                await _context.SaveChangesAsync();
             }
             return entity;
         }

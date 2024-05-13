@@ -100,9 +100,10 @@ namespace ERequestTrackerApp
                         try
                         {
                             List<Request> reqsRaised = await employeeAdminBL.GetAllRequest();
+                            await Console.Out.WriteLineAsync("-------Requests--------");
                             foreach (var req in reqsRaised)
                             {
-                                Console.WriteLine(req.ToString());
+                                Console.WriteLine(req.ToString()+"\n");
                             }
                         }
                         catch (NoObjectsAvailableException e)
@@ -112,7 +113,7 @@ namespace ERequestTrackerApp
                         break;
 
                     case 3:
-                        ViewSolutions(userMain, employeeAdminBL);
+                        await ViewSolutions(userMain, employeeAdminBL);
                         break;
 
                     case 4:
@@ -134,7 +135,7 @@ namespace ERequestTrackerApp
                         }
                         catch (NoObjectsAvailableException e)
                         {
-                            Console.WriteLine(e.Message);
+                            await Console.Out.WriteLineAsync(e.Message);
                         }
                         break;
 
@@ -142,6 +143,7 @@ namespace ERequestTrackerApp
                         try
                         {
                             List<SolutionFeedback> feedbacks = await employeeAdminBL.ViewFeedbacks();
+                            await Console.Out.WriteLineAsync("------Feedbacks-------");
                             foreach (var feedback in feedbacks)
                             {
                                 await Console.Out.WriteLineAsync(feedback.ToString());
@@ -160,7 +162,7 @@ namespace ERequestTrackerApp
                         break;
 
                     case 10:
-                        userMain.Logout(employeeLoginBl);
+                        await userMain.Logout(employeeLoginBl);
                         break;
 
                     default:

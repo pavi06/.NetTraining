@@ -22,7 +22,7 @@ namespace ERequestTrackerDALLibrary
             try
             {
                 _context.Requests.Add(entity);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
             catch (DbUpdateException e)
             {
@@ -51,12 +51,12 @@ namespace ERequestTrackerDALLibrary
 
         public async Task<Request> Get(int key)
         {
-            return _context.Requests.SingleOrDefault(r => r.RequestNumber == key);
+            return _context.Requests.Include(r=>r.RequestSolutions).SingleOrDefault(r => r.RequestNumber == key);
         }
 
         public async Task<IList<Request>> GetAll()
         {
-            return await _context.Requests.ToListAsync();
+            return await _context.Requests.Include(r=>r.RequestSolutions).ToListAsync();
         }
 
         public async Task<Request> Update(Request entity)
@@ -64,7 +64,7 @@ namespace ERequestTrackerDALLibrary
             if (await Get(entity.RequestNumber) != null)
             {
                 _context.Entry<Request>(entity).State = EntityState.Modified;
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
             return entity;
         }

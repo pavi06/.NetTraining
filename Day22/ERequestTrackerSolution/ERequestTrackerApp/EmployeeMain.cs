@@ -52,7 +52,7 @@ namespace ERequestTrackerApp
                     await Console.Out.WriteLineAsync("Please provide your comment : ");
                     string comment = Console.ReadLine();
                     if (await employeeRequestBL.CheckRequestRaisedByEmployeeOrNot(solId))
-                        Console.WriteLine(await employeeRequestBL.RespondToSolutionProvided(solId, comment));
+                        await Console.Out.WriteLineAsync(await employeeRequestBL.RespondToSolutionProvided(solId, comment));
                     else
                         await Console.Out.WriteLineAsync("Cannot provide comment for the solution not provided to you!");
                 }
@@ -73,8 +73,7 @@ namespace ERequestTrackerApp
             await Console.Out.WriteLineAsync("Please provide the solution id : ");
             int solId1 = Convert.ToInt32(Console.ReadLine());
             if(await employeeRequestBL.CheckObjectAvailableOrNot("solution", solId1))
-            {
-                
+            {                
                 if (await employeeRequestBL.CheckRequestRaisedByEmployeeOrNot(solId1))
                 {
                     await Console.Out.WriteLineAsync("Provide the rating out of 5 : ");
@@ -103,6 +102,7 @@ namespace ERequestTrackerApp
                 if (await employeeRequestBL.CheckObjectAvailableOrNot("request", id1))
                 {
                     List<RequestSolution> solutions = await employeeRequestBL.GetAllSolutionsForTheRequestRaised(id1);
+                    await Console.Out.WriteLineAsync("----------solutions---------");
                     foreach (var solution in solutions)
                     {
                         await Console.Out.WriteLineAsync(solution.ToString());
@@ -121,7 +121,7 @@ namespace ERequestTrackerApp
 
         public async Task Logout(IEmployeeLoginBL employeeLoginBl)
         {
-            Console.WriteLine(employeeLoginBl.Logout().Result);
+            await Console.Out.WriteLineAsync(employeeLoginBl.Logout().Result);
         }
 
         public async Task Starter(Employee user, IEmployeeLoginBL employeeLoginBl)
