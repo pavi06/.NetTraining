@@ -29,7 +29,7 @@ namespace ERequestTrackerModelLibrary
 
         public override string ToString()
         {
-            return $"Request Number : {RequestNumber}, RequestMessage : {RequestMessage}, Request Date : {RequestDate}" +
+            return $"Request Number : {RequestNumber}, RequestMessage : {RequestMessage}, Request Date : {RequestDate}, " +
                 $"Request raised by : {RequestRaisedBy}, Request status : {RequestStatus}, Request closed by : {RequestClosedBy}";
         }
 

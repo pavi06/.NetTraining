@@ -33,7 +33,7 @@ namespace ERequestTrackerBLL1Library
         public async Task<string> Logout()
         {
             LoggedInUser = null;
-            return "Logged Out successfully";
+            return "Logged Out successfully\n\n";
         }
 
         public async Task<Employee> Register(Employee employee)

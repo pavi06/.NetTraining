@@ -11,7 +11,7 @@ namespace ERequestTrackerApp
 {
     internal class Program
     {
-        async Task<Employee> EmployeeLoginAsync(int username, string password, IEmployeeLoginBL employeeLoginBl)
+        public async Task<Employee> EmployeeLoginAsync(int username, string password, IEmployeeLoginBL employeeLoginBl)
         {
             Employee employee = new Employee() { Password = password, Id = username };
             var result = await employeeLoginBl.Login(employee);
@@ -21,7 +21,7 @@ namespace ERequestTrackerApp
                 await Console.Out.WriteLineAsync("Invalid username or password");
             return result;
         }
-        async Task<Employee> GetLoginDeatils(IEmployeeLoginBL employeeLoginBl)
+        public async Task<Employee> GetLoginDeatils(IEmployeeLoginBL employeeLoginBl)
         {
             await Console.Out.WriteLineAsync("Please enter Employee Id");
             int id = Convert.ToInt32(Console.ReadLine());
@@ -30,7 +30,7 @@ namespace ERequestTrackerApp
             return await EmployeeLoginAsync(id, password, employeeLoginBl);
         }
 
-        async Task<Employee> EmployeeRegisterAsync(string name, string password, IEmployeeLoginBL employeeLoginBl)
+        public async Task<Employee> EmployeeRegisterAsync(string name, string password, IEmployeeLoginBL employeeLoginBl)
         {
             Employee employee = new Employee() { Name = name, Password = password, Role = "user" };
             var result = await employeeLoginBl.Register(employee);
@@ -46,7 +46,7 @@ namespace ERequestTrackerApp
             return null;
         }
 
-        async Task<Employee> GetRegisterDeatils(IEmployeeLoginBL employeeLoginBl)
+        public async Task<Employee> GetRegisterDeatils(IEmployeeLoginBL employeeLoginBl)
         {
             await Console.Out.WriteLineAsync("Please Enter Employee Name");
             string name = Console.ReadLine();
@@ -55,7 +55,7 @@ namespace ERequestTrackerApp
             return await EmployeeRegisterAsync(name, password, employeeLoginBl);
         }
 
-        async Task<int> Menu()
+        public async Task<int> Menu()
         {
             await Console.Out.WriteLineAsync("----------Welcome to Request Tracker Application--------\n1. Already a User?? Login Now..\n2.New to the system ?? Register Now..");
             int userChoice;
@@ -80,36 +80,50 @@ namespace ERequestTrackerApp
             }
         }
 
+        public async Task LoginOrRegisterMain()
+        {
+            IEmployeeLoginBL employeeLoginBL = new EmployeeLoginBL();
+            var input = Menu().Result;
+            Employee user;
+            if (input == 1)
+            {
+                user = await GetLoginDeatils(employeeLoginBL);
+                if (user != null)
+                {
+                    Console.WriteLine($"Logged In user : {user.Id}");
+                    await CheckUserAndDisplayMenu(user, employeeLoginBL);
+                }
+                else
+                {
+                    Console.WriteLine("Not LoggedIn");
+                    await LoginOrRegisterMain();
+                }                   
+
+            }
+            else
+            {
+                user = await GetRegisterDeatils(employeeLoginBL);
+                if (user != null)
+                {
+                    Console.WriteLine($"Registered user : {user.Id}");
+                    await CheckUserAndDisplayMenu(user, employeeLoginBL);
+                }
+                else
+                {
+                    Console.WriteLine("Not Registered");
+                    await LoginOrRegisterMain();
+                }
+                    
+            }
+        }
+
         static async Task Main(string[] args)
         {
             try
             {
                 Program program = new Program();
-                IEmployeeLoginBL employeeLoginBL = new EmployeeLoginBL();
-                var input = program.Menu().Result;
-                Employee user;
-                if (input == 1)
-                {
-                    user = await program.GetLoginDeatils(employeeLoginBL);
-                    if (user != null)
-                    {
-                        Console.WriteLine($"Logged In user : {user.Id}");
-                        await program.CheckUserAndDisplayMenu(user, employeeLoginBL);
-                    }
-                    else
-                        Console.WriteLine("Not LoggedIn");
-                }
-                else
-                {
-                    user = await program.GetRegisterDeatils(employeeLoginBL);
-                    if (user != null)
-                    {
-                        Console.WriteLine($"Registered user : {user.Id}");
-                        await program.CheckUserAndDisplayMenu(user, employeeLoginBL);
-                    }
-                    else
-                        Console.WriteLine("Not Registered");
-                }
+                await program.LoginOrRegisterMain();
+                
             }
             catch (Exception ex)
             {

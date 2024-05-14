@@ -30,7 +30,7 @@ namespace ERequestTrackerApp
 
         public async Task CreateRequest(EmployeeRequestBL employeeRequestBL)
         {
-                await Console.Out.WriteLineAsync("Provide the issue : ");
+                await Console.Out.WriteLineAsync("Provide the issue/Request : ");
                 string issue = Console.ReadLine();
                 Request request = new Request() { RequestMessage = issue };
                 var reqId = await employeeRequestBL.RaiseRequest(request);
@@ -165,13 +165,15 @@ namespace ERequestTrackerApp
 
                     case 6:
                         await Logout(employeeLoginBl);
+                        Program program = new Program();
+                        program.LoginOrRegisterMain();
                         break;
 
                     default:
                         await Console.Out.WriteLineAsync("Invalid Input!");
                         break;
                 }
-            } while (choice != 6);            
+            } while (true);            
         }
     }
 }

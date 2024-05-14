@@ -163,13 +163,15 @@ namespace ERequestTrackerApp
 
                     case 10:
                         await userMain.Logout(employeeLoginBl);
+                        Program program = new Program();
+                        program.LoginOrRegisterMain();
                         break;
 
                     default:
                         await Console.Out.WriteLineAsync("Invalid Input!");
                         break;
                 }
-            } while (choice != 10);
+            } while (true);
         }
     }
 }

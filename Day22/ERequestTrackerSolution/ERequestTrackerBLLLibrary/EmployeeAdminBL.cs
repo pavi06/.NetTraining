@@ -13,23 +13,17 @@ namespace ERequestTrackerBLLLibrary
 {
     public class EmployeeAdminBL : EmployeeRequestBL, IEmployeeAdminBL
     {
-        protected RequestSolutionRepository _reqSolRepo;
-        protected RequestRepository _requestRepository;
         protected Employee LoggedUser;
-        protected RequestTrackerContext _reqTrackerContext;
         protected EmployeeAdminRepository _empAdminRepo;
   
         public EmployeeAdminBL(Employee user) : base(user){
-            _reqTrackerContext = base._reqTrackerContext;
-            _reqSolRepo = base._requestSolutionRepo;
-            _requestRepository =base._reqRepo;
             _empAdminRepo = new EmployeeAdminRepository(_reqTrackerContext);
             LoggedUser = base.LoggedUser;
         }
 
         public async Task<List<Request>> GetAllRequest()
         {
-            var allRequests = _requestRepository.GetAll().Result.ToList();
+            var allRequests = _reqRepo.GetAll().Result.ToList();
             if(allRequests != null)
             {
                 return allRequests;
@@ -41,7 +35,7 @@ namespace ERequestTrackerBLLLibrary
         public async Task<RequestSolution> ProvideSolutionForRequestRaised(RequestSolution reqSolution)
         {
             reqSolution.SolvedBy = LoggedUser.Id;
-            var solAdded = await _reqSolRepo.Add(reqSolution);
+            var solAdded = await _requestSolutionRepo.Add(reqSolution);
             if ( solAdded != null)
             {
                 return solAdded;
@@ -104,18 +98,18 @@ namespace ERequestTrackerBLLLibrary
 
         public async Task<Request> UpdateRequestForClosure(int reqId, int reqSolId)
         {
-            var req = await _requestRepository.Get(reqId);
+            var req = await _reqRepo.Get(reqId);
             if (req == null)
                 throw new ObjectNotAvailableException($"Request - {reqId} is not available");
-            var sol = await _reqSolRepo.Get(reqSolId);
+            var sol = await _requestSolutionRepo.Get(reqSolId);
             if (sol == null)
                 throw new ObjectNotAvailableException($"Solution - {reqSolId} for the request - {reqId} is not available");       
             sol.IsSolved = true;
             req.ClosedDate = DateTime.Now;
             req.RequestStatus = "Closed";
             req.RequestClosedBy = LoggedUser.Id;
-            await _reqSolRepo.Update(sol);
-            if (await _requestRepository.Update(req) != null)
+            await _requestSolutionRepo.Update(sol);
+            if (await _reqRepo.Update(req) != null)
             {
                 return req;
             }
@@ -125,7 +119,7 @@ namespace ERequestTrackerBLLLibrary
 
         public async Task<List<SolutionFeedback>> ViewFeedbacks()
         {
-            var reqSolutions = _reqSolRepo.GetAll().Result.ToList().FindAll(rs => rs.SolvedBy == LoggedUser.Id);
+            var reqSolutions = _requestSolutionRepo.GetAll().Result.ToList().FindAll(rs => rs.SolvedBy == LoggedUser.Id);
             List<SolutionFeedback> allFeedbacks = new List<SolutionFeedback>();
             foreach (var reqSolution in reqSolutions)
             {
