@@ -26,7 +26,7 @@ namespace ClinicTrackerAPI.Repositories
             if (doctor != null)
             {
                 _context.Remove(doctor);
-                _context.SaveChangesAsync(true);
+                await _context.SaveChangesAsync(true);
                 return doctor;
             }
             throw new NoSuchDoctorAvailableException();
@@ -50,7 +50,7 @@ namespace ClinicTrackerAPI.Repositories
             if (doctor != null)
             {
                 _context.Update(item);
-                _context.SaveChangesAsync(true);
+                await _context.SaveChangesAsync(true);
                 return doctor;
             }
             throw new NoSuchDoctorAvailableException();

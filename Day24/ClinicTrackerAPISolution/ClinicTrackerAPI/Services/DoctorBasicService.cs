@@ -21,9 +21,9 @@ namespace ClinicTrackerAPI.Services
 
         public async Task<IEnumerable<Doctor>> GetDoctorsBySpeciality(string speciality)
         {
-            var doctors = _doctorRepository.Get().Result.Where(d=>d.Specialization == speciality);
-            if (doctors.ToList().Count>0)
-                return doctors.ToList();
+            var doctors = _doctorRepository.Get().Result.Where(d=>d.Specialization == speciality).ToList();
+            if (doctors.Count>0)
+                return doctors;
             throw new NoDoctorsAvailableException($"with {speciality} speciality");
         }
 
@@ -34,8 +34,7 @@ namespace ClinicTrackerAPI.Services
                 throw new NoSuchDoctorAvailableException();
             doctor.Experience = experience;
             var updatedDoctor = await _doctorRepository.Update(doctor);
-            return updatedDoctor;
-            
+            return updatedDoctor;            
         }
     }
 }
