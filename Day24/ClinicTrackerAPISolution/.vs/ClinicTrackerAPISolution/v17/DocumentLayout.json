@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|c:\\dotnet\\day24\\clinictrackerapisolution\\clinictrackerapi\\repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|solutionrelative:clinictrackerapi\\repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|c:\\dotnet\\day24\\clinictrackerapisolution\\clinictrackerapi\\services\\doctorbasicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|solutionrelative:clinictrackerapi\\services\\doctorbasicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|c:\\dotnet\\day24\\clinictrackerapisolution\\clinictrackerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|solutionrelative:clinictrackerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoctorRepository.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Repositories\\DoctorRepository.cs",
+              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Repositories\\DoctorRepository.cs",
+              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Repositories\\DoctorRepository.cs",
+              "RelativeToolTip": "ClinicTrackerAPI\\Repositories\\DoctorRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:35:19.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoctorBasicService.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Services\\DoctorBasicService.cs",
+              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Services\\DoctorBasicService.cs",
+              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Services\\DoctorBasicService.cs",
+              "RelativeToolTip": "ClinicTrackerAPI\\Services\\DoctorBasicService.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:34:54.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Program.cs",
+              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Program.cs",
+              "RelativeToolTip": "ClinicTrackerAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:34:43.176Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

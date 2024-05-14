@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ERequestTrackerBLL1Library")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e6a1a5be7972564bdabe08be1dd7946348aaa7d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3b7b6acde84c7e2c87ec899f6373a5c0f907220")]
 [assembly: System.Reflection.AssemblyProductAttribute("ERequestTrackerBLL1Library")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ERequestTrackerBLL1Library")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
