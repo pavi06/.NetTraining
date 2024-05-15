@@ -33,11 +33,11 @@ namespace ERequestTrackerApp
         public async Task<Employee> EmployeeRegisterAsync(string name, string password, IEmployeeLoginBL employeeLoginBl)
         {
             Employee employee = new Employee() { Name = name, Password = password, Role = "user" };
-            var result = await employeeLoginBl.Register(employee);
-            if (result != null)
+            var res = await employeeLoginBl.Register(employee);
+            if (res != null)
             {
                 await Console.Out.WriteLineAsync("Registration Successfull!");
-                return result;
+                return res;
             }
             else
             {

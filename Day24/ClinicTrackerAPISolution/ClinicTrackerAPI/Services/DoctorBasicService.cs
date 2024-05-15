@@ -21,7 +21,7 @@ namespace ClinicTrackerAPI.Services
 
         public async Task<IEnumerable<Doctor>> GetDoctorsBySpeciality(string speciality)
         {
-            var doctors = _doctorRepository.Get().Result.Where(d=>d.Specialization == speciality).ToList();
+            var doctors = _doctorRepository.Get().Result.Where(d=>d.Specialization.ToLower() == speciality.ToLower()).ToList();
             if (doctors.Count>0)
                 return doctors;
             throw new NoDoctorsAvailableException($"with {speciality} speciality");
