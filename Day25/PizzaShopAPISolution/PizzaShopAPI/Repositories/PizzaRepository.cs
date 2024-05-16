@@ -31,15 +31,15 @@ namespace PizzaShopAPI.Repositories
             throw new Exception("No such pizza available!");
         }
 
-        public Task<Pizza> Get(int key)
+        public async Task<Pizza> Get(int key)
         {
-            var pizza = _context.Pizza.Include(p=>p.Ingredients).FirstOrDefaultAsync(e => e.PizzaId == key);
+            var pizza = await _context.Pizza.FirstOrDefaultAsync(e => e.PizzaId == key);
             return pizza;
         }
 
         public async Task<IEnumerable<Pizza>> Get()
         {
-            var pizza = await _context.Pizza.Include(p=>p.Ingredients).ToListAsync();
+            var pizza = await _context.Pizza.ToListAsync();
             return pizza;
 
         }

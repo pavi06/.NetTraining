@@ -60,9 +60,9 @@ namespace PizzaShopAPI.Services
                 customer = await _customerRepo.Add(customer);
                 user.CustId = customer.CustId;
                 user = await _userRepo.Add(user);
-                //customer = (CustomerReturnDTO)customer;
-                ((CustomerDTO)customer).Password = string.Empty;
-                return customer;
+                //((CustomerDTO)customer).Password = string.Empty;
+                CustomerReturnDTO customerAdded = new CustomerReturnDTO(customer.CustId, customer.CustName,customer.CustPhone, customer.Address,customer.City);
+                return customerAdded;
             }
             catch (Exception) { }
             if (customer != null)

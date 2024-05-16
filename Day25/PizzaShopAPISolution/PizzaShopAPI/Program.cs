@@ -32,7 +32,7 @@ namespace PizzaShopAPI
             builder.Services.AddScoped<IRepository<int, Customer>, CustomerRepository>();
             builder.Services.AddScoped<IRepository<int, User>, UserRepository>();
             builder.Services.AddScoped<IRepository<int, Pizza>, PizzaRepository>();
-            builder.Services.AddScoped<IRepository<int, Ingredient>, IngredientRepository>();
+            builder.Services.AddScoped<IRepository<int, Stock>, StockRepository>();
             #endregion
 
             #region Services

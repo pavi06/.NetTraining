@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|c:\\dotnet\\day25\\pizzashopapisolution\\pizzashopapi\\models\\pizzaingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|solutionrelative:pizzashopapi\\models\\pizzaingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|c:\\dotnet\\day25\\pizzashopapisolution\\pizzashopapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|solutionrelative:pizzashopapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|c:\\dotnet\\day25\\pizzashopapisolution\\pizzashopapi\\models\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|solutionrelative:pizzashopapi\\models\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|c:\\dotnet\\day25\\pizzashopapisolution\\pizzashopapi\\models\\dtos\\pizzadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|solutionrelative:pizzashopapi\\models\\dtos\\pizzadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|c:\\dotnet\\day25\\pizzashopapisolution\\pizzashopapi\\interface\\ipizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|solutionrelative:pizzashopapi\\interface\\ipizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|c:\\dotnet\\day25\\pizzashopapisolution\\pizzashopapi\\services\\pizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|solutionrelative:pizzashopapi\\services\\pizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|c:\\dotnet\\day25\\pizzashopapisolution\\pizzashopapi\\controllers\\pizzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DE4E17-2A65-4AF1-A157-68BD6CF4C575}|PizzaShopAPI\\PizzaShopAPI.csproj|solutionrelative:pizzashopapi\\controllers\\pizzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +39,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PizzaIngredient.cs",
-              "DocumentMoniker": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Models\\PizzaIngredient.cs",
-              "RelativeDocumentMoniker": "PizzaShopAPI\\Models\\PizzaIngredient.cs",
-              "ToolTip": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Models\\PizzaIngredient.cs",
-              "RelativeToolTip": "PizzaShopAPI\\Models\\PizzaIngredient.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAoAAAA",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "PizzaShopAPI\\Models\\User.cs",
+              "ToolTip": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Models\\User.cs",
+              "RelativeToolTip": "PizzaShopAPI\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T18:24:58.72Z",
+              "WhenOpened": "2024-05-16T12:02:49.752Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserLoginDTO.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Models\\DTOs\\UserLoginDTO.cs",
+              "RelativeDocumentMoniker": "PizzaShopAPI\\Models\\DTOs\\UserLoginDTO.cs",
+              "ToolTip": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Models\\DTOs\\UserLoginDTO.cs",
+              "RelativeToolTip": "PizzaShopAPI\\Models\\DTOs\\UserLoginDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:02:45.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PizzaDTO.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Models\\DTOs\\PizzaDTO.cs",
+              "RelativeDocumentMoniker": "PizzaShopAPI\\Models\\DTOs\\PizzaDTO.cs",
+              "ToolTip": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Models\\DTOs\\PizzaDTO.cs",
+              "RelativeToolTip": "PizzaShopAPI\\Models\\DTOs\\PizzaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T11:56:03.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPizzaService.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Interface\\IPizzaService.cs",
+              "RelativeDocumentMoniker": "PizzaShopAPI\\Interface\\IPizzaService.cs",
+              "ToolTip": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Interface\\IPizzaService.cs",
+              "RelativeToolTip": "PizzaShopAPI\\Interface\\IPizzaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T11:27:19.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PizzaService.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Services\\PizzaService.cs",
+              "RelativeDocumentMoniker": "PizzaShopAPI\\Services\\PizzaService.cs",
+              "ToolTip": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Services\\PizzaService.cs",
+              "RelativeToolTip": "PizzaShopAPI\\Services\\PizzaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T11:22:51.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PizzaController.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Controllers\\PizzaController.cs",
+              "RelativeDocumentMoniker": "PizzaShopAPI\\Controllers\\PizzaController.cs",
+              "ToolTip": "C:\\dotNet\\Day25\\PizzaShopAPISolution\\PizzaShopAPI\\Controllers\\PizzaController.cs",
+              "RelativeToolTip": "PizzaShopAPI\\Controllers\\PizzaController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAewC8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T10:19:27.609Z"
             }
           ]
         }

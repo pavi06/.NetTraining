@@ -17,6 +17,24 @@ namespace PizzaShopAPI.Controllers
             _pizzaService = pizzaService;
         }
 
+        [Route("GetAllPizza")]
+        [HttpGet]
+        [ProducesResponseType(typeof(IList<Pizza>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<IList<Pizza>>> GetAll()
+        {
+            try
+            {
+                var pizza = await _pizzaService.GetAllPizza();
+                return Ok(pizza.ToList());
+            }
+            catch (Exception e)
+            {
+                return NotFound(e.Message);
+            }
+        }
+
+        [Route("GetAllAvailablePizza")]
         [HttpGet]
         [ProducesResponseType(typeof(IList<Pizza>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status404NotFound)]
