@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -62,12 +63,14 @@ namespace PizzaShopAPI
                     {
                         ValidateIssuer = false,
                         ValidateAudience = false,
+                        RoleClaimType = "Role",
                         ValidateIssuerSigningKey = true,
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["TokenKey:JWT"]))
                     };
 
                 });
             #endregion
+
 
             #region Contexts
             builder.Services.AddDbContext<PizzaShopContext>(

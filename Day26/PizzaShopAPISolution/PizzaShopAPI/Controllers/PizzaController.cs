@@ -18,7 +18,7 @@ namespace PizzaShopAPI.Controllers
             _pizzaService = pizzaService;
         }
 
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         [Route("GetAllPizza")]
         [HttpGet]
         [ProducesResponseType(typeof(IList<Pizza>), StatusCodes.Status200OK)]
@@ -36,7 +36,7 @@ namespace PizzaShopAPI.Controllers
             }
         }
 
-        [Authorize]
+        [Authorize(Roles = "Admin,User")]
         [Route("GetAllAvailablePizza")]
         [HttpGet]
         [ProducesResponseType(typeof(IList<Pizza>), StatusCodes.Status200OK)]
