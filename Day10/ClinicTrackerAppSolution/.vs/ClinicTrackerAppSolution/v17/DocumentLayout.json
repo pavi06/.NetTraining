@@ -18,12 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,7 +28,7 @@
               "RelativeDocumentMoniker": "ClinicTrackerModelLibrary\\Patient.cs",
               "ToolTip": "C:\\dotNet\\Day10\\ClinicTrackerAppSolution\\ClinicTrackerModelLibrary\\Patient.cs",
               "RelativeToolTip": "ClinicTrackerModelLibrary\\Patient.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAzwAAAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T02:30:26.384Z",
               "EditorCaption": ""
@@ -45,7 +41,7 @@
               "RelativeDocumentMoniker": "ClinicTrackerDALLibrary\\PatientRepository.cs",
               "ToolTip": "C:\\dotNet\\Day10\\ClinicTrackerAppSolution\\ClinicTrackerDALLibrary\\PatientRepository.cs",
               "RelativeToolTip": "ClinicTrackerDALLibrary\\PatientRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACIAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwCIAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T02:29:35.849Z",
               "EditorCaption": ""

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            aside{
+                width: 50%;
+                float: left;
+                height: 100%;
+            }
+            .heading{
+                color: rgb(218, 118, 47);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                -webkit-text-stroke: 0.3px black"
+            }
+            .element{
+                display: flex; 
+                justify-content: space-between;
+                width: 500px;
+            }
+            .element1{
+                display: block; 
+                justify-content: space-between;
+                width: 500px;
+            }
+            .subHeading{
+                line-height: 5px;
+                font-weight: bolder;
+            }
+            .boxStyle{
+                box-sizing: border-box; 
+                padding: 5px;
+                margin: 5px;
+                font-weight: bold;
+                width: fit-content;
+                height: fit-content;
+                border: 1.5px solid rgb(218, 118, 47);
+            }
+            .iconDisplay{
+                display: flex; 
+                flex-direction: row;
+                align-items: center;
+                height: 30px;
+                padding: 0px;
+            }
+        </style>
+    </head>
+    <body style="padding: 20px;margin: 10px;">
+        <div style="display: inline-block">
+            <img src="data:image/png;base64,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" style="float: left; width: 140px; height: 140px;">
+            <div>
+                <h2>Pavithra P</h2>
+                <h4 style="line-height: 5px;">Software Engineer</h4>
+                <p>An enthusiastic Engineer who is a go-getter and capable to use technical skills for the betterment of the Organization and society.</p>
+            </div>
+        </div>
+        <div style="background-color: rgb(217, 170, 112); width: 100%;font-weight: bolder; display: flex; flex-direction: row;justify-content: space-around;">
+            <div style="display: block;padding: 10px;">
+                <div class="iconDisplay">
+                    <i class="fa fa-envelope"></i>
+                    <p style="padding-left: 10px;">pavi06saishivu@gmail.com</p>
+                </div>
+                <div class="iconDisplay">
+                    <i class="fa fa-map-marker"></i>
+                    <p style="padding-left: 10px;">Chennai, Tamil Nadu, India</p>
+                </div>
+                <div class="iconDisplay">
+                    <i class="fa fa-github"></i>
+                    <p style="padding-left: 10px;">github.com/pavi06</p>
+                </div>
+            </div>
+            <div>
+                <div class="iconDisplay">
+                    <i class="fa fa-phone"></i>
+                    <p style="padding-left: 10px;">+91 9875465768</p>
+                </div>
+                <div class="iconDisplay">
+                    <i class="fa fa-linkedin"></i>
+                    <p style="padding-left: 10px;">linkedin.com/in/pavithra-pazhanivel-145255201</p>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <div style="display: block;">
+                <div>
+                    <h3 class="heading">Education</h3>
+                    <ul>
+                        <li class = "subHeading">B.Tech - Information Technology</li>
+                        <div class="element">
+                            <p style="float: left;">R.M.K Engineering College<br><i>09/2020 - 03/2024</i></p>
+                            <p style="float: right;">CGPA : 9.4</p>
+                        </div>
+                        <li class="subHeading">Higher Secondary Education</li>
+                        <div class="element">
+                            <p style="float: left;">Velammal Matriculation Higher Secondary School<br><i>06/2018 - 05/2020</i></p>
+                            <p style="float: right;">Percentage : 85.83</p>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div style="display: block;">
+                <div>
+                    <h3 class="heading">Work Experience</h3>
+                    <ul>
+                        <li class="subHeading">Student Intern</li>
+                        <div class="element1">
+                            <p><b>Virtusa</b><br><i>07/2022 - 08/2022</i></p>
+                            <div>
+                                <ul>
+                                    <li style="font-weight: 700;">Inventory System for E-mart Grocery Shop</li>
+                                    <p>Developed a web application for a grocery shop that governs the inventory and order the products if inventory goes down.</p>
+                                </ul>
+                            </div>
+                        </div>
+                        <li class="subHeading">Student Intern</li>
+                        <div class="element1">
+                            <p><b>Virtusa</b><br><i>03/2022-03/2022</i></p>
+                            <div>
+                                <ul>
+                                    <li style="font-weight: 700;">Retro Coffee Shop</li>
+                                    <p>Developed backend service for coffee shop with java and sql</p>
+                                </ul>
+                            </div> 
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <section style="display: flex; flex-direction: column;">
+            <div style="display: block;">
+                <div>
+                    <h3 class="heading">Skills</h3>
+                    <div style="display: flex; flex-direction: row;">
+                        <p class="boxStyle">C</p>
+                        <p class="boxStyle">Python</p>
+                        <p class="boxStyle">Java</p>
+                        <p class="boxStyle">Flutter</p>
+                        <p class="boxStyle">Firebase</p>
+                        <p class="boxStyle">SQL</p>
+                        <p class="boxStyle">HTML</p>
+                        <p class="boxStyle">CSS</p>
+                        <p class="boxStyle">Javascript</p>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h3 class="heading">Personal Projects</h3>
+                    <div>
+                        <ul>
+                            <div>
+                                <li><p class="subHeading">Alumnique</p></li>                            
+                                <p>Developed an web application which helps the current students to have interactions with the alumni of the 
+                                institute for getting various updates on current trends, internship opportunities, project sponsorship and various referral opening in the corporate world.
+                                </p>
+                            </div>
+                            <div>
+                                <li><p class="subHeading">Seminar Hall Booking System</p></li>                            
+                                <p>Developed an application which is capable of booking a seminar hall through online using flutter. The objective of the System
+                                    is to provide hastle free booking process for various eventsconducted in the institutes.
+                                </p>
+                            </div>
+                            <div>
+                                <li><p class="subHeading">Tip off</p></li>                            
+                                <p>Developed a mobile application that allows users to voice out the problems they are facing without worrying 
+                                    about retaliation because their identities are masked.And the appropriate government representative 
+                                    will be assigned to handle those issues. Consequently, the society becomes a safer and better place.  
+                                </p>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h3 class="heading">Certificates</h3>
+                    <ul>
+                        <li>5<sup>th </sup> National Level IEEE Project Competition</li><br>
+                        <li>Elite NPTEL Certificattion<br><i>course - Introduction to Programming in C</i></li><br>
+                        <li>NPTEL Certification<br><i>course - Software Testing</i></li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <h3 class="heading">Languages</h3>
+                    <ul>
+                        <li><b>English</b><br><i>Professional Working Proficiency</i></li><br>
+                        <li><b>Tamil</b><br><i>Full Professional Proficiency</i></li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <h3 class="heading">Interests</h3>
+                    <div style="display: flex; flex-direction: row;">
+                        <p class="boxStyle">UI/UX Design</p>
+                        <p class="boxStyle">Frontend Development</p>
+                        <p class="boxStyle">Mobile App Development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

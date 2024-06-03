@@ -47,7 +47,7 @@ namespace EmployeeRequestTrackerAPI.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(RequestReturnDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<RequestReturnDTO>> GetRequestControl([FromBody] int id,int userId)
+        public async Task<ActionResult<RequestReturnDTO>> GetRequestControl([FromBody] int id)
         {
                 try
                 {
