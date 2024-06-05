@@ -106,3 +106,8 @@ nav ul li a:hover{
     border: 2px solid #8D26CC;
     transition-duration: 2.5ms;
 }
+.imgCard{
+    width: 300px; 
+    height: 200px; 
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+}
