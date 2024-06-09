@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    max-width: 100vw;
+}
+header{
+    padding-top: 2%;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 14vh;
+    background-color:#F1F1F1;
+    opacity: 0.9; 
+    border: 0px; 
+    padding-bottom: 3%; 
+}
+.filterButtonStyle{
+    padding: 1.5%;
+    font-weight: lighter;
+     width: 4vw; 
+     margin-right: 5%;
+}
+
+table, thead{
+    width: 100vw;
+    max-width: 100vw;
+}
+
+thead{
+    top: 13.5vh;
+    height: 8vh;
+    position: sticky;
+    box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+}
+
+.table th{
+    background-color: #F1F1F1;
+    opacity: 0.9;
+    font-weight: normal;
+}
+
+/* .bgLight{
+    background-color: #F1F1F1;
+    opacity: 0.9;
+    color: black;
+    font-weight: normal;
+  } */
+
+tbody tr:first-of-type td {
+    padding-top:  20vh;
+  }
+  
+  tbody tr:last-of-type td {
+    padding-bottom: 15vh;
+  }
+
+footer{
+    padding-top: 1%;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    background-color:#F1F1F1;
+    opacity: 0.9;
+    box-shadow: 0px -2px 3px -1px rgba(0,0,0,0.2);
+}
+
+.iconBtn{
+    border: 0px;
+    width: 2vw;
+    height: 5vh;
+    background: transparent;
+}
+
+.textDiv{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 40vw;
+    height:8vh;
+    display: block;
+}
+
+.form-control{
+    border: none;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.searchStyle{
+    padding: 1%;
+    padding-right: 5%;
+     padding-left: 5%;
+     font-weight: 400; 
+     width: 30vw; 
+     display: flex; 
+     flex-direction: row; 
+     align-items: center;
+}
+.visibilityMenu{
+    visibility: hidden;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color:#F1F1F1; 
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th .visibilityMenu{
+    background-color:#F1F1F1; 
+    visibility: visible;
+}
+
+.openStatus{
+    background-color: #E2ECFF;
+    color: #256FF9;
+    padding: 0.5vw;
+    text-transform: capitalize;
+}
+
+.PaidStatus{
+    background-color: #DEFFEF;
+    color: #13CB72;
+    padding: 0.5vw;
+    text-transform: capitalize;
+}
+
+.InactiveStatus{
+    background-color: #DBDFE1;
+    color: #6D6D6D;
+    padding: 0.5vw;
+    text-transform: capitalize;
+}
+
+.DueStatus{
+    background-color: #FFE4E4;
+    color: #D83838;
+    padding: 0.5vw;
+    text-transform: capitalize;
+}
+
+.textHeader{
+    text-align: center; 
+    margin-right: 2%;
+    transform: translate(0, 12%);
+}
+
+thead th{
+    background-color: transparent;
+    background-color: #e2e2e2;
+    opacity: 0.9; 
+}
+
+.form-check-input{
+    border: 0.5px solid #6A6A6A;
+    box-shadow: 1px 1px 5px #aaaaaa;
+}
+
+
+@media(751vw <= max-width <= 900vw){
+    header{
+        height: 14vh;
+    }
+
+    thead{
+        top: 13.5vh;
+        height: 6vh;
+    }
+
+    tbody tr:first-of-type td {
+        padding-top: 19vh;
+      }
+}
+
+
+@media(0vw <= max-width <= 750vw){
+    header{
+        height: 5vh;
+        padding-bottom: 1vh;
+    }
+
+    thead{
+        top: 4.5vh;
+        height: 3vh;
+    }
+
+    tbody tr:first-of-type td {
+        padding-top: 8vh;
+    }
+    .filterButtonStyle{
+        height: 3vh;
+    }
+    footer{
+        padding-right: 3vw;
+    }
+}

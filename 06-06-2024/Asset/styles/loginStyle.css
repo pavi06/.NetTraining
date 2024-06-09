@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #2148C0;
+    font-family: "Montserrat";
+}
+
+.mainDiv{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 30%;
+    height: 28vw;
+}
+
+.icon{
+    width: 10%;
+    height: 10%;
+}
+
+.smallCircle{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #264ECA;
+    width: 14%;
+    height: 28%;
+    border-top-right-radius: 100%;
+}
+
+.midCircle{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #2148C0;
+    width: 19%;
+    height: 38%;
+    border-top-right-radius: 100%;
+    z-index: -1;
+}
+
+.bigCircle{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color:#264ECA;
+    width: 24%;
+    height: 48%;
+    border-top-right-radius: 100%;
+    z-index: -2;
+}
+
+
+.group{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 16.5%;
+    padding-left: 3%;
+}
+
+.form-control{
+    fill: none;
+    background: transparent;
+    border: none;
+    font-size: 13px;
+}
+
+.form-control:focus{
+    fill: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.group:has(input:focus){
+    box-shadow: 1px 1px 5px #cacaca;
+}
+
+
+.form-control::-webkit-input-placeholder {
+    font-weight: 400;
+    color: white;
+}
+.btnDiv{
+    margin-left: 16.5%;
+    margin-top: 8%;
+}
+
+input {
+    color: white;
+    background-color: white;
+}
+
+::-ms-reveal{
+    filter: invert(100%);
+}
+
+.loginButton{
+    background-color: white; 
+    text-transform: uppercase;
+    color: #2148C0;
+    font-weight: bolder;
+    font-size: 15px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 5px #bcbcbc;
+}
+
+.loginButton:hover{
+    color: white;
+    border: 1px solid white;
+}
+
+.forgotPassword{
+    position: absolute;
+    right: 16%;
+    margin-top: 4%;
+    font-size: 13px;
+}
+.forgotPassword p a{
+    color: white;
+    text-decoration: none;
+}
+
+.forgotPassword p a:hover{
+    color: black;
+}
+
