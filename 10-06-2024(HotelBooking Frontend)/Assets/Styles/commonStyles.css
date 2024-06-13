@@ -1,0 +1,78 @@
+@import 'colorVariables';
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "EB Garamond";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.mainDiv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/hotelBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    filter: blur(5px); 
+    z-index: -1; 
+}
+
+.mainDiv .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-shadow: 0 8px 6px -6px #FFA456;
+}
+
+nav li a:hover{
+    color: white;
+    border-bottom: 3px solid #FFA456;
+    transition: .3s;
+}
+
+.active{
+    border-bottom: 3px solid #FFA456;
+    color: #FFA456;
+}
+
+.mainText{
+    font-size: 50px;
+    color: #FFA456;
+    text-transform: uppercase;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+p{
+    font-size: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+.buttonStyle{
+    background-color: #FFA456;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-bottom: 12px;
+    margin-right: 5px;
+}
+
+.buttonStyle:hover{
+    background-color: #e8a264;
+}

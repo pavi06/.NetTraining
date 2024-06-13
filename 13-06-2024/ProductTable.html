@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h5 class="p-3" style="text-transform: uppercase; text-align: center; font-weight: bolder;">Product Data</h5>
+    <div style="width: 50%;height: 40%;margin-left: auto;margin-right: auto;">
+        <table id="productTable">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </table>
+    </div> 
+    <h5 class="p-3 mt-5" style="text-transform: uppercase; text-align: center; font-weight: bolder;">Add Product</h5>
+    <div style="margin: auto;width: 50%;">
+        <form name="productForm" style="margin: auto;">
+            <div class="row mb-2">
+                  <div class="col-sm-4">
+                    <label for="productName" class="form-label">Product Name</label>
+                  </div>
+                  <div class="col-sm-8">
+                    <input type="text" required class="form-control" name="productName" id="productName" onblur="valid('productName')">
+                    <small class="text-danger" id="nameValidation"></small>
+                  </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-4">
+                    <label for="productPrice" class="form-label">Product Price</label>
+                  </div>
+                  <div class="col-sm-8">
+                    <input type="text" required class="form-control" name="productPrice" id="productPrice" onblur="valid('productPrice')">
+                    <small class="text-danger" id="priceValidation"></small>
+                  </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-4">
+                    <label for="productQuantity" class="form-label">Product Quantity</label>
+                  </div>
+                  <div class="col-sm-8">
+                    <input  type="text" required class="form-control" name="productQuantity" id="productQuantity" onblur="valid('productQuantity')">
+                    <small class="text-danger" id="quantityValidation"></small>
+                  </div>
+            </div>
+            <div class="col-10 m-5" style="text-align: center;">
+                <button type="button" class="btn btn-primary" onclick="ValidateAndAppend()">Add Product</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        function valid(field){
+            if(field === "productName"){
+                var name = document.productForm.productName;
+                if(name.value){
+                name.classList.remove("is-invalid");
+                name.classList.add("is-valid");
+                document.getElementById("nameValidation").innerHTML="";
+                }
+                else{
+                    name.classList.remove("is-valid");
+                    name.classList.add("is-invalid");
+                    document.getElementById("nameValidation").innerHTML="Please provide the valid product name!";
+                }
+            }
+            else if(field === "productPrice"){
+                var name = document.productForm.productPrice;
+                if(name.value){
+                name.classList.remove("is-invalid");
+                name.classList.add("is-valid");
+                document.getElementById("priceValidation").innerHTML="";
+                }
+                else{
+                    name.classList.remove("is-valid");
+                    name.classList.add("is-invalid");
+                    document.getElementById("priceValidation").innerHTML="Please provide the valid product price!";
+                }
+            }
+            else if(field === "productQuantity"){
+                var name = document.productForm.productQuantity;
+                if(name.value){
+                name.classList.remove("is-invalid");
+                name.classList.add("is-valid");
+                document.getElementById("quantityValidation").innerHTML="";
+                }
+                else{
+                    name.classList.remove("is-valid");
+                    name.classList.add("is-invalid");
+                    document.getElementById("quantityValidation").innerHTML="Please provide the valid product Quantity!";
+                }
+            }            
+        } 
+
+        function validationSucceed(productName,productPrice,productQuantity){  
+            if (productName == "" || productName == " ") {
+                return false;
+            }
+            if (productPrice == "" || productPrice == " ") {
+                return false;
+            }
+            if (productQuantity == "" || productQuantity == " ") {
+                return false;
+            }         
+            var regrexString = /[^a-zA-Z0-9]/;
+            if(productName.match(regrexString)){
+                document.getElementById("nameValidation").innerHTML="Please provide the valid product name!";
+                return false;
+            }
+           
+            var regString = /[^0-9.]/;
+            if(productPrice.match(regString)){
+                document.getElementById("priceValidation").innerHTML="Please provide the valid product price!";
+                return false;
+            }
+           
+            var rstring = /[^0-9]/;
+            if(productQuantity.match(rstring)){
+                document.getElementById("quantityValidation").innerHTML="Please provide the valid product Quantity!";
+                return false;
+            }
+            console.log(productName);
+            return (true);
+        }
+
+        // function checkDataAlreadyExists(productName,productPrice,productQuantity){
+        //     console.log("Inside table chcek")
+        //     var rows = document.getElementById('productTable').getElementsByTagName("tr");
+        //     for (var i = 1; i < rows.length; i++) {
+        //         var cells = rows[i].getElementsByTagName("td");
+        //         console.log(cells)
+        //         if (cells.length > 0) {
+        //             console.log("checking")
+        //             console.log(productName)
+        //             console.log(productPrice)
+        //             console.log(productQuantity)
+        //             console.log(cells[1].innerHtml)
+        //             console.log(cells[2].innerHtml)
+        //             console.log(cells[3].innerHtml)
+        //             if (productName === cells[1].innerHtml && productPrice === cells[2].innerHtml && productQuantity===cells[3].innerHtml) {
+        //                 alert("Product Already Exists!");
+        //                 return false;
+        //             }
+        //         }
+        //     } 
+        //     return true; 
+        // }
+
+        function ValidateAndAppend(){
+            valid('productName');
+            valid('productPrice');
+            valid('productQuantity');
+            var productName = document.forms["productForm"]["productName"].value;
+            var productPrice = document.forms["productForm"]["productPrice"].value;
+            var  productQuantity = document.forms["productForm"]["productQuantity"].value;
+            if(validationSucceed(productName,productPrice,productQuantity)){ 
+                var table = document.getElementById("productTable");
+                // if(table.rows.length>1){
+                //     if(checkDataAlreadyExists(productName,productPrice,productQuantity)){
+                //         var rows = table.insertRow(table.rows.length);
+                //         var cell1 = row.insertCell(0);
+                //         var cell2 = row.insertCell(1);
+                //         var cell3 = row.insertCell(2);
+                //         var cell4 = row.insertCell(3);
+                //         cell1.innerHTML = table.rows.length-1;
+                //         cell2.innerHTML = productName;
+                //         cell3.innerHTML = productPrice;
+                //         cell4.innerHTML = productQuantity;
+                //     }
+                // } 
+                var row = table.insertRow(table.rows.length);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                var cell4 = row.insertCell(3);
+                cell1.innerHTML = table.rows.length-1;
+                cell2.innerHTML = productName;
+                cell3.innerHTML = productPrice;
+                cell4.innerHTML = productQuantity;             
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .textInfo{
+            display: none;
+            background-color: #FFA456;
+            padding: 5px;
+            width: 40%;
+            z-index: -1;
+            position: relative;
+            left: 7%;
+            border-radius: 10px;
+        }
+
+        .hover{
+            position: relative;
+            top: 5%;
+        }
+
+        .hover:hover + .textInfo {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex flex-row">
+        <div class="flex-none w-70 h-auto">
+            <div class="hover">
+                <span class="cursor-pointer rounded-md  px-2 py-3 w-30 text-xl font-bold ring-1 ring-inset ring-orange-400 bg-black text-orange-400 banner">Free Wifi</span>
+            </div>
+            <div class="textInfo">
+                <div class="w-50 h-auto px-3 py-2"></div>
+            </div>
+        </div>
+        <div class="flex-none w-70 h-auto">
+            <div class="hover">
+                <span class="cursor-pointer rounded-md  px-2 py-3 w-30 text-xl font-bold ring-1 ring-inset ring-orange-400 bg-black text-orange-400 banner">Free Wifi</span>
+            </div>
+            <div class="textInfo">
+                <div class="w-50 h-auto px-3 py-2">We're pleased to offer complimentary Wi-Fi access to all our guests. Feel free to connect and stay connected throughout your stay with us.</div>
+            </div>
+        </div>
+        <div class="flex-none w-70 h-auto">
+            <div class="hover">
+                <span class="cursor-pointer rounded-md  px-2 py-3 w-30 text-xl font-bold ring-1 ring-inset ring-orange-400 bg-black text-orange-400 banner">Free Wifi</span>
+            </div>
+            <div class="textInfo">
+                <div class="w-50 h-auto px-3 py-2">We're pleased to offer complimentary Wi-Fi access to all our guests. Feel free to connect and stay connected throughout your stay with us.</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

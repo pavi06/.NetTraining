@@ -1,0 +1,51 @@
+.sideMenu{
+    height: fit-content;
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    border-color:  #FFA456;
+    padding-bottom: 5%;
+}
+
+.hotelName{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.description{
+    margin-top: 5%;
+    font-size: 18px;
+    line-height: 24px;
+
+}
+
+.cardDesign{
+    box-shadow: #FFA456 1.95px 1.95px 2.6px;
+}
+
+.review{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.form-check-input{
+    border: 0.5px solid black;
+}
+
+.menu{
+    padding: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bolder;
+    color: #FFA456;
+    text-transform: uppercase;
+}
