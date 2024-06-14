@@ -96,7 +96,7 @@
                   </div>
             </div>
             <div class="col-10 m-5" style="text-align: center;">
-                <button type="button" value="Submit" class="btn" style="background-color: #7998f3; font-weight: bolder;text-transform: uppercase;" onclick="validateAndRegister()">Register</button>
+                <button type="button" class="btn" style="background-color: #7998f3; font-weight: bolder;text-transform: uppercase;" onclick="validateAndRegister()">Register</button>
             </div>
         </form>
     </div>
@@ -247,7 +247,12 @@
           else{
             alert("Not registered successfully!");
           }
-          document.getElementById("registrationForm").reset();
+          // document.getElementById("registrationForm").reset();
+          // const elements = document.querySelectorAll('input');  
+          // elements.forEach((element) => {  
+          //     element.classList.remove("is-valid");  
+          // });
+          location.reload(); 
         }  
     
     </script>
