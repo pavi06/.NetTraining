@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <h3 class="p-3 mb-5" style="text-transform: uppercase; text-align: center; font-weight: bolder; background-color: #7998f3 ;">Registration Form</h3>
+    <div  style="margin: auto;width: 50%;">
+        <form id="registrationForm" name="registrationForm" style="margin: auto;">
+            <div class="row mb-2">
+                  <div class="col-sm-4">
+                    <label for="name" class="form-label" style="font-weight: bold;">Name</label>
+                  </div>
+                  <div class="col-sm-8">
+                    <input type="text" required class="form-control" name="name" id="name" placeholder="eg. Shiva" onblur="validateName()">
+                    <small class="text-success" id="nameValid"></small>
+                    <small class="text-danger" id="nameInvalid"></small>
+                  </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-4">
+                    <label for="phoneNumber" class="form-label" style="font-weight: bold;">Phone</label>
+                  </div>
+                  <div class="col-sm-8">
+                    <input type="tel" required class="form-control" name="phoneNumber" id="phoneNumber" placeholder="eg. 9756453444" onblur="validatePhone()">
+                    <small class="text-success" id="phoneValid"></small>
+                    <small class="text-danger" id="phoneInvalid"></small>
+                  </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-4">
+                    <label for="dob" class="form-label" style="font-weight: bold;">Date Of Birth</label>
+                  </div>
+                  <div class="col-sm-8">
+                    <input  type="date" required class="form-control" name="dob" id="dob" placeholder="eg. 2020-05-31" onblur="validateDOB()">
+                    <small class="text-success" id="dobValid"></small>
+                    <small class="text-danger" id="dobInvalid"></small>
+                  </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-4">
+                    <label for="age" class="form-label" style="font-weight: bold;">Age</label>
+                  </div>
+                  <div class="col-sm-8">
+                    <input  type="number" required class="form-control" name="age" id="age" disabled>
+                  </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-4">
+                    <p class="form-label"style="font-weight: bold;">Gender</p>
+                  </div>
+                  <div class="col-sm-8" style="display: flex; flex-direction: row;">
+                    <input  type="radio" required class="form-check-input" name="gender" value="male" id="genderMale" onclick="validateGender()">
+                    <label for="genderMale" class="form-label" style="margin-right: 10px;margin-left: 5px;">Male</label>
+                    <input  type="radio" required class="form-check-input" name="gender" value="female" id="genderFemale" onclick="validateGender()">
+                    <label for="genderFemale" class="form-label" style="margin-right: 10px;margin-left: 5px;">Female</label>
+                    <input  type="radio" required class="form-check-input" name="gender" value="others" id="genderOthers" onclick="validateGender()">
+                    <label for="genderOthers" class="form-label" style="margin-right: 10px;margin-left: 5px;">Others</label>
+                    <small class="text-success" id="genValid"></small>
+                    <small class="text-danger" id="genInvalid"></small>
+                  </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-4">
+                    <p class="form-label" style="font-weight: bold;">Qualification</p>
+                  </div>
+                  <div class="col-sm-8">
+                    <input  type="checkbox"  class="form-check-input" name="qualifications" value="Btech" id="btech" onclick="validateQualification()">
+                    <label for="btech" class="form-label" style="margin-right: 10px;margin-left: 5px;">Bachelor of Technology</label><br>
+                    <input  type="checkbox"  class="form-check-input" name="qualifications" value="Mtech" id="mtech" onclick="validateQualification()">
+                    <label for="mtech" class="form-label" style="margin-right: 10px;margin-left: 5px;">Master of Technology</label><br>
+                    <input  type="checkbox"  class="form-check-input" name="qualifications" value="others" id="others" onclick="validateQualification()">
+                    <label for="others" class="form-label" style="margin-right: 10px;margin-left: 5px;">Others</label>
+                    <small class="text-success" id="qualValid"></small>
+                    <small class="text-danger" id="qualInvalid"></small>
+                  </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-4">
+                    <label for="profession" class="form-label" style="font-weight: bold;">Profession</label><br>
+                  </div>
+                  <div class="col-sm-8">
+                    <input class="form-control" list="datalistOptions" required name="profession" id="profession" placeholder="eg. Software Engineer" onblur="validateProfession()">
+                    <datalist id="datalistOptions">
+                        <option value="Software Developer"></option>
+                        <option value="Graphic Designer"></option>
+                        <option value="Teacher"></option>
+                        <option value="Doctor"></option>
+                        <option value="Civil Engineer"></option>                        
+                    </datalist>
+                    <small class="text-success" id="profValid"></small>
+                    <small class="text-danger" id="profInvalid"></small>
+                  </div>
+            </div>
+            <div class="col-10 m-5" style="text-align: center;">
+                <button type="button" value="Submit" class="btn" style="background-color: #7998f3; font-weight: bolder;text-transform: uppercase;" onclick="validateAndRegister()">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+            function validateName(){
+                var element = document.registrationForm.name;
+                var regString = /[a-zA-Z]/g
+                if(element.value && element.value.match(regString)){
+                  element.classList.remove("is-invalid");
+                  element.classList.add("is-valid");
+                  document.getElementById("nameValid").innerHTML="valid input!";
+                  document.getElementById("nameInvalid").innerHTML="";
+                  return true;
+                }
+                else{
+                    element.classList.remove("is-valid");
+                    element.classList.add("is-invalid");
+                    document.getElementById("nameValid").innerHTML="";
+                    document.getElementById("nameInvalid").innerHTML="Please provide the valid name!";
+                    return false;
+                }
+            }
+
+            function validatePhone(){
+              var element = document.registrationForm.phoneNumber;
+              var regPhone = /[0-9+() ]/g
+                if(element.value && element.value.match(regPhone)){
+                  element.classList.remove("is-invalid");
+                  element.classList.add("is-valid");
+                  document.getElementById("phoneValid").innerHTML="valid input!";
+                  document.getElementById("phoneInvalid").innerHTML="";
+                  return true;
+                }
+                else{
+                    element.classList.remove("is-valid");
+                    element.classList.add("is-invalid");
+                    document.getElementById("phoneValid").innerHTML="";
+                    document.getElementById("phoneInvalid").innerHTML="Please provide the valid phone number!";
+                    return false;
+                }
+            }
+
+            function validateDOB(){
+              var element = document.registrationForm.dob;
+                if(element.value){
+                  document.getElementById('age').value= new Date().getFullYear() - new Date(element.value).getFullYear();
+                  element.classList.remove("is-invalid");
+                  element.classList.add("is-valid");
+                  document.getElementById("dobValid").innerHTML="valid input!";
+                  document.getElementById("dobInvalid").innerHTML="";
+                  return true;
+                }
+                else{
+                    element.classList.remove("is-valid");
+                    element.classList.add("is-invalid");
+                    document.getElementById("dobValid").innerHTML="";
+                    document.getElementById("dobInvalid").innerHTML="Please provide the valid dob!";
+                    return false;
+                }
+            }
+
+            function validateGender(){
+              var e1 = document.getElementById('genderMale');
+              var e2 = document.getElementById('genderFemale');
+              var e3 = document.getElementById('genderOthers')
+              if(e1.checked == true || e2.checked == true || e3.checked==true){
+                  e1.classList.remove("is-invalid");
+                  e1.classList.add("is-valid");
+                  e2.classList.remove("is-invalid");
+                  e2.classList.add("is-valid");
+                  e3.classList.remove("is-invalid");
+                  e3.classList.add("is-valid");
+                  document.getElementById("genValid").innerHTML="valid input!";
+                  document.getElementById("genInvalid").innerHTML="";
+                  return true;
+              }
+              else{
+                    e1.classList.remove("is-valid");
+                    e1.classList.add("is-invalid");
+                    e2.classList.remove("is-valid");
+                    e2.classList.add("is-invalid");
+                    e3.classList.remove("is-valid");
+                    e3.classList.add("is-invalid");
+                    document.getElementById("genValid").innerHTML="";
+                    document.getElementById("genInvalid").innerHTML="Please provide the gender!";
+                    return false;
+              }  
+            }
+
+            function validateQualification(){
+              var e1 = document.getElementById('btech');
+              var e2 = document.getElementById('mtech');
+              var e3 = document.getElementById('others');
+                  if(e1.checked == true || e2.checked == true || e3.checked == true){
+                    e1.classList.remove("is-invalid");
+                    e1.classList.add("is-valid");
+                    e2.classList.remove("is-invalid");
+                    e2.classList.add("is-valid");
+                    e3.classList.remove("is-invalid");
+                    e3.classList.add("is-valid");
+                    document.getElementById("qualValid").innerHTML="valid input!";
+                    document.getElementById("qualInvalid").innerHTML="";
+                    return true;
+                }
+                else{
+                  e1.classList.remove("is-valid");
+                  e1.classList.add("is-invalid");
+                  e2.classList.remove("is-valid");
+                  e2.classList.add("is-invalid");
+                  e3.classList.remove("is-valid");
+                  e3.classList.add("is-invalid");
+                  document.getElementById("qualValid").innerHTML="";
+                  document.getElementById("qualInvalid").innerHTML="Please provide the valid qualification!";
+                  return false;
+                }
+            }
+
+            function validateProfession(){
+              var element = document.registrationForm.profession;
+                if(element.value){
+                  element.classList.remove("is-invalid");
+                  element.classList.add("is-valid");
+                  document.getElementById("profValid").innerHTML="valid input!";
+                  document.getElementById("profInvalid").innerHTML="";
+                  return true;
+                }
+                else{
+                    element.classList.remove("is-valid");
+                    element.classList.add("is-invalid");
+                    document.getElementById("profValid").innerHTML="";
+                    document.getElementById("profInvalid").innerHTML="Please provide the valid profession!";
+                    return false;
+                }
+            }
+          
+        function validateAndRegister(){
+          var res1 = validateName()
+          var res2 = validatePhone()
+          var res3 = validateDOB()
+          var res4 = validateGender()
+          var res5 = validateQualification()
+          var res6 = validateProfession()
+          if(res1 && res2 && res3 && 
+          res4 && res5 && res6){
+            alert("Registered successfully!");
+          }
+          else{
+            alert("Not registered successfully!");
+          }
+          document.getElementById("registrationForm").reset();
+        }  
+    
+    </script>
+</body>
+</html>
