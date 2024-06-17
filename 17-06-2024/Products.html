@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script>
+        var displayProducts = ()=>{
+            fetch('https://dummyjson.com/products', {
+                method: 'GET',
+            }).then(response => {
+                return response.json();
+            }).then(data => {
+                console.log(data);
+                var productsTitleList=""
+                data.products.forEach(element => {
+                    var stockColor = element.stock > 5?"green":"red";
+                    var ratingColor = element.rating > 3.5?"green":"red";
+                    productsTitleList+= `
+                    <div class="d-flex m-3 flex-column justify-content-between shadow rounded" style="width:30% ;">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="text-white fw-bolder fs-6 mt-2 py-2" style="background-color: rgb(138, 96, 184);height: fit-content; border-radius: 0px 5px 5px 0px;width:40%;text-align:center; text-transform:uppercase;">`+ element.category+`</div>
+                            <p class="fs-6 fw-bold mt-5" style="padding-right:5%">Ratings : <span style="color:${ratingColor}">`+ element.rating+`</span> / 5 </p> 
+                        </div>
+                        <div style="text-align:center"><img src = "`+ element.images[0] +`" alt="image" style="width:150px; height:160px;" /></div>
+                        <div style="margin-right:10%;margin-left:10%">
+                            <h4 class="fw-bolder px-5" style="color:rgb(138, 96, 184);text-align:center">`+element.title+`</h4>
+                            <p style="text-align:justify">`+element.description+`</p>    
+                        </div>
+                        <div class="d-flex flex-row justify-content-between" style="margin-left:10%;margin-right:10%"> 
+                            <div class="d-flex flex-column fw-bold" >
+                                <p>Brand :<span style="color:rgb(138, 96, 184)"> `+ element.brand+`</span></p>
+                                <p style="color:${stockColor}"><span class="text-dark">In Stock : </span>`+ element.stock+`</p>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="fw-bold" style="line-height: 15px;">Price <del class="text-danger"> &#8377; `+element.price+`</del></p>
+                                <p class="text-success fw-bold" style="line-height: 15px;"> - `+element.discountPercentage+`% </p>
+                                <p class="fs-6 fw-bold" style="line-height: 15px;">&#8377; `+ Math.round((element.price - (element.discountPercentage/100)*element.price),2)+`</p>
+                            </div>
+                        </div>
+                    </div>`  ;
+                });
+                document.getElementById("products").innerHTML = productsTitleList;
+            }).catch(error => {
+                console.error(error);
+            });
+        } 
+
+        displayProducts();
+    </script>
+</head>
+<body>
+    <h3 style="background-color: rgb(138, 96, 184);text-transform:uppercase;text-align:center;color: white;padding: 2%;">Products</h3>
+    <div id="products" class="d-flex flex-row" style="flex-wrap: wrap;"></div>  
+</body>
+</html>

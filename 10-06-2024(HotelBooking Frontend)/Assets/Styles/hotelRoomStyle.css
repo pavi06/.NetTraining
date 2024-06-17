@@ -59,6 +59,13 @@ section{
     color: #FFA456 ;
 }
 
+.cardBody{
+    margin-top: 5%;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+
 .banner{
     display: none;
 }

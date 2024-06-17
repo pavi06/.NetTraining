@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./Assets/Styles/commonStyles.css">
     <link rel="stylesheet" href="./Assets/Styles/hotelsStyle.css"/>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./Assets/Scripts/filterScript.js"></script>
 </head>
 <body>
     <div>
@@ -26,63 +27,101 @@
             <div class="sideMenu">
                 <p class="menu">Filter out</p>
                 <div style="padding-left: 20px;">
-                    <p class="heading">Facilities</p>
-                    <form>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="facility">
-                            <label class="form-check-label" for="facility">Parking</label><br>
-                            <input class="form-check-input" type="checkbox" value="" id="facility">
-                            <label class="form-check-label" for="facility">Wifi</label><br>
-                            <input class="form-check-input" type="checkbox" value="" id="facility">
-                            <label class="form-check-label" for="facility">Laundary Service</label><br>
-                            <input class="form-check-input" type="checkbox" value="" id="facility">
-                            <label class="form-check-label" for="facility">Spa</label><br>
-                            <input class="form-check-input" type="checkbox" value="" id="facility">
-                            <label class="form-check-label" for="facility">Gym</label><br>
-                            <input class="form-check-input" type="checkbox" value="" id="facility">
-                            <label class="form-check-label" for="facility">Restraurant</label><br>
-                        </div>
-                    </form>
+                    <div class="filter-dropdown" id="facilitiesDropdown">
+                        <div class="filter-btn">Hotel Facilities <button onclick="toggleDropdown('facilitiesDropdown')"><i class="bi bi-caret-down-fill arrow"></i><i class="bi bi-caret-up-fill arrowup"></i></button></div>
+                        <form class="filter-content">
+                            <div class="form-check">
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="Parking" id="facility">
+                                    <label class="form-check-label" for="facility">Parking</label>
+                                </div>
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="Wifi" id="facility">
+                                    <label class="form-check-label" for="facility">Wifi</label>
+                                </div>
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="Laundary Service" id="facility">
+                                    <label class="form-check-label" for="facility">Laundary Service</label>
+                                </div>
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="Spa" id="facility">
+                                    <label class="form-check-label" for="facility">Spa</label>
+                                </div>
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="Gym" id="facility">
+                                    <label class="form-check-label" for="facility">Gym</label>
+                                </div>
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="Restraurant" id="facility">
+                                    <label class="form-check-label" for="facility">Restraurant</label>
+                                </div>                                
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div style="padding-left: 20px;">
-                    <p class="heading">Ratings</p>
-                    <form>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="ratings">
-                            <label class="form-check-label" for="ratings">5 Stars</label><br>
-                            <input class="form-check-input" type="checkbox" value="" id="ratings">
-                            <label class="form-check-label" for="ratings">4 Stars</label><br>
-                            <input class="form-check-input" type="checkbox" value="" id="ratings">
-                            <label class="form-check-label" for="ratings">3 Stars</label><br>
-                            <input class="form-check-input" type="checkbox" value="" id="ratings">
-                            <label class="form-check-label" for="ratings">2 Stars</label><br>
-                            <input class="form-check-input" type="checkbox" value="" id="ratings">
-                            <label class="form-check-label" for="ratings">1 Stars</label><br>
-                        </div>
-                    </form>
+                    <div class="filter-dropdown" id="ratingsDropdown">
+                        <div class="filter-btn">Ratings <button onclick="toggleDropdown('ratingsDropdown')"><i class="bi bi-caret-down-fill arrow"></i><i class="bi bi-caret-up-fill arrowup"></i></button></div>
+                        <form class="filter-content">
+                            <div class="form-check">
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="5" id="ratings">
+                                    <label class="form-check-label" for="ratings">5 Stars</label>
+                                </div>
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="4" id="ratings">
+                                    <label class="form-check-label" for="ratings">4 Stars</label>
+                                </div>
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="3" id="ratings">
+                                    <label class="form-check-label" for="ratings">3 Stars</label>
+                                </div>
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="ratings">
+                                    <label class="form-check-label" for="ratings">2 Stars</label>
+                                </div>
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="1" id="ratings">
+                                    <label class="form-check-label" for="ratings">1 Stars</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div style="padding-left: 20px;">
-                    <p class="heading">Room Facilities</p>
-                    <form>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="roomFacility">
-                            <label class="form-check-label" for="roomFacility">Air conditioning</label><br>
-                            <input class="form-check-input" type="checkbox" value="" id="roomFacility">
-                            <label class="form-check-label" for="roomFacility">Refrigerator</label><br>
-                            <input class="form-check-input" type="checkbox" value="" id="roomFacility">
-                            <label class="form-check-label" for="roomFacility">Kitchen</label><br>
-                            <input class="form-check-input" type="checkbox" value="" id="roomFacility">
-                            <label class="form-check-label" for="roomFacility">Cofee/Tea Maker</label><br>
-                            <input class="form-check-input" type="checkbox" value="" id="roomFacility">
-                            <label class="form-check-label" for="roomFacility">Scenic View</label><br>
-                        </div>
-                    </form>
+                    <div class="filter-dropdown" id="roomFacilitiesDropdown">
+                        <div class="filter-btn">Room Facilities <button onclick="toggleDropdown('roomFacilitiesDropdown')"><i class="bi bi-caret-down-fill arrow"></i><i class="bi bi-caret-up-fill arrowup"></i></button></div>
+                        <form class="filter-content">
+                            <div class="form-check">
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="AirConditioning" id="roomFacility">
+                                    <label class="form-check-label" for="roomFacility">Air conditioning</label>
+                                </div>
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="Refrigerator" id="roomFacility">
+                                    <label class="form-check-label" for="roomFacility">Refrigerator</label>
+                                </div>
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="Kitchen" id="roomFacility">
+                                    <label class="form-check-label" for="roomFacility">Kitchen</label>
+                                </div>
+                                <div class="mb-2">
+                                    <input class="form-check-input" type="checkbox" value="Cofee/Tea Maker" id="roomFacility">
+                                    <label class="form-check-label" for="roomFacility">Cofee/Tea Maker</label>
+                                </div>
+                               <div class="mb-2">
+                                <input class="form-check-input" type="checkbox" value="Scenic View" id="roomFacility">
+                                <label class="form-check-label" for="roomFacility">Scenic View</label>
+                               </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="col-span-4 p-3">
                 <div class="px-3 pb-5 mb-10 h-auto cardDesign">
                     <div class="flex flex-row justify-between">                      
-                        <div class="w-60 h-50 mt-3" style="object-fit: cover;">
+                        <div class="w-60 h-50 mt-4" style="object-fit: cover;">
                             <img src="./Assets/Images/hotelImage5.jpg" alt="HotelImage"/>
                         </div>
                         <div class="p-3">
@@ -108,7 +147,7 @@
                 </div>
                 <div class="px-3 pb-5 mb-10 h-auto cardDesign">
                     <div class="flex flex-row justify-between">                      
-                        <div class="w-60 h-50" style="background-color: #FFA456; object-fit: cover;">
+                        <div class="w-60 h-50 mt-4" style="object-fit: cover;">
                             <img src="./Assets/Images/hotelImage5.jpg" alt="HotelImage"/>
                         </div>
                         <div class="p-3">
@@ -116,7 +155,7 @@
                             <a href="#"><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Ooty, Tamil Nadu, India</a>
                             <p class="description">Amenities: Wifi, Parking, Laundry service,  <br> Restriction : No cancellation, No smoke and alcohol</p>
                         </div>
-                        <div class="flex flex-col justify-between">
+                        <div class="flex flex-col justify-between mt-3">
                             <div>
                                 <p><span class="review">Review Score</span></p>
                                 <div>
@@ -134,7 +173,7 @@
                 </div>
                 <div class="px-3 pb-5 mb-10 h-auto cardDesign">
                     <div class="flex flex-row justify-between">                      
-                        <div class="w-60 h-50" style="background-color: #FFA456; object-fit: cover;">
+                        <div class="w-60 h-50 mt-4" style="object-fit: cover;">
                             <img src="./Assets/Images/hotelImage5.jpg" alt="HotelImage"/>
                         </div>
                         <div class="p-3">
@@ -142,7 +181,7 @@
                             <a href="#"><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Ooty, Tamil Nadu, India</a>
                             <p class="description">Amenities: Wifi, Parking, Laundry service,  <br> Restriction : No cancellation, No smoke and alcohol</p>
                         </div>
-                        <div class="flex flex-col justify-between">
+                        <div class="flex flex-col justify-between mt-3">
                             <div>
                                 <p><span class="review">Review Score</span></p>
                                 <div>
@@ -160,15 +199,15 @@
                 </div>
                 <div class="px-3 pb-5 mb-10 h-auto cardDesign">
                     <div class="flex flex-row justify-between">                      
-                        <div class="w-60 h-50" style="background-color: #FFA456; object-fit: cover;">
+                        <div class="w-60 h-50 mt-4" style="object-fit: cover;">
                             <img src="./Assets/Images/hotelImage5.jpg" alt="HotelImage"/>
                         </div>
-                        <div class="px-3">
+                        <div class="p-3">
                             <p class="hotelName">Mr. Shivam Residency</p>
                             <a href="#"><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Ooty, Tamil Nadu, India</a>
                             <p class="description">Amenities: Wifi, Parking, Laundry service,  <br> Restriction : No cancellation, No smoke and alcohol</p>
                         </div>
-                        <div class="flex flex-col justify-between">
+                        <div class="flex flex-col justify-between mt-3">
                             <div>
                                 <p><span class="review">Review Score</span></p>
                                 <div>
@@ -183,7 +222,33 @@
                             <button type="button" class="buttonStyle">Check Room Availability</button>
                         </div>
                     </div>
-                </div>                
+                </div>
+                <div class="px-3 pb-5 mb-10 h-auto cardDesign">
+                    <div class="flex flex-row justify-between">                      
+                        <div class="w-60 h-50 mt-4" style="object-fit: cover;">
+                            <img src="./Assets/Images/hotelImage5.jpg" alt="HotelImage"/>
+                        </div>
+                        <div class="p-3">
+                            <p class="hotelName">Mr. Shivam Residency</p>
+                            <a href="#"><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Ooty, Tamil Nadu, India</a>
+                            <p class="description">Amenities: Wifi, Parking, Laundry service,  <br> Restriction : No cancellation, No smoke and alcohol</p>
+                        </div>
+                        <div class="flex flex-col justify-between mt-3">
+                            <div>
+                                <p><span class="review">Review Score</span></p>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <p><a href="#">10 reviews</a></p>
+                            </div>
+                            <button type="button" class="buttonStyle">Check Room Availability</button>
+                        </div>
+                    </div>
+                </div>                                
             </div>
         </div>
     </div>
