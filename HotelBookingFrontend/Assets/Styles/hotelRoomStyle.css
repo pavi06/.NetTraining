@@ -48,34 +48,65 @@ section{
     border-radius: 1rem;
 }
 
-.cardBanner{
+.ribbon{
     position: absolute;
     top: 11px;
-    right: -10px;
-    width: 8rem;
-    height: 2rem;
-    padding-top: 3px;
-    background-color: rgba(0, 0, 0, 0.8);
     color: #FFA456 ;
+    width: 8rem;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0px 0px 20px;
+    right: 0px;
+}
+
+.ribbon span{
+    padding: 2%;
 }
 
 .cardBody{
-    margin-top: 5%;
+    margin-top: 12%;
     font-size: 20px;
     line-height: 25px;
     text-align: justify;
 }
 
-.banner{
-    display: none;
-}
-
-.content:hover + .banner{
-    cursor: pointer;
-    display: block;
-}
-
 li{
     font-size: 20px;
     width: 40%;
+}
+.facilityDiv{
+    position: relative;
+    width: 20%;
+    height: fit-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+    margin-top: 20px;
+
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: fit-content;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.facilityDiv:hover .banner{
+    opacity: 1;
 }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./Assets/Styles/hotelRoomStyle.css"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="./Assets/Scripts/scrollReveal.js"></script> -->
 </head>
 <body>
     <nav class="flex justify-between p-4">
@@ -48,7 +49,7 @@
                 <div class="col-span-1 row-span-2 rounded-xl bg-indigo-200"><img src="./Assets/Images/hotelImage5.jpg" class="images"/></div>
                 <div class="col-span-1 row-span-2 rounded-xl bg-indigo-200"><img src="./Assets/Images/hotelBg.jpg" class="images"/></div>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col h-auto">
                 <div  class=" w-100 h-auto p-3 mb-5 flex flex-row shadow-lg">
                         <div class="w-70">
                             <button type="button" data-bs-toggle="modal" data-bs-target="#roomTypeDetailsModal" class="subHeading">Standard Room</button>
@@ -65,7 +66,7 @@
                             <button type="button" class="mt-3 buttonStyle">Book now</button>
                         </div>
                 </div>
-                <div class=" w-100 h-auto p-3 flex flex-row justify-between shadow-lg">
+                <div class=" w-100 h-auto p-3 mb-5 flex flex-row justify-between shadow-lg">
                         <div class="w-70">
                             <p class="subHeading"><a>Deluxe Room</a><p>
                             <p class="roomCount text-green-600 font-bold"><span class="bg-green-200">Only 10 rooms left</span></p>
@@ -81,7 +82,7 @@
                             <button type="button" class="mt-3 buttonStyle">Book now</button>
                         </div>
                 </div>
-                <div class="w-100 h-auto p-3 flex flex-row justify-between my-20px shadow-lg">
+                <div class="w-100 h-auto p-3 flex flex-row justify-between shadow-lg">
                         <div class="w-70">
                             <p class="subHeading"><a href="#">Super Deluxe Room</a><p>
                             <p class="roomCount text-red-600 font-bold"><span class="bg-red-200">Only 5 rooms left</span></p>
@@ -100,73 +101,105 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="sec hide" style="padding-top: 10%;">
             <p class="text-3xl mb-5 font-bold uppercase text-orange-400 text-center">Amenities</p>
-            <div class="flex flex-row flex-wrap">
-                <div class="w-80 h-auto ring-1 ring-orange-400">
-                    <div class="h-18 hover text-2xl font-bold text-center bg-orange-300 banner" style="z-index: -1;top: 10px;">Free Wifi</div>      
+            <div class="flex flex-row justify-around flex-wrap">
+                <div class="facilityDiv">
                     <div class="content">
-                        <p class="p-3 leading-8 text-justify">We're pleased to offer complimentary Wi-Fi access to all our guests. Feel free to connect and stay connected throughout your stay with us.</p>
+                        <p class="p-3 leading-8 text-justify"><q>Stay connected with free, high-speed WiFi access.</q></p>
                     </div> 
+                    <div class="text-xl font-bold text-center bg-orange-300 banner"><p>Free Wifi</p></div>      
+                </div> 
+                <div class="facilityDiv">
+                    <div class="content">
+                        <p class="p-3 leading-8 text-justify"><q>Relax and unwind with complimentary spa amenities.</q></p>
+                    </div> 
+                    <div class="h-18 text-xl font-bold text-center bg-orange-300 banner"><p>Spa</p></div>      
+                </div>
+                <div class="facilityDiv">
+                    <div class="content">
+                        <p class="p-3 leading-8 text-justify"><q>Stay active at no extra cost in our state-of-the-art gym.</q></p>
+                    </div> 
+                    <div class="h-18 text-xl font-bold text-center bg-orange-300 banner"><p>Gym</p></div>      
+                </div> 
+                <div class="facilityDiv">
+                    <div class="content">
+                        <p class="p-3 leading-8 text-justify"><q>Take in stunning vistas with picturesque views.</q></p>
+                    </div> 
+                    <div class="h-18 text-xl font-bold text-center bg-orange-300 banner"><p>Scenic View</p></div>      
+                </div> 
+                <div class="facilityDiv">
+                    <div class="content">
+                        <p class="p-3 leading-8 text-justify"><q>Enjoy cool comfort with complimentary air conditioning.</q></p>
+                    </div> 
+                    <div class="h-18 text-xl font-bold text-center bg-orange-300 banner"><p>AC</p></div>      
+                </div> 
+                <div class="facilityDiv">
+                    <div class="content">
+                        <p class="p-3 leading-8 text-justify"><q>Savor diverse cuisines at our complimentary dining spots.</q></p>
+                    </div> 
+                    <div class="h-18 text-xl font-bold text-center bg-orange-300 banner"><p>Restraurant</p></div>      
                 </div>                     
             </div>
     </section>
-    <section>
+    <section class="sec hide">
         <p class="text-3xl mb-5 mt-5 font-bold uppercase text-center text-orange-400">Rules / Restrictions</p>
         <div>
-            <div class="bg-orange-300 w-100 p-5 font-bold text-xl">
+            <div class="bg-orange-300 w-100 p-3 font-bold text-xl">
                 CheckIn Time : <span class="uppercase px-5 text-2xl">Between 11am to 2pm</span>
                 CheckOut Time :<span class="uppercase px-5 text-2xl">Between 10am to 11am</span> 
             </div>
-            <span class="inline-flex items-center rounded-md  px-2 py-3 mx-3 my-5 text-xl font-bold text-base ring-1 ring-inset ring-orange-400">No pets</span>
-            <span class="inline-flex items-center rounded-md  px-2 py-3 mx-3 my-5 text-xl font-bold text-base ring-1 ring-inset ring-orange-400">No smoking and alcohol</span>
+            <div class="flex flex-row justify-center">
+                <span class="inline-flex items-center rounded-md  px-2 py-3 mx-3 my-5 text-xl font-bold text-base ring-1 ring-inset ring-orange-400">No pets</span>
+                <span class="inline-flex items-center rounded-md  px-2 py-3 mx-3 my-5 text-xl font-bold text-base ring-1 ring-inset ring-orange-400">No smoking and alcohol</span>
+            </div>
         </div>
     </section>
-    <section style="background-color: rgba(0, 0, 0, 0.8);">
+    <section class="sec hide" style="background-color: rgba(0, 0, 0, 0.8);padding-top: 10%;padding-bottom: 5%;">
         <!-- <p class="text-3xl mb-5 font-bold reviewRating text-orange-400 uppercase text-center">Reviews</p> -->
-        <p class="text-white text-center mb-10">Wanna look at our <span class="uppercase font-extrabold text-4xl px-3">guests Testimonials</span>???</p>
+        <p class="text-white text-center mb-10">Wanna look at our <span class="uppercase font-extrabold text-2xl px-3" style="color: #FFA456;">guests Testimonials</span>???</p>
             <div class="flex flex-row">
                 <div class="card">
+                    <i class="ribbon">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </i>
                     <div class="cardContent">
                       <p class="cardBody">
                         <q>A luxurious retreat with a perfect blend of comfort and sophistication. The hospitality was exemplary, with every interaction reflecting genuine care and efficiency. Highly recommended for those seeking a serene and pampering experience.</q>
                       </p> 
-                      <h4 style="margin-top: 5%;">@ Sai, Chennai</h4>  
-                    </div>
-                    <div class="rounded-md text-center align-middle cardBanner">
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
+                      <h4 style="margin-top: 5%;font-weight: bolder;color: #FFA456;">@ Sai, Chennai</h4>  
                     </div>
                 </div>
                 <div class="card">
+                    <i class="ribbon">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </i>
                     <div class="cardContent">
                       <p class="cardBody">
                         <q>From the moment we arrived, we were treated with utmost courtesy and warmth. The room was pristine, with every detail meticulously curated. The staff's dedication to ensuring our comfort and satisfaction was evident at every turn.</q>
                       </p> 
-                      <h4 style="margin-top: 5%;">@ Vijayalakshmi, Chennai</h4>  
-                    </div>
-                    <div class="rounded-md text-center align-middle cardBanner">
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
+                      <h4 style="margin-top: 5%;font-weight: bolder;color: #FFA456;">@ Vijayalakshmi, Chennai</h4>  
                     </div>
                 </div>
                 <div class="card">
+                    <i class="ribbon">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </i>
                     <div class="cardContent">
                       <p class="cardBody">
                         <q>Our stay was nothing short of exceptional. The room was elegantly furnished with a stunning view, and the hospitality extended by the staff was unparalleled. They anticipated our needs before we even realized them.</q>
                       </p> 
-                      <h4 style="margin-top: 5%;">@ Arun, Chennai</h4>  
-                    </div>
-                    <div class="rounded-md text-center align-middle cardBanner">
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
+                      <h4 style="margin-top: 5%;font-weight: bolder;color: #FFA456;">@ Arun, Chennai</h4>  
                     </div>
                 </div>
             </div>

@@ -62,7 +62,7 @@ nav li a:hover{
 }
 
 p{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .subheading{
@@ -98,17 +98,57 @@ p{
 }
 
 .buttonStyle{
-    background-color: #FFA456;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: #FFA456;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 12px;
+  margin-right: 5px;
+}
+
+.buttonStyle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%; /* Large enough to cover the entire button */
+  height: 300%; /* Large enough to cover the entire button */
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent color for fill effect */
+  border-radius: 50%;
+  transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.buttonStyle:hover::before {
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+}
+
+.buttonStyle span{
+  position: relative;
+  z-index: 1;
+}
+
+/* .buttonStyle{
     padding: 5px;
     border-radius: 5px;
     font-weight: bolder;
     margin-bottom: 12px;
     margin-right: 5px;
-}
+} */
 
-.buttonStyle:hover{
+/* .buttonStyle:hover{
     background-color: #e8a264;
-}
+} */
 
 input {
     font-weight: 700;
@@ -354,3 +394,13 @@ input {
     font-size:20px;
     opacity:0.6;
   }
+
+  /* .hide{
+    opacity: 0;
+    transition: all 1s ease;
+  } */
+
+.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
