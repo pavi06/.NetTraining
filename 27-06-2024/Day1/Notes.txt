@@ -1,0 +1,15 @@
+
+File extension -> .py
+Execute python file in cmd -> python filename
+			    eg. python first.py
+
+To get input from user -> input()
+To display -> print()
+
+
+List:
+-indexed (start with 0)
+-mutable
+-ordered
+-can have duplicate values
+-datatype independent (can have any datatype in a list)

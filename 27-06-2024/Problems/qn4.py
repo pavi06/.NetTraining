@@ -1,0 +1,5 @@
+name = input("Enter your name : ")
+age = int(input("Enter your age : "))
+dob = input("Enter your date of birth in YYYY/MM/DD format : ")
+phone = input("Enter your phone number : ")
+print(f"Name : {name}\nAge : {age}\nDate of birth : {dob}\nPhone number : {phone}")
