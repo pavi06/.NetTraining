@@ -1,0 +1,8 @@
+from collections import Counter
+
+
+if __name__ == '__main__':
+    s = input()
+    letterFrequency = Counter(sorted(s))
+    for letter, occurance in letterFrequency.most_common(3):
+        print(f"{letter} {occurance}")
