@@ -1,0 +1,23 @@
+class Solution:
+    def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
+        res,lineWords,length = [], [], 0 #length- length of words in a line
+        for word in words:
+            if(len(lineWords)+len(word)+length>maxWidth):
+                spaces = (maxWidth - length) // max(1,len(lineWords)-1)
+                rem_spaces = (maxWidth - length)% max(1,len(lineWords)-1)
+                for i in range(max(1,len(lineWords)-1)): #spaces added btw words
+                    lineWords[i]+= " "*spaces
+                    if rem_spaces:
+                        lineWords[i]+= " " #adding extra space,left justified
+                        rem_spaces-=1
+                res.append("".join(lineWords))
+                lineWords = []
+                length = 0
+                
+            lineWords.append(word)
+            length+=len(word)
+            
+        last_line = " ".join(lineWords) #for last line, left justification
+        spaces = maxWidth - len(last_line)
+        res.append(last_line+ " "*spaces)
+        return res
