@@ -1,0 +1,81 @@
+#pull image
+docker pull postgres
+
+#check for available images
+docker images
+
+#run image
+docker run --name postgres_a -p 5432:5432 -e POSTGRES_PASSWORD=demopassword -d postgres
+
+#look for active containers
+docker ps
+
+#interactive execution with current user 
+docker exec -it postgres_emp psql -U postgres
+
+#db creation
+CREATE DATABASE employee;
+
+#listing all db
+\l
+
+#choose database
+\c employee
+
+#creating department table
+CREATE TABLE Department(
+DepartId SERIAL PRIMARY KEY,
+DepartmentName VARCHAR(30)
+);
+
+#creating employee table
+CREATE TABLE Employees (
+EmpId SERIAL PRIMARY KEY ,
+EmployeeName VARCHAR(50),
+Age INTEGER,
+Phone VARCHAR(20),
+DepartId INTEGER,
+FOREIGN KEY (DepartId) REFERENCES Department (DepartId)
+);
+
+#creating salary table
+CREATE TABLE Salary(
+employee(# SalaryId SERIAL PRIMARY KEY,
+employee(# EmpId INTEGER,
+employee(# Salary DECIMAL(10,2),
+employee(# FOREIGN KEY(EmpId) REFERENCES Employees (EmpId)
+employee(# );
+
+#inserting records into department table
+employee=# INSERT INTO Department(DepartId, DepartmentName) VALUES(101,'HR');
+INSERT 0 1
+employee=# INSERT INTO Department(DepartId, DepartmentName) VALUES(102,'DevOps');
+INSERT 0 1
+employee=# INSERT INTO Department(DepartId, DepartmentName) VALUES(103,'Testing');
+INSERT 0 1
+
+#inserting records into employees table
+employee=# INSERT INTO Employees VALUES(1,'Sai',25,'9878908767',101);
+INSERT 0 1
+employee=# INSERT INTO Employees VALUES(2,'Shiva',40,'9899908767',101);
+INSERT 0 1
+employee=# INSERT INTO Employees VALUES(3,'Pavi',23,'9809908760',102);
+
+
+
+#inserting records into salary table
+employee=# INSERT INTO Salary VALUES(1101,1,200000);
+INSERT 0 1
+employee=# INSERT INTO Salary VALUES(1102,2,30000);
+INSERT 0 1
+employee=# INSERT INTO Salary VALUES(1103,3,5000);
+INSERT 0 1
+employee=# \q
+#quiting
+
+
+#executing again
+docker exec -it postgres_emp  psql -U postgres
+
+#select query
+SELECT e.EmployeeName, e.Age, e.Phone, d.DepartmentName, s.Salary FROM Employees e INNER JOIN Department d on e.DepartId = d.DepartId INNER JOIN Salary s on e.EmpId = s.EmpId;
