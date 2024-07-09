@@ -1,0 +1,27 @@
+ 1. **Transactions**
+   - **Description**: Handling of deposits, withdrawals, and transfers.
+   - **Actors**: Customers, Bank Employees, ATM
+   - **Components**:
+     - **Deposit**: A customer can deposit money into their account.
+     - **Withdrawal**: A customer can withdraw money from their account.
+     - **Transfer**: A customer can transfer money between accounts.
+   - **Process**:
+     1. Customer initiates a transaction (deposit, withdrawal, or transfer).
+     2. System validates the transaction (e.g., sufficient funds, correct account details).
+     3. Transaction is processed and recorded in the customer's account.
+     4. Confirmation is provided to the customer.
+--------------------------------------------------------------------------------------------
+
+Transaction:
+id , date, senderaccount, receiveraccount , mode(online, offline) ,
+type (windraw, deposit), amount
+	-Online (internal, external)
+	-ATM (withdraw, deposit)
+Internal transfer:
+	accountno, name
+External transfer:
+	accountno, name ,ifsc code, bank name
+	type:
+	-IMPS (imediate transfer, limited amount)
+	-RTGS (high range)
+	-NEFT (transfered batch wise, low range, not immediate)
