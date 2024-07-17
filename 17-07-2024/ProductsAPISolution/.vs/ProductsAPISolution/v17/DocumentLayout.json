@@ -1,0 +1,200 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\migrations\\productcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\migrations\\productcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\migrations\\20240717141612_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\migrations\\20240717141612_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\contexts\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\contexts\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\models\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\models\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\models\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\models\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\customexceptions\\nosuchobjectavailableexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\customexceptions\\nosuchobjectavailableexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Migrations\\ProductContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "ProductsAPI\\Migrations\\ProductContextModelSnapshot.cs",
+              "ToolTip": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Migrations\\ProductContextModelSnapshot.cs",
+              "RelativeToolTip": "ProductsAPI\\Migrations\\ProductContextModelSnapshot.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T15:19:08.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240717141612_init.cs",
+              "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Migrations\\20240717141612_init.cs",
+              "RelativeDocumentMoniker": "ProductsAPI\\Migrations\\20240717141612_init.cs",
+              "ToolTip": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Migrations\\20240717141612_init.cs",
+              "RelativeToolTip": "ProductsAPI\\Migrations\\20240717141612_init.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T15:19:02.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ProductsAPI\\Program.cs",
+              "ToolTip": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Program.cs",
+              "RelativeToolTip": "ProductsAPI\\Program.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAqwB0AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:11:19.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ErrorModel.cs",
+              "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Models\\ErrorModel.cs",
+              "RelativeDocumentMoniker": "ProductsAPI\\Models\\ErrorModel.cs",
+              "ToolTip": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Models\\ErrorModel.cs",
+              "RelativeToolTip": "ProductsAPI\\Models\\ErrorModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T09:57:46.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ProductsAPI\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ProductsAPI\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T09:44:11.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "ProductsAPI\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "ProductsAPI\\Repositories\\ProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T09:22:10.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "ProductsAPI\\Services\\ProductService.cs",
+              "ToolTip": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Services\\ProductService.cs",
+              "RelativeToolTip": "ProductsAPI\\Services\\ProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T09:18:48.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductContext.cs",
+              "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Contexts\\ProductContext.cs",
+              "RelativeDocumentMoniker": "ProductsAPI\\Contexts\\ProductContext.cs",
+              "ToolTip": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Contexts\\ProductContext.cs",
+              "RelativeToolTip": "ProductsAPI\\Contexts\\ProductContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:11:17.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Models\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "ProductsAPI\\Models\\ProductDTO.cs",
+              "ToolTip": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Models\\ProductDTO.cs",
+              "RelativeToolTip": "ProductsAPI\\Models\\ProductDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T14:21:00.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NoSuchObjectAvailableException.cs",
+              "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\CustomExceptions\\NoSuchObjectAvailableException.cs",
+              "RelativeDocumentMoniker": "ProductsAPI\\CustomExceptions\\NoSuchObjectAvailableException.cs",
+              "ToolTip": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\CustomExceptions\\NoSuchObjectAvailableException.cs",
+              "RelativeToolTip": "ProductsAPI\\CustomExceptions\\NoSuchObjectAvailableException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T09:07:53.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "ProductsAPI\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "ProductsAPI\\Interfaces\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T08:46:02.21Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

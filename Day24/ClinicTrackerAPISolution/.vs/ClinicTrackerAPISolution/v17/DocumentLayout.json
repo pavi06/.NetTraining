@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|c:\\dotnet\\day24\\clinictrackerapisolution\\clinictrackerapi\\repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|solutionrelative:clinictrackerapi\\repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|c:\\dotnet\\day24\\clinictrackerapisolution\\clinictrackerapi\\contexts\\clinictrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|solutionrelative:clinictrackerapi\\contexts\\clinictrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|c:\\dotnet\\day24\\clinictrackerapisolution\\clinictrackerapi\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|solutionrelative:clinictrackerapi\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|c:\\dotnet\\day24\\clinictrackerapisolution\\clinictrackerapi\\services\\doctorbasicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|solutionrelative:clinictrackerapi\\services\\doctorbasicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|c:\\dotnet\\day24\\clinictrackerapisolution\\clinictrackerapi\\repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|solutionrelative:clinictrackerapi\\repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|c:\\dotnet\\day24\\clinictrackerapisolution\\clinictrackerapi\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|solutionrelative:clinictrackerapi\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|c:\\dotnet\\day24\\clinictrackerapisolution\\clinictrackerapi\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|c:\\dotnet\\day24\\clinictrackerapisolution\\clinictrackerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|solutionrelative:clinictrackerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|c:\\dotnet\\day24\\clinictrackerapisolution\\clinictrackerapi\\contexts\\clinictrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|solutionrelative:clinictrackerapi\\contexts\\clinictrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|c:\\dotnet\\day24\\clinictrackerapisolution\\clinictrackerapi\\services\\doctorbasicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{851928D7-17BF-4058-B170-292C13AB3317}|ClinicTrackerAPI\\ClinicTrackerAPI.csproj|solutionrelative:clinictrackerapi\\services\\doctorbasicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,23 +46,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "ClinicTrackerAPI\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-15T10:34:08.221Z"
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "ClinicTrackerAPI\\Interfaces\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T08:47:18.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "ClinicTrackerAPI\\Controllers\\DoctorController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwCkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T09:34:51.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClinicTrackerContext.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Contexts\\ClinicTrackerContext.cs",
+              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Contexts\\ClinicTrackerContext.cs",
+              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Contexts\\ClinicTrackerContext.cs",
+              "RelativeToolTip": "ClinicTrackerAPI\\Contexts\\ClinicTrackerContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T09:17:43.803Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "DoctorRepository.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Repositories\\DoctorRepository.cs",
+              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Repositories\\DoctorRepository.cs",
+              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Repositories\\DoctorRepository.cs",
+              "RelativeToolTip": "ClinicTrackerAPI\\Repositories\\DoctorRepository.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAADgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:56:26.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DoctorBasicService.cs",
+              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Services\\DoctorBasicService.cs",
+              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Services\\DoctorBasicService.cs",
+              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Services\\DoctorBasicService.cs",
+              "RelativeToolTip": "ClinicTrackerAPI\\Services\\DoctorBasicService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:34:54.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ClinicTrackerAPI\\appsettings.Development.json",
@@ -70,45 +124,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DoctorController.cs",
-              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Controllers\\DoctorController.cs",
-              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Controllers\\DoctorController.cs",
-              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Controllers\\DoctorController.cs",
-              "RelativeToolTip": "ClinicTrackerAPI\\Controllers\\DoctorController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T09:34:51.066Z",
-              "EditorCaption": ""
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ClinicTrackerAPI\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-15T10:34:08.221Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClinicTrackerContext.cs",
-              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Contexts\\ClinicTrackerContext.cs",
-              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Contexts\\ClinicTrackerContext.cs",
-              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Contexts\\ClinicTrackerContext.cs",
-              "RelativeToolTip": "ClinicTrackerAPI\\Contexts\\ClinicTrackerContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T09:17:43.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DoctorRepository.cs",
-              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Repositories\\DoctorRepository.cs",
-              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Repositories\\DoctorRepository.cs",
-              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Repositories\\DoctorRepository.cs",
-              "RelativeToolTip": "ClinicTrackerAPI\\Repositories\\DoctorRepository.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBgAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:56:26.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Doctor.cs",
               "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Models\\Doctor.cs",
               "RelativeDocumentMoniker": "ClinicTrackerAPI\\Models\\Doctor.cs",
@@ -120,19 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DoctorBasicService.cs",
-              "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Services\\DoctorBasicService.cs",
-              "RelativeDocumentMoniker": "ClinicTrackerAPI\\Services\\DoctorBasicService.cs",
-              "ToolTip": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Services\\DoctorBasicService.cs",
-              "RelativeToolTip": "ClinicTrackerAPI\\Services\\DoctorBasicService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAABTAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:34:54.626Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dotNet\\Day24\\ClinicTrackerAPISolution\\ClinicTrackerAPI\\Program.cs",
               "RelativeDocumentMoniker": "ClinicTrackerAPI\\Program.cs",
