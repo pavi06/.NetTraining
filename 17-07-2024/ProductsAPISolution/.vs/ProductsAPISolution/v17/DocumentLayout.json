@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\migrations\\productcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\migrations\\productcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|solutionrelative:productsapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{598F1351-A334-4BFE-BCC0-2E570D72434B}|ProductsAPI\\ProductsAPI.csproj|c:\\dotnet\\17-07-2024\\productsapisolution\\productsapi\\models\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,24 +54,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProductContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Migrations\\ProductContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "ProductsAPI\\Migrations\\ProductContextModelSnapshot.cs",
               "ToolTip": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Migrations\\ProductContextModelSnapshot.cs",
               "RelativeToolTip": "ProductsAPI\\Migrations\\ProductContextModelSnapshot.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-17T15:19:08.912Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "20240717141612_init.cs",
               "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Migrations\\20240717141612_init.cs",
               "RelativeDocumentMoniker": "ProductsAPI\\Migrations\\20240717141612_init.cs",
@@ -79,12 +79,11 @@
               "RelativeToolTip": "ProductsAPI\\Migrations\\20240717141612_init.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T15:19:02.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T15:19:02.114Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Program.cs",
               "RelativeDocumentMoniker": "ProductsAPI\\Program.cs",
@@ -92,8 +91,7 @@
               "RelativeToolTip": "ProductsAPI\\Program.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAqwB0AAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T10:11:19.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T10:11:19.807Z"
             },
             {
               "$type": "Document",
@@ -109,15 +107,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "ProductsAPI\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Controllers\\ProductController.cs",
               "RelativeToolTip": "ProductsAPI\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T09:44:11.854Z"
+              "WhenOpened": "2024-07-17T09:44:11.854Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -133,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "ProductsAPI\\Services\\ProductService.cs",
@@ -145,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProductContext.cs",
               "DocumentMoniker": "C:\\dotNet\\17-07-2024\\ProductsAPISolution\\ProductsAPI\\Contexts\\ProductContext.cs",
               "RelativeDocumentMoniker": "ProductsAPI\\Contexts\\ProductContext.cs",
@@ -153,8 +152,7 @@
               "RelativeToolTip": "ProductsAPI\\Contexts\\ProductContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T10:11:17.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T10:11:17.34Z"
             },
             {
               "$type": "Document",

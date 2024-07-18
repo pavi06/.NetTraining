@@ -1,0 +1,6 @@
+//sqlserver
+az deployment group validate --name azuresqlserver --resource-group rgPavi --template-file azuresqlservertemplate.json --parameters serverName=paviSqlServer sqlDBName=pavidbdemo firewallRuleName=pavisqlfirewallrule location="East US 2" adminLogin=pavi adminPassword=sqlPassword@123
+az deployment group create --name azuresqlserver --resource-group rgPavi --template-file azuresqlservertemplate.json --parameters serverName=paviSqlServer sqlDBName=pavidbdemo firewallRuleName=pavisqlfirewallrule location="East US 2" adminLogin=pavi adminPassword=sqlPassword@123
+
+//keyvault secret
+az deployment group create --name azureKeyVault --resource-group rgPavi --template-file azuresecretkeyvaulttemplate.json --parameters keyVaultName=paviKeyVault01 secretsPermissions="['get', 'list', 'set', 'delete', 'backup', 'restore', 'recover', 'purge']" objectId=3bab640a-ce28-46fe-93da-6b9fdaef76b4 secretName=connectionString secretValue="Server=tcp:pavisqlserver.database.windows.net,1433;Initial Catalog=pavidbdemo;Persist Security Info=False;User ID=pavi;Password=sqlPassword@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
